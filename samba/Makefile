@@ -14,7 +14,7 @@ COMMENT=	SMB/CIFS protocol server suite
 LICENSE=	gnu-gpl-v3
 
 VERSION=	4.1.17
-CONFLICTS+=	ja-samba-[0-9]* pam-smbpass-[0-9]* tdb-[0-9]* winbind-[0-9]*
+CONFLICTS+=	ja-samba-[0-9]* pam-smbpass-[0-9]* tdb-[0-9]* winbind-[0-9]* samba4-*
 
 FILESDIR=		${PKGDIR}/../../pbd/samba/files
 DESCR_SRC=		${PKGDIR}/../../pbd/samba/DESCR
