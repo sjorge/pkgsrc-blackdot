@@ -8,3 +8,5 @@ packages that were available in the older omnios repository.
 
 This repository is a suppliment to the joyent repository,
 packages are prefixed with pbd. It provides the few missing bits.
+
+Everything is provided as-is. Some packages are taken from pkgsrc-wip.
