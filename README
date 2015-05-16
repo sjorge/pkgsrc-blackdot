@@ -1,0 +1,10 @@
+####
+## Blackdot pkgsrc repository
+###########################################
+Replacement for the old omnios.blackdot.be repository.
+
+The pkgsrc repository provided by joyent provides most 
+packages that were available in the older omnios repository.
+
+This repository is a suppliment to the joyent repository,
+packages are prefixed with pbd. It provides the few missing bits.
