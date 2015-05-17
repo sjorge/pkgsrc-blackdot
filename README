@@ -37,12 +37,10 @@ echo "http://pkg.blackdot.be/${PKG_VER}/${PKG_ARCH}/All" >> /opt/local/etc/pkgin
 ## ! critical;
 ## > in progress
 ###########################################
-[+] Provide packages
-    [-] Sonnarr 
 [=] Provide SMF manifests
     [=] znc
     [=] sabnzbd
     [=] sickbeard
-    [-] couchpotato
+    [=] couchpotato
 [-] Testing and optimization
 [-] OmniOS compatibility
