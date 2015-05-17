@@ -38,8 +38,6 @@ echo "http://pkg.blackdot.be/${PKG_VER}/${PKG_ARCH}/All" >> /opt/local/etc/pkgin
 ## > in progress
 ###########################################
 [+] Provide packages
-    [+] couchpotato
-    [=] check extra deps couch + sickbeard
     [-] Sonnarr 
 [=] Provide SMF manifests
     [=] znc
