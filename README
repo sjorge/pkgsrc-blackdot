@@ -16,7 +16,9 @@ Everything is provided as-is. Some packages are taken from pkgsrc-wip.
 ###########################################
 Architecture: x86_64
 Target: LTS
+Compatibility: SmartOS
 Siging: no (you may be prompted to accept unsigned packages)
+Stability: Highly Experimental
 
 ####
 ## Adding the repository
