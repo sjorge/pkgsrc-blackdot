@@ -12,13 +12,14 @@ packages are prefixed with pbd. It provides the few missing bits.
 Everything is provided as-is. Some packages are taken from pkgsrc-wip.
 
 ####
-## Adding the repository
+## Repository Information
 ###########################################
-Architecture: x86_64
-Target: LTS
-Compatibility: SmartOS
-Siging: no (you may be prompted to accept unsigned packages)
-Stability: Highly Experimental
+Compatibility:	SmartOS
+Architecture:	x86_64
+Target:		LTS
+Siging:		no (you may be prompted to accept unsigned packages)
+Stability:	Highly Experimental
+URL:		http://pkg.blackdot.be/${PKG_VER}/${PKG_ARCH}/All
 
 ####
 ## Adding the repository
@@ -26,3 +27,23 @@ Stability: Highly Experimental
 PKG_VER=$(cat /opt/local/etc/pkgin/repositories.conf  | grep 'SmartOS' | cut -d"/" -f 6)
 PKG_ARCH=$(cat /opt/local/etc/pkgin/repositories.conf  | grep 'SmartOS' | cut -d"/" -f 7)
 echo "http://pkg.blackdot.be/${PKG_VER}/${PKG_ARCH}/All" >> /opt/local/etc/pkgin/repositories.conf
+
+####
+## TODO
+## ----------------------------------------
+## - low priority
+## = normal priority
+## + high priority
+## ! critical;
+## > in progress
+###########################################
+[+] Provide packages
+    [+] couchpotato
+    [-] Sonnarr 
+[=] Provide SMF manifests
+    [=] znc
+    [=] sabnzbd
+    [=] sickbeard
+    [-] couchpotato
+[-] Testing and optimization
+[-] OmniOS compatibility
