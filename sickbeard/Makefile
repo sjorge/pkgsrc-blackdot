@@ -2,8 +2,7 @@
 
 DISTNAME=	sickbeard-0.0.20141116
 PKGNAME=	pbd-${DISTNAME}
-COMMIT_SHA=	db2658a9c12f0282d98d8eb23cb4575b58fc39c9
-SHORT_SHA=	db2658a
+COMMIT_SHA=	db2658a
 CATEGORIES=	news
 MASTER_SITES=	-https://github.com/midgetspy/Sick-Beard/tarball/${COMMIT_SHA}
 DISTFILE= 	${DISTNAME}${EXTRACT_SUFX}
@@ -19,7 +18,7 @@ DEPENDS+=	${PYPKGPREFIX}-cheetah-[0-9]*:../../devel/py-cheetah
 DEPENDS+=	${PYPKGPREFIX}-cElementTree-[0-9]*:../../textproc/py-cElementTree
 DEPENDS+=	${PYPKGPREFIX}-sqlite3-[0-9]*:../../databases/py-sqlite3
 
-TEMP_DIR= 	midgetspy-Sick-Beard-${SHORT_SHA}
+TEMP_DIR= 	midgetspy-Sick-Beard-${COMMIT_SHA}
 WRKSRC= 	${WRKDIR}/${TEMP_DIR}
 NO_BUILD= 	yes
 USE_TOOLS= 	pax
