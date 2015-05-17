@@ -1,8 +1,8 @@
 # $NetBSD$
 
-DISTNAME=	sickbeard-0.0.20130329
+DISTNAME=	sickbeard-0.0.20141116
 PKGNAME=	pbd-${DISTNAME}
-COMMIT_SHA=	91c428a43765a1476ec268f73cd62051a64bf4e0
+COMMIT_SHA=	db2658a9c12f0282d98d8eb23cb4575b58fc39c9
 CATEGORIES=	news
 MASTER_SITES=	-https://github.com/midgetspy/Sick-Beard/tarball/${COMMIT_SHA}
 # DISTFILE is the the filename to save the download as
@@ -19,13 +19,13 @@ DEPENDS+=	${PYPKGPREFIX}-cheetah-[0-9]*:../../devel/py-cheetah
 DEPENDS+=	${PYPKGPREFIX}-cElementTree-[0-9]*:../../textproc/py-cElementTree
 DEPENDS+=	${PYPKGPREFIX}-sqlite3-[0-9]*:../../databases/py-sqlite3
 
-TEMP_DIR= midgetspy-Sick-Beard-${DISTVERSION}
+TEMP_DIR= midgetspy-Sick-Beard-${COMMIT_SHA}
 WRKSRC= ${WRKDIR}/${TEMP_DIR}
 NO_BUILD= yes
 USE_TOOLS= pax
 
-PKG_GROUPS= other
-PKG_USERS= sickbeard:other
+PKG_GROUPS= sickbeard
+PKG_USERS= sickbeard:sickbeard
 PKG_HOME.sickbeard= ${PREFIX}/sickbeard
 
 INSTALL_DIRS+= autoProcessTV cherrypy data lib sickbeard
