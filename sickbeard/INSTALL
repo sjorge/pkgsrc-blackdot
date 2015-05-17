@@ -1,7 +1,7 @@
 # $NetBSD$
 SB_DIR="@PREFIX@/sickbeard"
 SB_USER=sickbeard
-SB_GROUP=other
+SB_GROUP=sickbeard
 
 case ${STAGE} in
 POST-INSTALL)
