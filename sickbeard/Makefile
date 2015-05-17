@@ -3,10 +3,10 @@
 DISTNAME=	sickbeard-0.0.20141116
 PKGNAME=	pbd-${DISTNAME}
 COMMIT_SHA=	db2658a9c12f0282d98d8eb23cb4575b58fc39c9
+SHORT_SHA=	db2658a
 CATEGORIES=	news
 MASTER_SITES=	-https://github.com/midgetspy/Sick-Beard/tarball/${COMMIT_SHA}
-# DISTFILE is the the filename to save the download as
-DISTFILE= ${DISTNAME}${EXTRACT_SUFX}
+DISTFILE= 	${DISTNAME}${EXTRACT_SUFX}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	wongk@apt.homeunix.net
@@ -19,29 +19,29 @@ DEPENDS+=	${PYPKGPREFIX}-cheetah-[0-9]*:../../devel/py-cheetah
 DEPENDS+=	${PYPKGPREFIX}-cElementTree-[0-9]*:../../textproc/py-cElementTree
 DEPENDS+=	${PYPKGPREFIX}-sqlite3-[0-9]*:../../databases/py-sqlite3
 
-TEMP_DIR= midgetspy-Sick-Beard-${COMMIT_SHA}
-WRKSRC= ${WRKDIR}/${TEMP_DIR}
-NO_BUILD= yes
-USE_TOOLS= pax
+TEMP_DIR= 	midgetspy-Sick-Beard-${SHORT_SHA}
+WRKSRC= 	${WRKDIR}/${TEMP_DIR}
+NO_BUILD= 	yes
+USE_TOOLS= 	pax
 
-PKG_GROUPS= sickbeard
-PKG_USERS= sickbeard:sickbeard
+PKG_GROUPS= 	sickbeard
+PKG_USERS= 	sickbeard:sickbeard
 PKG_HOME.sickbeard= ${PREFIX}/sickbeard
 
-INSTALL_DIRS+= autoProcessTV cherrypy data lib sickbeard
+INSTALL_DIRS+= 	autoProcessTV cherrypy data lib sickbeard
 INSTALL_FILES+= SickBeard.py init.solaris11
-AUTO_MKDIRS=yes
+AUTO_MKDIRS=	yes
 
-PY_PATCHPLIST=          yes
-PLIST_SUBST+=           PYVERSSUFFIX=${PYVERSSUFFIX}
-REPLACE_PYTHON=		*.py */*.py */*/*.py
+PY_PATCHPLIST=	yes
+PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX}
+REPLACE_PYTHON=	*.py */*.py */*/*.py
 PYTHON_VERSIONS_INCOMPATIBLE=	33 34 # py-cheetah
 
-SUBST_CLASSES+= fix-paths
-SUBST_STAGE.fix-paths=  pre-configure
-SUBST_MESSAGE.fix-paths= Fix absolute paths.
-SUBST_FILES.fix-paths=  init.solaris11
-SUBST_SED.fix-paths=  -e 's,/opt/sickbeard,${PREFIX}/sickbeard,g'
+SUBST_CLASSES+=			fix-paths
+SUBST_STAGE.fix-paths= 		pre-configure
+SUBST_MESSAGE.fix-paths=	Fix absolute paths.
+SUBST_FILES.fix-paths=		init.solaris11
+SUBST_SED.fix-paths=		-e 's,/opt/sickbeard,${PREFIX}/sickbeard,g'
 
 do-install:
 	${MKDIR} ${DESTDIR}${PREFIX}/sickbeard
