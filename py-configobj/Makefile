@@ -1,7 +1,6 @@
 # $NetBSD: Makefile,v 1.1 2014/03/31 08:10:05 wiz Exp $
 
 DISTNAME=	configobj-5.0.6
-PKGNAME=	pbd-${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	python
 MASTER_SITES=	https://pypi.python.org/packages/source/c/configobj/
 

@@ -1,7 +1,6 @@
 # $NetBSD$
 
 DISTNAME=	sickbeard-0.0.20141116
-PKGNAME=	pbd-${DISTNAME}
 COMMIT_SHA=	db2658a
 CATEGORIES=	news
 MASTER_SITES=	-https://github.com/midgetspy/Sick-Beard/tarball/${COMMIT_SHA}

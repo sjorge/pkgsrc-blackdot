@@ -48,7 +48,7 @@ DEPENDS+=	${PYPKGPREFIX}-feedparser-[0-9]*:../../textproc/py-feedparser
 ### par2 support
 ###
 .if !empty(PKG_OPTIONS:Myenc)
-DEPENDS+=	pbd-${PYPKGPREFIX}-yenc-[0-9]*:../../pbd/py-yenc
+DEPENDS+=	${PYPKGPREFIX}-yenc-[0-9]*:../../pbd/py-yenc
 .endif
 
 ###

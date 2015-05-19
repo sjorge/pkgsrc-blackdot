@@ -3,7 +3,7 @@
 .include "../../pbd/samba/Makefile.mirrors"
 
 DISTNAME=	samba-${VERSION}
-PKGNAME=	pbd-samba4-${VERSION}
+PKGNAME=	samba4_zfs-${VERSION}
 CATEGORIES=	net
 MASTER_SITES=	${SAMBA_MIRRORS:=stable/}
 # http://www.samba.org/samba/ftp/stable/

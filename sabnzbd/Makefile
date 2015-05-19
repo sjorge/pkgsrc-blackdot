@@ -1,7 +1,6 @@
 # $NetBSD$
 
 DISTNAME=	sabnzbd-${DISTVERSION}
-PKGNAME=	pbd-${DISTNAME}
 DISTVERSION=	0.7.20
 DISTFILES=	SABnzbd-${DISTVERSION}-src${EXTRACT_SUFX}
 CATEGORIES=	news
@@ -15,7 +14,7 @@ LICENSE=	gnu-gpl-v2 AND gnu-gpl-v3 AND modified-bsd AND mit
 DEPENDS+=	${PYPKGPREFIX}-cheetah-[0-9]*:../../devel/py-cheetah
 DEPENDS+=	${PYPKGPREFIX}-sqlite3-[0-9]*:../../databases/py-sqlite3
 DEPENDS+=	${PYPKGPREFIX}-xml-[0-9]*:../../textproc/py-xml
-DEPENDS+=	pbd-${PYPKGPREFIX}-configobj-[0-9]*:../../pbd/py-configobj
+DEPENDS+=	${PYPKGPREFIX}-configobj-[0-9]*:../../pbd/py-configobj
 #unzip
 #7zip
 

@@ -2,7 +2,6 @@
 #
 
 DISTNAME=		znc-1.6.0
-PKGNAME=		pbd-${DISTNAME}
 CATEGORIES=		net
 MASTER_SITES=		http://znc.in/releases/archive/
 

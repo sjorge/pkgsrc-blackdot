@@ -1,7 +1,6 @@
 # $NetBSD$
 
 DISTNAME=	couchpotato-2.6.3
-PKGNAME=	pbd-${DISTNAME}
 COMMIT_SHA=	965b808 
 CATEGORIES=	news
 MASTER_SITES=	-https://github.com/RuudBurger/CouchPotatoServer/tarball/${COMMIT_SHA}
