@@ -3,14 +3,15 @@
 .include "../../pbd/samba/Makefile.mirrors"
 
 DISTNAME=	samba-${VERSION}
-PKGNAME=	samba4_zfs-${VERSION}
+PKGNAME=	samba4-${VERSION}
+# try to avoid upgrade to package in base by having a high revision
+PKGREVISION=	9
 CATEGORIES=	net
 MASTER_SITES=	${SAMBA_MIRRORS:=stable/}
-# http://www.samba.org/samba/ftp/stable/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.samba.org/
-COMMENT=	SMB/CIFS protocol server suite
+COMMENT=	[PBD] SMB/CIFS protocol server suite with vfs_zfsacl
 LICENSE=	gnu-gpl-v3
 
 VERSION=	4.1.17
