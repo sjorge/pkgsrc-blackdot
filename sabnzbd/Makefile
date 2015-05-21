@@ -26,8 +26,11 @@ PYTHON_VERSIONS_INCOMPATIBLE=	33 34 # py-cheetah, py-xml
 
 .include "options.mk"
 
+BUILD_DEFS+=		PKG_SYSCONFDIR
+
 PKG_GROUPS=		dlmgr
 PKG_USERS=		dlmgr:dlmgr
+PKG_GECOS.dlmgr=	Download Manager Daemon
 PKG_HOME.dlmgr=		${PKG_SYSCONFDIR}/dlmgr
 OWN_DIRS_PERMS=		${PKG_SYSCONFDIR}/dlmgr dlmgr dlmgr 0755
 
