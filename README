@@ -24,7 +24,7 @@ URL:		http://pkg.blackdot.be/${PKG_VER}/${PKG_ARCH}/All
 ####
 ## Adding the repository
 ###########################################
-wget pkg.blackdot.be/pbd-signature.key<br />
+wget http://pkg.blackdot.be/pbd-signature.key
 gpg --no-default-keyring --keyring /opt/local/etc/gnupg/pkgsrc.gpg --import pbd-signature.key
 PKG_VER=$(awk -F/ '/SmartOS/ { print $6 }' /opt/local/etc/pkgin/repositories.conf)
 PKG_ARCH=$(awk -F/ '/SmartOS/ { print $7 }' /opt/local/etc/pkgin/repositories.conf)
