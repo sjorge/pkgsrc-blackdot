@@ -287,7 +287,6 @@ sickbeard/data/js/qualityChooser.js
 sickbeard/data/js/restart.js
 sickbeard/data/js/rootDirs.js
 sickbeard/data/js/testRename.js
-sickbeard/init.solaris11
 sickbeard/lib/MultipartPostHandler.py
 sickbeard/lib/__init__.py
 sickbeard/lib/certgen.py

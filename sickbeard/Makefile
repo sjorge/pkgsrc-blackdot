@@ -40,7 +40,7 @@ PYTHON_VERSIONS_INCOMPATIBLE=	33 34 # py-cheetah
 SUBST_CLASSES+=			fix-paths
 SUBST_STAGE.fix-paths= 		pre-configure
 SUBST_MESSAGE.fix-paths=	Fix absolute paths.
-SUBST_FILES.fix-paths=		init.solaris11
+SUBST_FILES.fix-paths=		
 SUBST_SED.fix-paths=		-e 's,/opt/sickbeard,${PREFIX}/sickbeard,g'
 
 do-install:
