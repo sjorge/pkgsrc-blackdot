@@ -15,8 +15,8 @@ DEPENDS+=	${PYPKGPREFIX}-cheetah-[0-9]*:../../devel/py-cheetah
 DEPENDS+=	${PYPKGPREFIX}-sqlite3-[0-9]*:../../databases/py-sqlite3
 DEPENDS+=	${PYPKGPREFIX}-xml-[0-9]*:../../textproc/py-xml
 DEPENDS+=	${PYPKGPREFIX}-configobj-[0-9]*:../../pbd/py-configobj
-#unzip
-#7zip
+DEPENDS+=	archivers/unzip-[0-9]*:../../archivers/unzip
+DEPENDS+=	archivers/p7zip-[0-9]*:../../archivers/p7zip
 
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/SABnzbd-${DISTVERSION}
