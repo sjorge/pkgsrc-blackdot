@@ -156,4 +156,4 @@ share/znc/webskins/ice/pub/linkbg.jpg
 share/znc/webskins/ice/pub/pagebg.gif
 share/znc/webskins/ice/tmpl/FooterTag.tmpl
 share/znc/webskins/ice/tmpl/Header.tmpl
-@exec /usr/bin/su -m ${ZNC_USER} -c 'sh -c "${PKG_PREFIX}/bin/znc -d ${PKG_SYSCONFDIR} --makeconf"'
+@exec /usr/bin/su -m ${ZNC_USER} -c 'sudo -u znc -s sh -c "${PKG_PREFIX}/bin/znc -d ${PKG_SYSCONFDIR} --makeconf"'
