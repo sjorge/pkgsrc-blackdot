@@ -40,9 +40,5 @@ pkgin -fy up
 ## ! critical;
 ## > in progress
 ###########################################
-[=] Provide SMF manifests
-    [=] sabnzbd
-    [=] sickbeard
-    [=] couchpotato
 [-] Testing and optimization
 [-] OmniOS compatibility
