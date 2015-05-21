@@ -37,12 +37,11 @@ PYTHON_VERSIONS_INCOMPATIBLE=	33 34 # py-cheetah
 SUBST_CLASSES+=			fix-paths
 SUBST_STAGE.fix-paths= 		pre-configure
 SUBST_MESSAGE.fix-paths=	Fix absolute paths.
-SUBST_FILES.fix-paths=		init/solaris11
+SUBST_FILES.fix-paths=		
 SUBST_SED.fix-paths=		-e 's,/opt/couchpotato,${PREFIX}/couchpotato,g'
 
 do-install:
 	${MKDIR} ${DESTDIR}${PREFIX}/couchpotato
-	${CP} ${WRKSRC}/init/solaris11 ${DESTDIR}${PREFIX}/couchpotato/init.solaris11
 .for i in ${INSTALL_FILES} ${INSTALL_DIRS}
 	cd ${WRKSRC} && pax -rw -pmp ${i} ${DESTDIR}${PREFIX}/couchpotato/
 .endfor

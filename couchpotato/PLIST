@@ -356,7 +356,6 @@ couchpotato/couchpotato/templates/database.html
 couchpotato/couchpotato/templates/index.html
 couchpotato/couchpotato/templates/login.html
 couchpotato/icon_mac.png
-couchpotato/init.solaris11
 couchpotato/libs/CodernityDB/__init__.py
 couchpotato/libs/CodernityDB/database.py
 couchpotato/libs/CodernityDB/database_gevent.py
