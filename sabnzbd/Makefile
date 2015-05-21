@@ -55,7 +55,6 @@ do-install:
 	${MKDIR} ${DESTDIR}/${PREFIX}/share/sabnzbdplus
 	cd ${WRKSRC} && pax -rw -pmp ${i} ${DESTDIR}/${PREFIX}/share/sabnzbdplus
 .endfor
-	cd ${.CURDIR}/files && pax -rw -pmp sabnzbd.xml ${DESTDIR}/${PREFIX}/share/sabnzbdplus
 
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
