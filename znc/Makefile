@@ -46,8 +46,7 @@ SUBST_SED.fix-man-znc+=		-e 's,\/usr\/local,${PREFIX},g'
 
 BUILD_DEFS+=		VARBASE
 BUILD_DEFS+=		PKG_SYSCONFDIR
-BUILD_DEFS+=		znc
-BUILD_DEFS+=		znc
+BUILD_DEFS+=		PKG_USERS
 
 RCD_SCRIPTS+=		znc
 
