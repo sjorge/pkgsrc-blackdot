@@ -29,7 +29,7 @@ PKG_HOME.dlmgr=	${PKG_SYSCONFDIR}/dlmgr
 OWN_DIRS_PERMS=	${PKG_SYSCONFDIR}/dlmgr dlmgr dlmgr 0755
 
 INSTALL_DIRS+= 	autoProcessTV cherrypy data lib sickbeard
-INSTALL_FILES+= SickBeard.py init.solaris11
+INSTALL_FILES+= SickBeard.py
 AUTO_MKDIRS=	yes
 
 PY_PATCHPLIST=	yes
