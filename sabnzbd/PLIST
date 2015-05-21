@@ -417,7 +417,6 @@ share/sabnzbdplus/po/nsis/pt_BR.po
 share/sabnzbdplus/po/nsis/ro.po
 share/sabnzbdplus/po/nsis/ro.px
 share/sabnzbdplus/po/nsis/sv.po
-share/sabnzbdplus/sabnzbd.xml
 share/sabnzbdplus/tools/make_mo.py
 share/sabnzbdplus/tools/msgfmt.py
 share/sabnzbdplus/util/__init__.py
