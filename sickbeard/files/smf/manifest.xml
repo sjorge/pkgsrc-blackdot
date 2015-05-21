@@ -31,10 +31,10 @@
 
     <template>
       <common_name>
-        <loctext xml:lang='C'>SABnzbd</loctext>
+        <loctext xml:lang='C'>SickBeard</loctext>
       </common_name>
       <documentation>
-        <doc_link name='SABnzbd'  uri='http://sabnzbd.org/' />
+        <doc_link name='SickBeard'  uri='http://sickbeard.com/' />
       </documentation>
     </template>
   </service>
