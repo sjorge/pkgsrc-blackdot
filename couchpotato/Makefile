@@ -19,9 +19,10 @@ WRKSRC= 	${WRKDIR}/${TEMP_DIR}
 NO_BUILD= 	yes
 USE_TOOLS= 	pax
 
-PKG_GROUPS= 	couchpotato
-PKG_USERS= 	couchpotato:couchpotato
-PKG_HOME.couchpotato= ${PREFIX}/couchpotato
+PKG_GROUPS=	dlmgr
+PKG_USERS=	dlmgr:dlmgr
+PKG_HOME.dlmgr=	${PKG_SYSCONFDIR}/dlmgr
+OWN_DIRS_PERMS=	${PKG_SYSCONFDIR}/dlmgr dlmgr dlmgr 0755
 
 INSTALL_DIRS+= 	couchpotato libs
 INSTALL_FILES+= CouchPotato.py version.py icon_mac.png

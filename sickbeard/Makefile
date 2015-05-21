@@ -22,9 +22,10 @@ WRKSRC= 	${WRKDIR}/${TEMP_DIR}
 NO_BUILD= 	yes
 USE_TOOLS= 	pax
 
-PKG_GROUPS= 	sickbeard
-PKG_USERS= 	sickbeard:sickbeard
-PKG_HOME.sickbeard= ${PREFIX}/sickbeard
+PKG_GROUPS=	dlmgr
+PKG_USERS=	dlmgr:dlmgr
+PKG_HOME.dlmgr=	${PKG_SYSCONFDIR}/dlmgr
+OWN_DIRS_PERMS=	${PKG_SYSCONFDIR}/dlmgr dlmgr dlmgr 0755
 
 INSTALL_DIRS+= 	autoProcessTV cherrypy data lib sickbeard
 INSTALL_FILES+= SickBeard.py init.solaris11

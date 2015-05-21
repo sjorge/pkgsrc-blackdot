@@ -26,11 +26,10 @@ PYTHON_VERSIONS_INCOMPATIBLE=	33 34 # py-cheetah, py-xml
 
 .include "options.mk"
 
-PKG_GROUPS=		sabnzbd
-PKG_USERS=		sabnzbd:sabnzbd
-PKG_HOME.sabnzbd=	${PREFIX}/sabnzbd
-
-OWN_DIRS_PERMS=		${PREFIX}/sabnzbd sabnzbd sabnzbd 0755
+PKG_GROUPS=		dlmgr
+PKG_USERS=		dlmgr:dlmgr
+PKG_HOME.dlmgr=		${PKG_SYSCONFDIR}/dlmgr
+OWN_DIRS_PERMS=		${PKG_SYSCONFDIR}/dlmgr dlmgr dlmgr 0755
 
 INSTALLATION_DIRS+=	cherrypy gntp interfaces locale po tools util
 
