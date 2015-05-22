@@ -604,8 +604,3 @@ share/sickbeard/lib/tvdb_api/tvdb_cache.py
 share/sickbeard/lib/tvdb_api/tvdb_exceptions.py
 share/sickbeard/lib/tvdb_api/tvdb_ui.py
 share/sickbeard/version.txt
-@pkgdir data
-@pkgdir cherrypy
-@pkgdir autoProcessTV
-@pkgdir COPYING.txt
-@pkgdir CHANGELOG.txt
