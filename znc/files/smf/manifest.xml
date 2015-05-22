@@ -12,6 +12,9 @@
     <dependency name='network-service' grouping='require_all' restart_on='none' type='service'>
       <service_fmri value='svc:/network/service'/>
     </dependency>
+    <dependency name='config-file' grouping='require_all' restart_on='none' type='path'>
+      <service_fmri value='file://localhost/@PKG_SYSCONFDIR@/configs/znc.conf' />
+    </dependency>
 
     <!-- execute as user USERNAME -->
     <method_context>
