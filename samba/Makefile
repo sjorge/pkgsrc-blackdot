@@ -17,10 +17,13 @@ LICENSE=	gnu-gpl-v3
 VERSION=	4.1.17
 CONFLICTS+=	ja-samba-[0-9]* pam-smbpass-[0-9]* tdb-[0-9]* winbind-[0-9]* samba4-*
 
-FILESDIR=		${PKGDIR}/../../pbd/samba/files
-DESCR_SRC=		${PKGDIR}/../../pbd/samba/DESCR
-MESSAGE_SRC=		${PKGDIR}/../../pbd/samba/MESSAGE
+#FILESDIR=		${PKGDIR}/../../pbd/samba/files
+#DESCR_SRC=		${PKGDIR}/../../pbd/samba/DESCR
+#MESSAGE_SRC=		${PKGDIR}/../../pbd/samba/MESSAGE
 BUILD_DEFS+=		VARBASE
+
+DEPENDS+=	gnutls-[0-9]*:../../security/gnutls
+DEPENDS+=	libgcrypt-[0-9]*:../../security/libgcrypt
 
 USE_MULTIARCH=	lib
 
