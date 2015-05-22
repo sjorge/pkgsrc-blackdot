@@ -1,9 +1,0 @@
-===========================================================================
-$NetBSD$
-
-To use couhcpotato on Solaris, you'll need to import and enable the service
-via SMF:
-    svcadm enable couchpotato
-
-
-===========================================================================
