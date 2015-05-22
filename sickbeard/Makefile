@@ -58,6 +58,7 @@ do-install:
 	cd ${WRKSRC} && pax -rw -pmp ${i} ${DESTDIR}/${PREFIX}/share/sickbeard
 .endfor
 	${RM} -rf ${DESTDIR}/${PREFIX}/share/sickbeard/lib/tvdb_api/tests
+	@${ECHO} ${COMMIT_SHA} > ${DESTDIR}${PREFIX}/share/sickbeard/version.txt
 
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
