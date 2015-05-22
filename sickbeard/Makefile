@@ -31,7 +31,7 @@ PKG_GECOS.dlmgr=Download Manager Daemon
 PKG_HOME.dlmgr=	${PKG_SYSCONFDIR}/dlmgr
 OWN_DIRS_PERMS=	${PKG_SYSCONFDIR}/dlmgr dlmgr dlmgr 0755
 
-INSTALLATION_DIRS+=	autoProcessTV cherrypy data lib COPYING.txt CHANGELOG.txt
+INSTALL_DIRS+=	autoProcessTV cherrypy data lib COPYING.txt CHANGELOG.txt
 
 PY_PATCHPLIST=	yes
 PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX}
@@ -53,7 +53,7 @@ do-install:
 	cd ${WRKSRC} && pax -rw SickBeard.py ${DESTDIR}/${PREFIX}/bin/
 	${MKDIR} ${DESTDIR}/${PREFIX}/${PYSITELIB}/
 	cd ${WRKSRC} && pax -rw -pmp sickbeard ${DESTDIR}/${PREFIX}/${PYSITELIB}/
-.for i in ${INSTALLATION_DIRS}
+.for i in ${INSTALL_DIRS}
 	${MKDIR} ${DESTDIR}/${PREFIX}/share/sickbeard
 	cd ${WRKSRC} && pax -rw -pmp ${i} ${DESTDIR}/${PREFIX}/share/sickbeard
 .endfor
