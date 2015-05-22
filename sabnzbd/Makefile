@@ -32,7 +32,7 @@ PKG_GECOS.dlmgr=	Download Manager Daemon
 PKG_HOME.dlmgr=		${PKG_SYSCONFDIR}/dlmgr
 OWN_DIRS_PERMS=		${PKG_SYSCONFDIR}/dlmgr dlmgr dlmgr 0755
 
-INSTALLATION_DIRS+=	cherrypy gntp interfaces locale po tools util
+INSTALL_DIRS+=	cherrypy gntp interfaces locale po tools util
 
 PY_PATCHPLIST=          yes
 PLIST_SUBST+=           PYVERSSUFFIX=${PYVERSSUFFIX}
@@ -49,7 +49,7 @@ do-install:
 	cd ${WRKSRC} && pax -rw SABnzbd.py ${DESTDIR}/${PREFIX}/bin/
 	${MKDIR} ${DESTDIR}/${PREFIX}/${PYSITELIB}/
 	cd ${WRKSRC} && pax -rw -pmp sabnzbd ${DESTDIR}/${PREFIX}/${PYSITELIB}/
-.for i in ${INSTALLATION_DIRS}
+.for i in ${INSTALL_DIRS}
 	${MKDIR} ${DESTDIR}/${PREFIX}/share/sabnzbdplus
 	cd ${WRKSRC} && pax -rw -pmp ${i} ${DESTDIR}/${PREFIX}/share/sabnzbdplus
 .endfor

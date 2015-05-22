@@ -423,10 +423,3 @@ share/sabnzbdplus/util/__init__.py
 share/sabnzbdplus/util/apireg.py
 share/sabnzbdplus/util/mailslot.py
 share/sabnzbdplus/util/pystone.py
-@pkgdir util
-@pkgdir tools
-@pkgdir po
-@pkgdir locale
-@pkgdir interfaces
-@pkgdir gntp
-@pkgdir cherrypy
