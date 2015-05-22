@@ -37,11 +37,16 @@ PY_PATCHPLIST=	yes
 PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX}
 REPLACE_PYTHON=	*.py */*.py */*/*.py
 
-SUBST_CLASSES+=		fix-paths
-SUBST_STAGE.fix-paths=	pre-configure
-SUBST_MESSAGE.fix-paths=Fix absolute paths.
-SUBST_FILES.fix-paths=	SickBeard.py
-SUBST_SED.fix-paths=	-e 's,%%PREFIX%%,${PREFIX},g'
+SUBST_CLASSES+=			fix-paths
+SUBST_STAGE.fix-paths=		pre-configure
+SUBST_MESSAGE.fix-paths=	Fix absolute paths.
+SUBST_FILES.fix-paths=		SickBeard.py
+SUBST_SED.fix-paths=		-e 's,%%PREFIX%%,${PREFIX},g'
+SUBST_CLASSES+=			fix-version
+SUBST_STAGE.fix-version=	pre-configure
+SUBST_MESSAGE.fix-version=	set correct version
+SUBST_FILES.fix-version=	sickbeard/version.py
+SUBST_SED.fix-version=		-e 's,build Nonea,${COMMIT_SHA},g'
 
 do-install:
 	${MKDIR} ${DESTDIR}/${PREFIX}/bin
