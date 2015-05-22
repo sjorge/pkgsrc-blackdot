@@ -3,4 +3,4 @@ $NetBSD$
 SHA1 (sickbeard-0.0.20141116.tgz) = 95417ef51a5a3224a452a6bda074ed51f47f2010
 RMD160 (sickbeard-0.0.20141116.tgz) = e7b8b7a7cfdf6dec0a3de28920f23871f7ef80cc
 Size (sickbeard-0.0.20141116.tgz) = 2481896 bytes
-SHA1 (patch-SickBeard.py) = 4af6952b88bd278da1e9e1cd7bfd4c2911977e6c
+SHA1 (patch-SickBeard.py) = f0039e2486492339826ebed3ca3c3c0d9ce8d27f
