@@ -18,9 +18,6 @@ USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake pkg-config
 
 PLIST_SRC=		PLIST
-PLIST_SUBST+=		ZNC_USER=znc
-PLIST_SUBST+=		PKG_SYSCONFDIR="${PKG_SYSCONFDIR}"
-PLIST_SUBST+=		PKG_PREFIX="${PREFIX}"
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 
@@ -44,6 +41,14 @@ SUBST_FILES.fix-man-znc=	man/znc.1
 SUBST_SED.fix-man-znc=		-e 's,\~\/\.znc,${PKG_SYSCONFDIR},g'
 SUBST_SED.fix-man-znc+=		-e 's,\/usr\/local,${PREFIX},g'
 
+SUBST_CLASSES+=			paths
+SUBST_MESSAGE.paths=		Fixing paths.
+SUBST_FILES.paths=		${WRKDIR}/znc-setup
+SUBST_STAGE.paths=		post-patch
+SUBST_SED.paths+=		-e 's,@ZNC_USER@,znc,g'
+SUBST_SED.paths+=		-e 's,@PKG_SYSCONFDIR@,${PKG_SYSCONFDIR},g'
+SUBST_SED.paths+=		-e 's,@PKG_PREFIX@,${PREFIX},g'
+
 BUILD_DEFS+=		VARBASE
 BUILD_DEFS+=		PKG_SYSCONFDIR
 BUILD_DEFS+=		PKG_USERS
@@ -51,6 +56,14 @@ BUILD_DEFS+=		PKG_USERS
 RCD_SCRIPTS+=		znc
 
 MANCOMPRESSED=		yes
+
+post-extract:
+	${CP} ${FILESDIR}/znc-setup ${WRKDIR}
+
+post-install:
+	${INSTALL_SCRIPT} -d ${DESTDIR}${PREFIX}/sbin/
+	${INSTALL_SCRIPT} ${WRKDIR}/znc-setup \
+		${DESTDIR}${PREFIX}/sbin/znc-setup
 
 .include		"./options.mk"
 

@@ -3,8 +3,7 @@ $SunOS$
 
 ZNC - An advanced IRC bouncer with IPv6 and SSL support
 
-To configure please run:
-sudo -u znc -s sh -c "/opt/local/bin/znc -d /opt/local/etc/znc --makeconf"
+To configure please run: znc-setup
 
 Each ZNC user can connect to several IRC networks, though you'll need to
 connect your IRC client to ZNC several times. You can later change settings
