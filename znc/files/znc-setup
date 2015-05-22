@@ -1,0 +1,3 @@
+#!/bin/sh
+
+@PKG_PREFIX@/bin/sudo -u znc -s sh -c "@PKG_PREFIX@/bin/znc -d @PKG_SYSCONFDIR@ --makeconf"
