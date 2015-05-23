@@ -19,7 +19,9 @@
     <!-- execute as user USERNAME -->
     <method_context>
       <method_credential user='znc' group='znc' />
+      <method_environment>
         <envvar name="HOME" value="@PKG_SYSCONFDIR@" />
+      </method_environment>
     </method_context>
 
     <exec_method type='method' name='start' exec='@PREFIX@/bin/znc --datadir=@PKG_SYSCONFDIR@' timeout_seconds='60' />
