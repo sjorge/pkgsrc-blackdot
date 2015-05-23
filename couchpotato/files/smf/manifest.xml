@@ -18,6 +18,7 @@
       <method_credential user='dlmgr' group='dlmgr' />
       <method_environment>
         <envvar name="PATH" value="@PREFIX@/bin:/usr/bin:/bin" />
+        <envvar name="HOME" value="@PKG_SYSCONFDIR@/dlmgr" />
       </method_environment>
     </method_context>
 
