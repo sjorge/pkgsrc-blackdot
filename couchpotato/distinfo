@@ -3,4 +3,4 @@ $NetBSD$
 SHA1 (couchpotato-2.6.3.tgz) = 692161b7b3f6824ee2b003e5ff0b2b2a3408d2a7
 RMD160 (couchpotato-2.6.3.tgz) = 995dea15a2e0f4aa188ec7dbc8b962ffbb40faeb
 Size (couchpotato-2.6.3.tgz) = 3453388 bytes
-SHA1 (patch-CouchPotato.py) = 493f18f318dadcd3c5656775b5e4ca9a05b22f34
+SHA1 (patch-CouchPotato.py) = 4cf23d9b6947b05f12cbd088b75f5d2e95d6368f

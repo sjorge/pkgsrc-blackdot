@@ -7,7 +7,7 @@ $NetBSD$
  
  # Insert local directories into path
 -sys.path.insert(0, os.path.join(base_path, 'libs'))
-++sys.path.insert(0,'%%PREFIX%%/share/couchpotato')
++sys.path.insert(0,'%%PREFIX%%/share/couchpotato')
  
  from couchpotato.environment import Env
  from couchpotato.core.helpers.variable import getDataDir, removePyc
