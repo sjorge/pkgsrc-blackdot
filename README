@@ -40,5 +40,4 @@ pkgin -fy up
 ## ! critical;
 ## > in progress
 ###########################################
-[-] Testing and optimization
 [-] OmniOS compatibility
