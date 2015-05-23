@@ -19,33 +19,38 @@ WRKSRC= 	${WRKDIR}/${TEMP_DIR}
 NO_BUILD= 	yes
 USE_TOOLS= 	pax
 
+PYTHON_VERSIONS_INCOMPATIBLE=	33 34 # py-cheetah
+
+BUILD_DEFS+=		PKG_SYSCONFDIR
+
 PKG_GROUPS=	dlmgr
 PKG_USERS=	dlmgr:dlmgr
 PKG_GECOS.dlmgr=Download Manager Daemon
 PKG_HOME.dlmgr=	${PKG_SYSCONFDIR}/dlmgr
 OWN_DIRS_PERMS=	${PKG_SYSCONFDIR}/dlmgr dlmgr dlmgr 0755
 
-INSTALL_DIRS+= 	couchpotato libs
-INSTALL_FILES+= CouchPotato.py version.py icon_mac.png
+INSTALL_DIRS+= 	libs
 AUTO_MKDIRS=	yes
 
 PY_PATCHPLIST=	yes
 PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX}
 REPLACE_PYTHON=	*.py */*.py */*/*.py */*/*/*.py */*/*/*/*.py */*/*/*/*/*.py */*/*/*/*/*/*.py
-PYTHON_VERSIONS_INCOMPATIBLE=	33 34 # py-cheetah
 
 SUBST_CLASSES+=			fix-paths
-SUBST_STAGE.fix-paths= 		pre-configure
+SUBST_STAGE.fix-paths=		pre-configure
 SUBST_MESSAGE.fix-paths=	Fix absolute paths.
-SUBST_FILES.fix-paths=		
-SUBST_SED.fix-paths=		-e 's,/opt/couchpotato,${PREFIX}/couchpotato,g'
+SUBST_FILES.fix-paths=		CouchPotato.py
+SUBST_SED.fix-paths=		-e 's,%%PREFIX%%,${PREFIX},g'
 
 do-install:
-	${MKDIR} ${DESTDIR}${PREFIX}/couchpotato
-.for i in ${INSTALL_FILES} ${INSTALL_DIRS}
-	cd ${WRKSRC} && pax -rw -pmp ${i} ${DESTDIR}${PREFIX}/couchpotato/
+	${MKDIR} ${DESTDIR}/${PREFIX}/bin
+	cd ${WRKSRC} && pax -rw CouchPotato.py ${DESTDIR}/${PREFIX}/bin/
+	${MKDIR} ${DESTDIR}/${PREFIX}/${PYSITELIB}/
+	cd ${WRKSRC} && pax -rw -pmp couchpotato ${DESTDIR}/${PREFIX}/${PYSITELIB}/
+.for i in ${INSTALL_DIRS}
+	${MKDIR} ${DESTDIR}/${PREFIX}/share/couchpotato
+	cd ${WRKSRC} && pax -rw -pmp ${i} ${DESTDIR}/${PREFIX}/share/couchpotato
 .endfor
-	@${ECHO} ${COMMIT_SHA} > ${DESTDIR}${PREFIX}/couchpotato/version.txt
 
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
