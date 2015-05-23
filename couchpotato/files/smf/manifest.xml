@@ -22,7 +22,7 @@
       </method_environment>
     </method_context>
 
-    <exec_method type='method' name='start' exec='@PREFIX@/bin/CouchPotato.py --daemon --nolaunch' timeout_seconds='60' />
+    <exec_method type='method' name='start' exec='@PREFIX@/bin/CouchPotato.py --daemon --data_dir=$HOME/.couchpotato' timeout_seconds='60' />
     <exec_method type='method' name='stop' exec=':kill' timeout_seconds='120' />
 
     <property_group name="startd" type="framework">
