@@ -977,3 +977,5 @@ ${PLIST.pam}share/examples/${PKGBASE}/pam_smbpass/password-migration
 ${PLIST.pam}share/examples/${PKGBASE}/pam_smbpass/password-sync
 ${PLIST.fam}lib${LIBARCHSUFFIX}/samba/vfs/notify_fam.${LIBEXT}
 ${PLIST.zfsacl}lib${LIBARCHSUFFIX}/samba/vfs/zfsacl.${LIBEXT}
+${PLIST.osx}lib${LIBARCHSUFFIX}/samba/vfs/streams_xattr.${LIBEXT}
+${PLIST.osx}lib${LIBARCHSUFFIX}/samba/vfs/catia.${LIBEXT}
