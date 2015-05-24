@@ -746,7 +746,7 @@ lib${LIBARCHSUFFIX}/samba/libprocess_model.${LIBEXT}
 lib${LIBARCHSUFFIX}/samba/libpyldb-util.${LIBEXT}.1
 lib${LIBARCHSUFFIX}/samba/libpyldb-util.${LIBEXT}.1.1.17
 lib${LIBARCHSUFFIX}/samba/libpytalloc-util.${LIBEXT}.2
-lib${LIBARCHSUFFIX}/samba/libpytalloc-util.${LIBEXT}.2.0.8
+lib${LIBARCHSUFFIX}/samba/libpytalloc-util.${LIBEXT}.2.1.1
 lib${LIBARCHSUFFIX}/samba/libreplace.${LIBEXT}
 lib${LIBARCHSUFFIX}/samba/libroken-samba4.${LIBEXT}.19
 lib${LIBARCHSUFFIX}/samba/libroken-samba4.${LIBEXT}.19.0.1
@@ -769,7 +769,7 @@ lib${LIBARCHSUFFIX}/samba/libsmbpasswdparser.${LIBEXT}
 lib${LIBARCHSUFFIX}/samba/libsmbregistry.${LIBEXT}
 lib${LIBARCHSUFFIX}/samba/libsubunit.${LIBEXT}
 lib${LIBARCHSUFFIX}/samba/libtalloc.${LIBEXT}.2
-lib${LIBARCHSUFFIX}/samba/libtalloc.${LIBEXT}.2.0.8
+lib${LIBARCHSUFFIX}/samba/libtalloc.${LIBEXT}.2.1.2
 lib${LIBARCHSUFFIX}/samba/libtdb-wrap.${LIBEXT}
 lib${LIBARCHSUFFIX}/samba/libtdb.${LIBEXT}.1
 lib${LIBARCHSUFFIX}/samba/libtdb.${LIBEXT}.1.2.12
@@ -977,5 +977,3 @@ ${PLIST.pam}share/examples/${PKGBASE}/pam_smbpass/password-migration
 ${PLIST.pam}share/examples/${PKGBASE}/pam_smbpass/password-sync
 ${PLIST.fam}lib${LIBARCHSUFFIX}/samba/vfs/notify_fam.${LIBEXT}
 ${PLIST.zfsacl}lib${LIBARCHSUFFIX}/samba/vfs/zfsacl.${LIBEXT}
-${PLIST.osx}lib${LIBARCHSUFFIX}/samba/vfs/streams_xattr.${LIBEXT}
-${PLIST.osx}lib${LIBARCHSUFFIX}/samba/vfs/catia.${LIBEXT}

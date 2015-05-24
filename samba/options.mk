@@ -8,7 +8,7 @@
 #   Domain Controller			ldap winbind
 #
 PKG_OPTIONS_VAR=	PKG_OPTIONS.samba
-PKG_SUPPORTED_OPTIONS=	ads cups fam ldap pam winbind osx
+PKG_SUPPORTED_OPTIONS=	ads cups fam ldap pam winbind
 PKG_SUGGESTED_OPTIONS=	ads ldap pam winbind
 
 .include "../../mk/bsd.fast.prefs.mk"
@@ -81,16 +81,6 @@ PLIST.zfsacl=		yes
 .if !empty(PKG_OPTIONS:Macl)
 CONFIGURE_ARGS+=	--with-acl-support
 .endif
-
-###
-### Ensure that the aditional shared library is generated
-### Related to OSX compatibility
-###
-PLIST_VARS+=		osx
-.if !empty(PKG_OPTIONS:Mosx)
-SAMBA_SHARED_MODULES:=	${SAMBA_SHARED_MODULES},vfs_streams_xattr,vfs_catia
-PLIST.osx=		yes
-.  endif
 
 ###
 ### Native CUPS support for providing printing services.
