@@ -746,7 +746,7 @@ lib${LIBARCHSUFFIX}/samba/libprocess_model.${LIBEXT}
 lib${LIBARCHSUFFIX}/samba/libpyldb-util.${LIBEXT}.1
 lib${LIBARCHSUFFIX}/samba/libpyldb-util.${LIBEXT}.1.1.17
 lib${LIBARCHSUFFIX}/samba/libpytalloc-util.${LIBEXT}.2
-lib${LIBARCHSUFFIX}/samba/libpytalloc-util.${LIBEXT}.2.1.1
+lib${LIBARCHSUFFIX}/samba/libpytalloc-util.${LIBEXT}.2.1.2
 lib${LIBARCHSUFFIX}/samba/libreplace.${LIBEXT}
 lib${LIBARCHSUFFIX}/samba/libroken-samba4.${LIBEXT}.19
 lib${LIBARCHSUFFIX}/samba/libroken-samba4.${LIBEXT}.19.0.1
