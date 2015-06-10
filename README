@@ -11,25 +11,7 @@ packages are prefixed with pbd. It provides the few missing bits.
 
 Everything is provided as-is. Some packages are taken from pkgsrc-wip.
 
-####
-## Repository Information
-###########################################
-Compatibility:	SmartOS
-Architecture:	x86_64
-Target:		LTS
-Siging:		no (you may be prompted to accept unsigned packages)
-Stability:	Highly Experimental
-URL:		http://pkg.blackdot.be/${PKG_VER}/${PKG_ARCH}/All
-
-####
-## Adding the repository
-###########################################
-wget http://pkg.blackdot.be/pbd-signature.key
-gpg --no-default-keyring --keyring /opt/local/etc/gnupg/pkgsrc.gpg --import pbd-signature.key
-PKG_VER=$(awk -F/ '/SmartOS/ { print $6 }' /opt/local/etc/pkgin/repositories.conf)
-PKG_ARCH=$(awk -F/ '/SmartOS/ { print $7 }' /opt/local/etc/pkgin/repositories.conf)
-echo "http://pkg.blackdot.be/${PKG_VER}/${PKG_ARCH}/All" >> /opt/local/etc/pkgin/repositories.conf
-pkgin -fy up
+Check out http://pkg.blackdot.be/ for how to use this repository.
 
 ####
 ## TODO
