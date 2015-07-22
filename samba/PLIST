@@ -703,9 +703,9 @@ lib/samba/private/libtalloc.so.2.1.2
 lib/samba/private/libtdb-compat-samba4.so
 lib/samba/private/libtdb-wrap-samba4.so
 lib/samba/private/libtdb.so.1
-lib/samba/private/libtdb.so.1.3.4
+lib/samba/private/libtdb.so.1.3.6
 lib/samba/private/libtevent.so.0
-lib/samba/private/libtevent.so.0.9.24
+lib/samba/private/libtevent.so.0.9.25
 lib/samba/private/libtrusts-util-samba4.so
 lib/samba/private/libutil-cmdline-samba4.so
 lib/samba/private/libutil-ntdb-samba4.so
