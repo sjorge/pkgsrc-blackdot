@@ -1,0 +1,7 @@
+$NetBSD$
+
+SHA1 (sickrage-4.0.75.3.tgz) = f108fd9d5c3e0ece879922796ca2d6f5e305c63d
+RMD160 (sickrage-4.0.75.3.tgz) = faad3f97a18b574cc31dfebb8966e9773db3ea86
+Size (sickrage-4.0.75.3.tgz) = 11367406 bytes
+SHA1 (patch-SickBeard.py) = be5e794d88415db55764376d815d2268afb79d6c
+SHA1 (patch-sickbeard_versionChecker.py) = 74f38ce3443f501a4034e3ee5f4de324e54d9da6
