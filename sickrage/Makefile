@@ -32,6 +32,7 @@ PKG_HOME.dlmgr=	${PKG_SYSCONFDIR}/dlmgr
 OWN_DIRS_PERMS=	${PKG_SYSCONFDIR}/dlmgr dlmgr dlmgr 0755
 
 INSTALL_DIRS+=	autoProcessTV tornado lib gui runscripts contrib
+OWN_DIRS_PERMS+= ${PREFIX}/share/sickrage/lib/dateutil/zoneinfo/ dlmgr dlmgr 0755
 
 PY_PATCHPLIST=	yes
 PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX}
