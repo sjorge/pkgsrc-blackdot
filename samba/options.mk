@@ -1,7 +1,7 @@
 # $NetBSD: options.mk,v 1.1 2015/05/12 12:19:52 ryoon Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.samba4
-PKG_SUPPORTED_OPTIONS=	fam osx pam winbind # cups # cups option is broken for me.
+PKG_SUPPORTED_OPTIONS=	osx pam winbind # cups # cups option is broken for me.
 PKG_SUGGESTED_OPTIONS=	pam winbind
 
 .include "../../mk/bsd.fast.prefs.mk"
@@ -64,18 +64,6 @@ PLIST.cups=		yes
 INSTALLATION_DIRS+=	libexec/cups/backend
 .else
 CONFIGURE_ARGS+=	--disable-cups
-.endif
-
-###
-### File Alteration Monitor support.
-###
-PLIST_VARS+=		fam
-.if !empty(PKG_OPTIONS:Mfam)
-.  include "../../mk/fam.buildlink3.mk"
-CONFIGURE_ARGS+=	--with-fam
-PLIST.fam=		yes
-.else
-CONFIGURE_ARGS+=	--without-fam
 .endif
 
 ###

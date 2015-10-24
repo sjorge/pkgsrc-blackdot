@@ -1,15 +1,11 @@
 $NetBSD: distinfo,v 1.2 2015/05/26 15:11:25 jperkin Exp $
 
-SHA1 (samba-4.2.4.tar.gz) = 315fff1abd4160a916fdf53ba7b4d4f2635a16df
-RMD160 (samba-4.2.4.tar.gz) = 37d80c6762f0ac01efc3eaeda275c83abce4ab43
-Size (samba-4.2.4.tar.gz) = 20735687 bytes
-SHA1 (patch-buildtools_wafsamba_wscript) = 5604936a825675647157331df2333f4237c611f5
-SHA1 (patch-lib_nss__wrapper_nss__wrapper.c) = c692fa33ec17ed4f1dc1e40c1fadf7846d976824
-SHA1 (patch-lib_nss__wrapper_wscript) = 1ce37974f93e791c9e0b1bdc34d26890583fdbfb
-SHA1 (patch-lib_uid__wrapper_uid__wrapper.c) = 1d36c941784095673197dec1ecdcf1e958e4fa78
-SHA1 (patch-nsswitch_wscript__build) = e8a6251e031ffa13d6347fade8891f7afd65d3eb
-SHA1 (patch-source3_lib_unix__msg_unix__msg.c) = f89510904d0776df5c37df88274728f666a8b3fe
-SHA1 (patch-source3_modules_vfs__aio__fork.c) = af330f5458aab3d3b4d334f3e2003147a1dcfc6e
-SHA1 (patch-source3_smbd_notify__inotify.c) = 28b6721eceeb1be26efad37dc3e4975c6f509ac8
-SHA1 (patch-source4_scripting_wsript_build) = 6053076427835ac4fe97d93b2ff67d2caccc71f4
-SHA1 (patch-testprogs_blackbox_dbcheck-oldrelease.sh) = 3448ae91a57123ac820d71892851b165477bc499
+SHA1 (samba-4.3.1.tar.gz) = 6c29b17692e28995d3c2c89ce850894744640859
+RMD160 (samba-4.3.1.tar.gz) = 94d4f7d40c422c9384a16fb7b17af37f1ddba4f9
+Size (samba-4.3.1.tar.gz) = 20424516 bytes
+SHA1 (patch-lib_nss__wrapper_wscript) = f78ce08a609f72ab60eb0585a36ff8eee5051e5c
+SHA1 (patch-lib_texpect_wscript) = 31cacf58bb9784707e0f954948c3108d73e5e179
+SHA1 (patch-source3_smbd_notify__inotify.c) = f2df813cd1d31991516c68185ee74484feba2b5e
+SHA1 (patch-source4_scripting_wsript_build) = 2d501c62e3a49359c08d1b0732c610fe9f2454b2
+SHA1 (patch-source4_torture_local_nss__tests.c) = 7b6b195a7bbff3930b5fe1bdf6d51af84c4dbb09
+SHA1 (patch-testprogs_blackbox_dbcheck-oldrelease.sh) = 0bd2067b77a1db93e3cb5d80964a7be2b06802ff

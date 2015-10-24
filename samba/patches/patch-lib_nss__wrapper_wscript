@@ -2,7 +2,7 @@ $NetBSD: patch-lib_nss__wrapper_wscript,v 1.1 2015/05/26 15:11:26 jperkin Exp $
 
 Fix HAVE_SOLARIS_GETGRENT_R define.
 
---- lib/nss_wrapper/wscript.orig	2015-01-16 08:18:39.000000000 +0000
+--- lib/nss_wrapper/wscript.orig	2015-07-21 09:47:48.000000000 +0000
 +++ lib/nss_wrapper/wscript
 @@ -62,7 +62,7 @@ def configure(conf):
                                 define='HAVE_SOLARIS_GETPWUID_R', headers='unistd.h pwd.h')
