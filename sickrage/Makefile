@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	sickrage-${VERSION}
-VERSION=        5.0.3
+VERSION=        5.0.3 ## repackage as everything under /opt/local/share/sickrage and keep a wrapper in bin!!!
 CATEGORIES=	news
 MASTER_SITES=	https://github.com/SickRage/SickRage/archive/
 DISTFILES= 	v${VERSION}${EXTRACT_SUFX}
