@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-DISTNAME=		znc-1.6.0
+DISTNAME=		znc-1.6.2
 CATEGORIES=		net
 PKGREVISION=		9
 MASTER_SITES=		http://znc.in/releases/archive/
