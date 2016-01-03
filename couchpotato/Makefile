@@ -1,7 +1,7 @@
 # $NetBSD$
 
-DISTNAME=	couchpotato-2.6.3
-COMMIT_SHA=	965b808 
+DISTNAME=	couchpotato-3.0.1
+COMMIT_SHA=	e9593f6 
 CATEGORIES=	news
 MASTER_SITES=	-https://github.com/RuudBurger/CouchPotatoServer/tarball/${COMMIT_SHA}
 DISTFILE= 	${DISTNAME}${EXTRACT_SUFX}
