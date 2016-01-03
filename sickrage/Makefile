@@ -1,8 +1,8 @@
 # $NetBSD$
 
 DISTNAME=	sickrage-${VERSION}
-COMMIT_SHA=	3baef95 
-VERSION=        4.0.75.3
+COMMIT_SHA=	4423fe9 
+VERSION=        5.0.3
 CATEGORIES=	news
 MASTER_SITES=	-https://github.com/SiCKRAGETV/SickRage/tarball/${COMMIT_SHA}
 DISTFILE= 	${DISTNAME}${EXTRACT_SUFX}
