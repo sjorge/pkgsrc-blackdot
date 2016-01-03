@@ -1,12 +1,11 @@
 # $NetBSD$
 
 DISTNAME=	sickrage-${VERSION}
-COMMIT_SHA=	4423fe9 
 VERSION=        5.0.3
 CATEGORIES=	news
-MASTER_SITES=	-https://github.com/SiCKRAGETV/SickRage/tarball/${COMMIT_SHA}
-DISTFILE= 	${DISTNAME}${EXTRACT_SUFX}
-EXTRACT_SUFX=	.tgz
+MASTER_SITES=	https://github.com/SickRage/SickRage/archive/
+DISTFILES= 	v${VERSION}${EXTRACT_SUFX}
+EXTRACT_SUFX=	.tar.gz
 
 MAINTAINER=	sjorge@blackdot.be
 HOMEPAGE=	http://www.sickrage.tv/
@@ -17,7 +16,7 @@ DEPENDS+=	${PYPKGPREFIX}-cheetah-[0-9]*:../../devel/py-cheetah
 DEPENDS+=	${PYPKGPREFIX}-cElementTree-[0-9]*:../../textproc/py-cElementTree
 DEPENDS+=	${PYPKGPREFIX}-sqlite3-[0-9]*:../../databases/py-sqlite3
 
-WRKSRC= 	${WRKDIR}/SiCKRAGETV-SickRage-${COMMIT_SHA}
+WRKSRC= 	${WRKDIR}/SickRage-${VERSION}
 NO_BUILD= 	yes
 USE_TOOLS= 	pax
 
@@ -31,7 +30,7 @@ PKG_GECOS.dlmgr=Download Manager Daemon
 PKG_HOME.dlmgr=	${PKG_SYSCONFDIR}/dlmgr
 OWN_DIRS_PERMS=	${PKG_SYSCONFDIR}/dlmgr dlmgr dlmgr 0755
 
-INSTALL_DIRS+=	autoProcessTV tornado lib gui runscripts contrib
+INSTALL_DIRS+=	lib gui runscripts contrib
 OWN_DIRS_PERMS+= ${PREFIX}/share/sickrage/lib/dateutil/zoneinfo/ dlmgr dlmgr 0755
 
 PY_PATCHPLIST=	yes
