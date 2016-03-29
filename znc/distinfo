@@ -1,5 +1,6 @@
 $NetBSD$
 
-SHA1 (znc-1.6.2.tar.gz) = 96e641a4da0a32ba60eb8a8c1dab15432de60fa2
-RMD160 (znc-1.6.2.tar.gz) = 347416274a7e70c06fef7d5a47b84eae6103a2aa
-Size (znc-1.6.2.tar.gz) = 1463898 bytes
+SHA1 (znc-1.6.3.tar.gz) = 89e8c2a32c8c0a95d0464a3cbfb06e6b050c6c72
+RMD160 (znc-1.6.3.tar.gz) = 2c306679192afd160c320d53229ceb22dc3895d9
+SHA512 (znc-1.6.3.tar.gz) = 777279b6c973310b4e78a0472bd1e355c2adf3e4fbe9ebedde3dd4706e5c0b208d4330eb2318a8d9e0d7d7146bee0a4a428cbe5a3f230c8f6aa692a477e86e2b
+Size (znc-1.6.3.tar.gz) = 1464200 bytes
