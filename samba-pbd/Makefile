@@ -97,33 +97,133 @@ CONFIGURE_ARGS+=	--jobs=1
 .endif
 
 # extra CF and LD flags
-LDFLAGS+=		${COMPILER_RPATH_FLAG}${SMB_PRIVATELIB}
-.if ${OPSYS} != "SunOS"
-LDFLAGS+=		-Wl,--allow-shlib-undefined
+LDFLAGS+=		${COMPILER_RPATH_FLAG}${SMB_PRIVATELIB} -lintl
+CFLAGS+=		-DHAVE_SOLARIS_GETGRENT_R
+PLIST_SUBST+=		LIBEXT=so
+SAMBA_LIBEXT=		so
+
+PKG_OPTIONS_VAR=	PKG_OPTIONS.samba4
+PKG_SUPPORTED_OPTIONS=	osx pam winbind # cups # cups option is broken for me.
+PKG_SUGGESTED_OPTIONS=	pam winbind
+
+.include "../../mk/bsd.fast.prefs.mk"
+
+###
+### Support ACL on certain platforms
+###
+SAMBA_ACL_OPSYS=	AIX Darwin FreeBSD HPUX IRIX Linux OSF1 SunOS
+.if !empty(SAMBA_ACL_OPSYS:M${OPSYS})
+PKG_SUPPORTED_OPTIONS+=	acl
 .endif
-CFLAGS.SunOS+=		-DHAVE_SOLARIS_GETGRENT_R
-LDFLAGS.SunOS+=		-lintl
 
-.include "options.mk"
+# Suggest zfs on SunOS
+.if ${OPSYS} == "SunOS"
+PKG_SUPPORTED_OPTIONS+=	zfs
+PKG_SUGGESTED_OPTIONS+=	zfs
+.endif
 
-PLIST_SUBST+=	LIBEXT=so
-SAMBA_LIBEXT=	so
+.include "../../mk/bsd.options.mk"
+
+SAMBA_STATIC_MODULES:=	# empty
+SAMBA_SHARED_MODULES:=	# empty
+
+###
+### Ensure that the zfs shared library is generated
+###
+PLIST_VARS+=		zfs
+.if !empty(PKG_OPTIONS:Mzfs)
+PKG_OPTIONS+=           acl
+SAMBA_SHARED_MODULES:=	${SAMBA_SHARED_MODULES},vfs_zfsacl
+PLIST.zfs=		yes
+.  endif
+
+###
+### Enable APPL extension
+###
+PLIST_VARS+=		osx
+.if !empty(PKG_OPTIONS:Mosx)
+SAMBA_SHARED_MODULES:=	${SAMBA_SHARED_MODULES},vfs_fruit
+PLIST.osx=		yes
+.  endif
+
+###
+### Access Control List support.
+###
+.if !empty(PKG_OPTIONS:Macl)
+CONFIGURE_ARGS+=	--with-acl-support
+.else
+CONFIGURE_ARGS+=	--without-acl-support
+.endif
+
+###
+### Native CUPS support for providing printing services.
+###
+PLIST_VARS+=		cups
+.if !empty(PKG_OPTIONS:Mcups)
+.  include "../../print/cups/buildlink3.mk"
+CONFIGURE_ARGS+=	--enable-cups
+PLIST.cups=		yes
+INSTALLATION_DIRS+=	libexec/cups/backend
+.else
+CONFIGURE_ARGS+=	--disable-cups
+.endif
+
+###
+### Support PAM authentication and build smbpass and winbind PAM modules.
+###
+PLIST_VARS+=		pam
+.if !empty(PKG_OPTIONS:Mpam)
+.  include "../../mk/pam.buildlink3.mk"
+
+CONFIGURE_ARGS+=	--with-pam
+CONFIGURE_ARGS+=	--with-pammodulesdir=${SMB_PAMMODULES}
+PLIST.pam=		yes
+INSTALLATION_DIRS+=	${EGDIR}/pam_smbpass
+.else
+CONFIGURE_ARGS+=	--without-pam
+.endif
+
+###
+### Support querying a PDC for domain user and group information, e.g.,
+### through NSS or PAM.
+###
+PLIST_VARS+=		winbind
+.if !empty(PKG_OPTIONS:Mwinbind)
+CONFIGURE_ARGS+=	--with-winbind
+PLIST.winbind=		yes
+.else
+CONFIGURE_ARGS+=	--without-winbind
+.endif
+
+###
+### Add the optional static modules to the configuration.
+###
+.if !empty(SAMBA_STATIC_MODULES)
+CONFIGURE_ARGS+=	--with-static-modules=${SAMBA_STATIC_MODULES:S/^,//}
+.endif
+
+###
+### Add the optionsl shared modules to the configuration
+###
+.if !empty(SAMBA_SHARED_MODULES)
+CONFIGURE_ARGS+=	--with-shared-modules=${SAMBA_SHARED_MODULES:S/^,//}
+.endif
 
 .if !defined(PWD_MKDB)
-PWD_MKDB!=	${TYPE} pwd_mkdb 2>&1 | \
-		${AWK} '/not found/ { print "pwd_mkdb"; exit } { print $$3 }'
-MAKEFLAGS+=	PWD_MKDB=${PWD_MKDB:Q}
+PWD_MKDB!=		${TYPE} pwd_mkdb 2>&1 | \
+			${AWK} '/not found/ { print "pwd_mkdb"; exit } { print $$3 }'
+MAKEFLAGS+=		PWD_MKDB=${PWD_MKDB:Q}
 .endif
-FILES_SUBST+=	MKTEMP=${MKTEMP:Q}
-FILES_SUBST+=	PWD_MKDB=${PWD_MKDB:Q}
+FILES_SUBST+=		MKTEMP=${MKTEMP:Q}
+FILES_SUBST+=		PWD_MKDB=${PWD_MKDB:Q}
 
 INSTALLATION_DIRS+=	${DOCDIR} ${EGDIR}
 
-DOCDIR=		share/doc/${PKGBASE}
-EGDIR=		share/examples/${PKGBASE}
-CONF_FILES=	${PREFIX}/${EGDIR}/smb.conf.default ${SMB_CONFIG}/smb.conf
-OWN_DIRS_PERMS=	${SMB_PRIVATE} ${REAL_ROOT_USER} ${REAL_ROOT_GROUP} 0700
-RCD_SCRIPTS+=	samba nmbd smbd ${WINBINDD_RCD_SCRIPT}
+DOCDIR=			share/doc/${PKGBASE}
+EGDIR=			share/examples/${PKGBASE}
+CONF_FILES=		${PREFIX}/${EGDIR}/smb.conf.default ${SMB_CONFIG}/smb.conf
+OWN_DIRS_PERMS=		${SMB_PRIVATE} ${REAL_ROOT_USER} ${REAL_ROOT_GROUP} 0700
+RCD_SCRIPTS+=		samba nmbd smbd ${WINBINDD_RCD_SCRIPT}
 
 SUBST_CLASSES+=		paths
 SUBST_MESSAGE.paths=	Fixing paths.
@@ -171,14 +271,10 @@ REPLACE_PYTHON=	buildtools/bin/waf \
 		lib/subunit/python/subunit/tests/sample-two-script.py \
 		lib/tevent/tevent.py
 
-.include "../../lang/python/application.mk"
 
 PY_PATCHPLIST=	yes
+.include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
-
-.if ${OPSYS} == "Linux"
-.include "../../devel/libuuid/buildlink3.mk"
-.endif
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"
