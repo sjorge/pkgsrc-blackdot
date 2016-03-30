@@ -2,7 +2,7 @@
 
 DISTNAME=	samba-${VERSION}
 PKGNAME=	samba4-${VERSION}
-PKGREVISION=	9
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.samba.org/pub/samba/
 
@@ -13,7 +13,7 @@ LICENSE=	gnu-gpl-v3
 
 DEPENDS+=	${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 
-VERSION=	4.3.3
+VERSION=	4.4.0
 CONFLICTS+=	ja-samba-[0-9]* pam-smbpass-[0-9]* tdb-[0-9]* winbind-[0-9]*
 
 DEPENDS+=	libgcrypt-[0-9]*:../../security/libgcrypt
@@ -87,7 +87,7 @@ CONFIGURE_ARGS+=	--with-privatelibdir=${SMB_PRIVATELIB}
 CONFIGURE_ARGS+=	--with-privileged-socket-dir=${SMB_PRIVSOCKETS}
 CONFIGURE_ARGS+=	--with-configdir=${SMB_CONFIG}
 CONFIGURE_ARGS+=	--with-libiconv=${BUILDLINK_PREFIX.iconv}
-CONFIGURE_ARGS+=	--with-gettext=${BUILDLINK_PREFIX.gettext}
+#CONFIGURE_ARGS+=	--with-gettext=${BUILDLINK_PREFIX.gettext}
 #CONFIGURE_ARGS+=	--bundled-libraries=com_err
 CONFIGURE_ARGS+=	--enable-gnutls
 CONFIGURE_ARGS+=	--with-system-mitkrb5
@@ -107,10 +107,11 @@ CONFIGURE_ARGS+=	--jobs=1
 .if ${OPSYS} != "SunOS"
 LDFLAGS+=		-Wl,--allow-shlib-undefined
 .endif
-LDFLAGS+=		${BUILDLINK_LDADD.gettext}
+#LDFLAGS+=		${BUILDLINK_LDADD.gettext}
 LDFLAGS+=		${COMPILER_RPATH_FLAG}${SMB_PRIVATELIB}
 
 CFLAGS.SunOS+=		-DHAVE_SOLARIS_GETGRENT_R
+LDFLAGS.SunOS+=		-lintl
 
 .include "options.mk"
 
@@ -199,7 +200,7 @@ PY_PATCHPLIST=	yes
 .include "../../devel/libuuid/buildlink3.mk"
 .endif
 .include "../../converters/libiconv/buildlink3.mk"
-.include "../../devel/gettext-lib/buildlink3.mk"
+#.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
