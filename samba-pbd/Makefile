@@ -1,20 +1,20 @@
 # $NetBSD: Makefile,v 1.7 2015/05/26 15:17:56 jperkin Exp $
 
 DISTNAME=	samba-${VERSION}
-PKGNAME=	samba4-${VERSION}
+PKGNAME=	samba-pbd-${VERSION}
 PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.samba.org/pub/samba/
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	sjorge@acheron.be
 HOMEPAGE=	http://www.samba.org/
-COMMENT=	SMB/CIFS protocol server suite
+COMMENT=	custom samba 4.x package with vfs_fruit, vfs_zfsacl, vfs_dirsort, vfs_syncops,...
 LICENSE=	gnu-gpl-v3
 
 DEPENDS+=	${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 
 VERSION=	4.4.0
-CONFLICTS+=	ja-samba-[0-9]* pam-smbpass-[0-9]* tdb-[0-9]* winbind-[0-9]*
+CONFLICTS+=	samba-[0-9]* ja-samba-[0-9]* pam-smbpass-[0-9]* tdb-[0-9]* winbind-[0-9]*
 
 DEPENDS+=	libgcrypt-[0-9]*:../../security/libgcrypt
 BUILD_DEPENDS+=	${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
@@ -55,13 +55,8 @@ USE_TOOLS+=		gmake mktemp perl:run
 
 REPLACE_PERL=		script/findsmb.in
 
-USE_GNU_ICONV=		yes	# FIXME: something doesn't work on NetBSD
+USE_GNU_ICONV=		yes
 BROKEN_GETTEXT_DETECTION=yes
-
-# Debugging
-#CONFIGURE_ARGS+=	-vvv
-#CONFIGURE_ARGS+=	--enable-developer
-#CONFIGURE_ARGS+=	--fatal-errors
 
 HAS_CONFIGURE=		yes
 CONFIGURE_ENV+=		XSLTPROC=${FALSE} # suppress generation of man pages
@@ -87,8 +82,6 @@ CONFIGURE_ARGS+=	--with-privatelibdir=${SMB_PRIVATELIB}
 CONFIGURE_ARGS+=	--with-privileged-socket-dir=${SMB_PRIVSOCKETS}
 CONFIGURE_ARGS+=	--with-configdir=${SMB_CONFIG}
 CONFIGURE_ARGS+=	--with-libiconv=${BUILDLINK_PREFIX.iconv}
-#CONFIGURE_ARGS+=	--with-gettext=${BUILDLINK_PREFIX.gettext}
-#CONFIGURE_ARGS+=	--bundled-libraries=com_err
 CONFIGURE_ARGS+=	--enable-gnutls
 CONFIGURE_ARGS+=	--with-system-mitkrb5
 CONFIGURE_ARGS+=	--abi-check-disable
@@ -103,31 +96,18 @@ CONFIGURE_ARGS+=	--jobs=${MAKE_JOBS}
 CONFIGURE_ARGS+=	--jobs=1
 .endif
 
-# for winbind option build.
+# extra CF and LD flags
+LDFLAGS+=		${COMPILER_RPATH_FLAG}${SMB_PRIVATELIB}
 .if ${OPSYS} != "SunOS"
 LDFLAGS+=		-Wl,--allow-shlib-undefined
 .endif
-#LDFLAGS+=		${BUILDLINK_LDADD.gettext}
-LDFLAGS+=		${COMPILER_RPATH_FLAG}${SMB_PRIVATELIB}
-
 CFLAGS.SunOS+=		-DHAVE_SOLARIS_GETGRENT_R
 LDFLAGS.SunOS+=		-lintl
 
 .include "options.mk"
 
-PLIST_VARS+=		macosx
-
-.if ${OPSYS} == "Darwin"
-PLIST.macosx=		yes
-.endif
-
-.if ${_OPSYS_SHLIB_TYPE} == "dylib"
-PLIST_SUBST+=	LIBEXT=dylib
-SAMBA_LIBEXT=	dylib
-.else
 PLIST_SUBST+=	LIBEXT=so
 SAMBA_LIBEXT=	so
-.endif
 
 .if !defined(PWD_MKDB)
 PWD_MKDB!=	${TYPE} pwd_mkdb 2>&1 | \
@@ -200,7 +180,6 @@ PY_PATCHPLIST=	yes
 .include "../../devel/libuuid/buildlink3.mk"
 .endif
 .include "../../converters/libiconv/buildlink3.mk"
-#.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
