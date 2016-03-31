@@ -89,6 +89,7 @@ CONFIGURE_ARGS+=	--without-systemd
 CONFIGURE_ARGS+=	--without-ldap
 CONFIGURE_ARGS+=	--without-ads
 CONFIGURE_ARGS+=	--disable-cups
+CONFIGURE_ARGS+=	--disable-iprint
 #CONFIGURE_ARGS+=	--bundled-libraries=!crypto,ldb,ntdb,talloc,tdb,tevent
 .if defined(MAKE_JOBS) && !empty(MAKE_JOBS) && !(defined(MAKE_JOBS_SAFE) && !empty(MAKE_JOBS_SAFE:M[nN][oO]))
 CONFIGURE_ARGS+=	--jobs=${MAKE_JOBS}
@@ -157,7 +158,7 @@ DOCDIR=			share/doc/${PKGBASE}
 EGDIR=			share/examples/${PKGBASE}
 CONF_FILES=		${PREFIX}/${EGDIR}/smb.conf.default ${SMB_CONFIG}/smb.conf
 OWN_DIRS_PERMS=		${SMB_PRIVATE} ${REAL_ROOT_USER} ${REAL_ROOT_GROUP} 0700
-RCD_SCRIPTS+=		samba nmbd smbd ${WINBINDD_RCD_SCRIPT}
+#RCD_SCRIPTS+=		samba nmbd smbd ${WINBINDD_RCD_SCRIPT}
 
 SUBST_CLASSES+=		paths
 SUBST_MESSAGE.paths=	Fixing paths.
