@@ -49,9 +49,7 @@ SMB_PAMMODULES?=	${SMB_LIB}/samba/security
 FILES_SUBST+=		SMB_CONFIG=${SMB_CONFIG}
 FILES_SUBST+=		SMB_PID=${SMB_PID}
 
-# mktemp is useful for the replacement adduser script, but don't require
-# a full dependency since it's not actually needed by samba.
-USE_TOOLS+=		gmake mktemp perl:run
+USE_TOOLS+=		gmake perl:run
 
 REPLACE_PERL=		script/findsmb.in
 
@@ -59,7 +57,7 @@ USE_GNU_ICONV=		yes
 BROKEN_GETTEXT_DETECTION=yes
 
 HAS_CONFIGURE=		yes
-CONFIGURE_ENV+=		XSLTPROC=${FALSE} # suppress generation of man pages
+#CONFIGURE_ENV+=		XSLTPROC=${FALSE} # suppress generation of man pages
 CONFIGURE_ARGS+=	--libdir=${SAMBA_LIB}
 CONFIG_SHELL=		${PYTHONBIN}
 CONFIGURE_SCRIPT=	${WRKSRC}/buildtools/bin/waf
@@ -86,8 +84,6 @@ CONFIGURE_ARGS+=	--enable-gnutls
 CONFIGURE_ARGS+=	--with-system-mitkrb5
 CONFIGURE_ARGS+=	--abi-check-disable
 CONFIGURE_ARGS+=	--without-systemd
-CONFIGURE_ARGS+=	--without-ldap
-CONFIGURE_ARGS+=	--without-ads
 CONFIGURE_ARGS+=	--disable-cups
 CONFIGURE_ARGS+=	--disable-iprint
 #CONFIGURE_ARGS+=	--bundled-libraries=!crypto,ldb,ntdb,talloc,tdb,tevent
@@ -125,10 +121,18 @@ CONFIGURE_ARGS+=	--with-pammodulesdir=${SMB_PAMMODULES}
 INSTALLATION_DIRS+=	${EGDIR}/pam_smbpass
 
 ###
+### LDAP support
+###
+.include "../../databases/openldap-client/buildlink3.mk"
+CONFIGURE_ARGS+=	--with-ldap
+
+###
 ### Support querying a PDC for domain user and group information, e.g.,
 ### through NSS or PAM.
 ###
 CONFIGURE_ARGS+=	--with-winbind
+SAMBA_SHARED_MODULES:= ${SAMBA_SHARED_MODULES},idmap_rid,idmap_autorid,idmap_hash
+SAMBA_SHARED_MODULES:= ${SAMBA_SHARED_MODULES},idmap_ad
 
 ###
 ### Add the optional static modules to the configuration.
@@ -158,11 +162,9 @@ DOCDIR=			share/doc/${PKGBASE}
 EGDIR=			share/examples/${PKGBASE}
 CONF_FILES=		${PREFIX}/${EGDIR}/smb.conf.default ${SMB_CONFIG}/smb.conf
 OWN_DIRS_PERMS=		${SMB_PRIVATE} ${REAL_ROOT_USER} ${REAL_ROOT_GROUP} 0700
-#RCD_SCRIPTS+=		samba nmbd smbd ${WINBINDD_RCD_SCRIPT}
 
 SUBST_CLASSES+=		paths
 SUBST_MESSAGE.paths=	Fixing paths.
-SUBST_FILES.paths=	${WRKDIR}/adduser.sh ${WRKDIR}/deluser.sh
 SUBST_STAGE.paths=	post-patch
 SUBST_SED.paths+=	-e 's,@AWK@,${AWK},g'
 SUBST_SED.paths+=	-e 's,@CAT@,${CAT},g'
@@ -177,25 +179,23 @@ SUBST_FILES.logpath=	examples/smb.conf.default
 SUBST_STAGE.logpath=	pre-configure
 SUBST_SED.logpath+=	-e 's,/usr/local/samba/var/log.%m,${SMB_LOGFILEBASE}/log.%m,g'
 
-.if ${INIT_SYSTEM} == "rc.d"
-MESSAGE_SRC=		${PKGDIR}/MESSAGE.rcd
-.endif
-
-post-extract:
-	${CP} ${FILESDIR}/adduser.sh ${FILESDIR}/deluser.sh ${WRKDIR}
-
 post-install:
 	set -e ; cd ${WRKSRC}/docs-xml/registry; for f in *.reg; do \
 		${INSTALL_DATA} $${f} ${DESTDIR}${PREFIX}/${DOCDIR}/$${f}; \
 	done
-	${INSTALL_SCRIPT} ${WRKDIR}/adduser.sh \
-		${DESTDIR}${PREFIX}/${EGDIR}/adduser.sh
-	${INSTALL_SCRIPT} ${WRKDIR}/deluser.sh \
-		${DESTDIR}${PREFIX}/${EGDIR}/deluser.sh
 	${INSTALL_DATA} ${WRKSRC}/examples/LDAP/samba.schema \
 		${DESTDIR}${PREFIX}/${EGDIR}
 	${INSTALL_DATA} ${WRKSRC}/examples/smb.conf.default \
 		${DESTDIR}${PREFIX}/${EGDIR}
+	mkdir -p ${DESTDIR}${SMB_MAN}/man{8,7,5,1}
+	${INSTALL_DATA} ${WRKSRC}/docs/manpages/*.8 \
+		${DESTDIR}${SMB_MAN}/man8
+	${INSTALL_DATA} ${WRKSRC}/docs/manpages/*.7 \
+		${DESTDIR}${SMB_MAN}/man7
+	${INSTALL_DATA} ${WRKSRC}/docs/manpages/*.5 \
+		${DESTDIR}${SMB_MAN}/man5
+	${INSTALL_DATA} ${WRKSRC}/docs/manpages/*.1 \
+		${DESTDIR}${SMB_MAN}/man1
 
 REPLACE_PERL=	pidl/pidl
 REPLACE_PYTHON=	buildtools/bin/waf \
