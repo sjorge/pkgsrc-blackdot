@@ -88,7 +88,7 @@ CONFIGURE_ARGS+=	--abi-check-disable
 CONFIGURE_ARGS+=	--without-systemd
 CONFIGURE_ARGS+=	--without-ldap
 CONFIGURE_ARGS+=	--without-ads
-CONFIGURE_ARGS+=	--disable-iprint
+CONFIGURE_ARGS+=	--disable-cups
 #CONFIGURE_ARGS+=	--bundled-libraries=!crypto,ldb,ntdb,talloc,tdb,tevent
 .if defined(MAKE_JOBS) && !empty(MAKE_JOBS) && !(defined(MAKE_JOBS_SAFE) && !empty(MAKE_JOBS_SAFE:M[nN][oO]))
 CONFIGURE_ARGS+=	--jobs=${MAKE_JOBS}
@@ -101,99 +101,33 @@ LDFLAGS+=		${COMPILER_RPATH_FLAG}${SMB_PRIVATELIB} -lintl
 CFLAGS+=		-DHAVE_SOLARIS_GETGRENT_R
 PLIST_SUBST+=		LIBEXT=so
 SAMBA_LIBEXT=		so
-
-PKG_OPTIONS_VAR=	PKG_OPTIONS.samba4
-PKG_SUPPORTED_OPTIONS=	osx pam winbind # cups # cups option is broken for me.
-PKG_SUGGESTED_OPTIONS=	pam winbind
-
-.include "../../mk/bsd.fast.prefs.mk"
-
-###
-### Support ACL on certain platforms
-###
-SAMBA_ACL_OPSYS=	AIX Darwin FreeBSD HPUX IRIX Linux OSF1 SunOS
-.if !empty(SAMBA_ACL_OPSYS:M${OPSYS})
-PKG_SUPPORTED_OPTIONS+=	acl
-.endif
-
-# Suggest zfs on SunOS
-.if ${OPSYS} == "SunOS"
-PKG_SUPPORTED_OPTIONS+=	zfs
-PKG_SUGGESTED_OPTIONS+=	zfs
-.endif
-
-.include "../../mk/bsd.options.mk"
-
 SAMBA_STATIC_MODULES:=	# empty
 SAMBA_SHARED_MODULES:=	# empty
 
 ###
-### Ensure that the zfs shared library is generated
+### Support ACL on ZFS
 ###
-PLIST_VARS+=		zfs
-.if !empty(PKG_OPTIONS:Mzfs)
-PKG_OPTIONS+=           acl
+CONFIGURE_ARGS+=	--with-acl-support
 SAMBA_SHARED_MODULES:=	${SAMBA_SHARED_MODULES},vfs_zfsacl
-PLIST.zfs=		yes
-.  endif
 
 ###
 ### Enable APPL extension
 ###
-PLIST_VARS+=		osx
-.if !empty(PKG_OPTIONS:Mosx)
 SAMBA_SHARED_MODULES:=	${SAMBA_SHARED_MODULES},vfs_fruit
-PLIST.osx=		yes
-.  endif
-
-###
-### Access Control List support.
-###
-.if !empty(PKG_OPTIONS:Macl)
-CONFIGURE_ARGS+=	--with-acl-support
-.else
-CONFIGURE_ARGS+=	--without-acl-support
-.endif
-
-###
-### Native CUPS support for providing printing services.
-###
-PLIST_VARS+=		cups
-.if !empty(PKG_OPTIONS:Mcups)
-.  include "../../print/cups/buildlink3.mk"
-CONFIGURE_ARGS+=	--enable-cups
-PLIST.cups=		yes
-INSTALLATION_DIRS+=	libexec/cups/backend
-.else
-CONFIGURE_ARGS+=	--disable-cups
-.endif
 
 ###
 ### Support PAM authentication and build smbpass and winbind PAM modules.
 ###
-PLIST_VARS+=		pam
-.if !empty(PKG_OPTIONS:Mpam)
-.  include "../../mk/pam.buildlink3.mk"
-
+.include "../../mk/pam.buildlink3.mk"
 CONFIGURE_ARGS+=	--with-pam
 CONFIGURE_ARGS+=	--with-pammodulesdir=${SMB_PAMMODULES}
-PLIST.pam=		yes
 INSTALLATION_DIRS+=	${EGDIR}/pam_smbpass
-.else
-CONFIGURE_ARGS+=	--without-pam
-.endif
 
 ###
 ### Support querying a PDC for domain user and group information, e.g.,
 ### through NSS or PAM.
 ###
-PLIST_VARS+=		winbind
-.if !empty(PKG_OPTIONS:Mwinbind)
 CONFIGURE_ARGS+=	--with-winbind
-PLIST.winbind=		yes
-.else
-CONFIGURE_ARGS+=	--without-winbind
-.endif
 
 ###
 ### Add the optional static modules to the configuration.
