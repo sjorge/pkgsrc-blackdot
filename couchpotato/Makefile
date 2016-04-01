@@ -3,7 +3,7 @@
 DISTNAME=	couchpotato-3.0.1
 COMMIT_SHA=	e9593f6 
 CATEGORIES=	news
-MASTER_SITES=	-https://github.com/RuudBurger/CouchPotatoServer/tarball/${COMMIT_SHA}
+MASTER_SITES=	-https://github.com/CouchPotato/CouchPotatoServer/tarball/${COMMIT_SHA}
 DISTFILE= 	${DISTNAME}${EXTRACT_SUFX}
 EXTRACT_SUFX=	.tgz
 
@@ -14,7 +14,7 @@ LICENSE=	gnu-gpl-v3 AND modified-bsd AND mit AND unlicense
 
 DEPENDS+=	${PYPKGPREFIX}-sqlite3-[0-9]*:../../databases/py-sqlite3
 
-TEMP_DIR= 	RuudBurger-CouchPotatoServer-${COMMIT_SHA}
+TEMP_DIR= 	CouchPotato-CouchPotatoServer-${COMMIT_SHA}
 WRKSRC= 	${WRKDIR}/${TEMP_DIR}
 NO_BUILD= 	yes
 USE_TOOLS= 	pax
@@ -23,13 +23,12 @@ PYTHON_VERSIONS_INCOMPATIBLE=	33 34 # py-cheetah
 
 BUILD_DEFS+=		PKG_SYSCONFDIR
 
-PKG_GROUPS=	dlmgr
-PKG_USERS=	dlmgr:dlmgr
-PKG_GECOS.dlmgr=Download Manager Daemon
-PKG_HOME.dlmgr=	${PKG_SYSCONFDIR}/dlmgr
-OWN_DIRS_PERMS=	${PKG_SYSCONFDIR}/dlmgr dlmgr dlmgr 0755
+PKG_GROUPS=		couchpotato
+PKG_USERS=		couchpotato:couchpotato
+PKG_GECOS.couchpotato=	Movie download manager
+PKG_HOME.couchpotato=	${PKG_SYSCONFDIR}/couchpotato
+OWN_DIRS_PERMS=		${PKG_SYSCONFDIR}/couchpotato couchpotato couchpotato 0755
 
-INSTALL_DIRS+= 	libs
 AUTO_MKDIRS=	yes
 
 PY_PATCHPLIST=	yes
@@ -43,14 +42,9 @@ SUBST_FILES.fix-paths=		CouchPotato.py
 SUBST_SED.fix-paths=		-e 's,%%PREFIX%%,${PREFIX},g'
 
 do-install:
-	${MKDIR} ${DESTDIR}/${PREFIX}/bin
-	cd ${WRKSRC} && pax -rw CouchPotato.py ${DESTDIR}/${PREFIX}/bin/
-	${MKDIR} ${DESTDIR}/${PREFIX}/${PYSITELIB}/
-	cd ${WRKSRC} && pax -rw -pmp couchpotato ${DESTDIR}/${PREFIX}/${PYSITELIB}/
-.for i in ${INSTALL_DIRS}
-	${MKDIR} ${DESTDIR}/${PREFIX}/share/couchpotato
-	cd ${WRKSRC} && pax -rw -pmp ${i} ${DESTDIR}/${PREFIX}/share/couchpotato
-.endfor
+	${MKDIR} ${DESTDIR}/${PKG_SYSCONFDIR}/couchpotato
+	${MKDIR} ${DESTDIR}/${PREFIX}/share/CouchPotato
+	cd ${WRKSRC} && pax -rw -pmp . ${DESTDIR}/${PREFIX}/share/CouchPotato
 
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
