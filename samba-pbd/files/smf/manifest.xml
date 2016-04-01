@@ -46,7 +46,7 @@
 				<loctext xml:lang='C'>Samba Name Service Switch daemon</loctext>
 			</common_name>
 			<documentation>
-				<manpage title='nmbd' section='8' manpath='man'/>
+				<manpage title='winbindd' section='8' manpath='man'/>
 			</documentation>
 		</template>
 	</instance>
