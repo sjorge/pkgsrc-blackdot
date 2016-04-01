@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	sabnzbd-${DISTVERSION}
-DISTVERSION=	0.7.20
+DISTVERSION=	1.0.0
 DISTFILES=	SABnzbd-${DISTVERSION}-src${EXTRACT_SUFX}
 CATEGORIES=	news
 MASTER_SITES= 	${MASTER_SITE_SOURCEFORGE:=sabnzbdplus/sabnzbdplus/}${DISTVERSION}/
@@ -14,26 +14,28 @@ LICENSE=	gnu-gpl-v2 AND gnu-gpl-v3 AND modified-bsd AND mit
 DEPENDS+=	${PYPKGPREFIX}-cheetah-[0-9]*:../../devel/py-cheetah
 DEPENDS+=	${PYPKGPREFIX}-sqlite3-[0-9]*:../../databases/py-sqlite3
 DEPENDS+=	${PYPKGPREFIX}-xml-[0-9]*:../../textproc/py-xml
-DEPENDS+=	${PYPKGPREFIX}-configobj-[0-9]*:../../pbd/py-configobj
+DEPENDS+=	par2-[0-9]*:../../archivers/par2                               # par2 support
+DEPENDS+=	unrar-[0-9]*:../../archivers/unrar                             # unrar support
+DEPENDS+=	unzip-[0-9]*:../../archivers/unzip                             # unzip support
+DEPENDS+=	p7zip-[0-9]*:../../archivers/p7zip                             # 7zip support
+DEPENDS+=	${PYPKGPREFIX}-feedparser-[0-9]*:../../textproc/py-feedparser  # feedparser support
+DEPENDS+=	${PYPKGPREFIX}-yenc-[0-9]*:../../pbd/py-yenc                   # yenc support
+DEPENDS+=	openssl-[0-9]*:../../security/openssl                          # openssl support
+DEPENDS+=	${PYPKGPREFIX}-OpenSSL-[0-9]*:../../security/py-OpenSSL
 
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/SABnzbd-${DISTVERSION}
 USE_TOOLS=	pax
 
-PYTHON_VERSIONS_INCOMPATIBLE=	33 34 # py-cheetah, py-xml
-
-.include "options.mk"
-
 BUILD_DEFS+=		PKG_SYSCONFDIR
 
-PKG_GROUPS=		dlmgr
-PKG_USERS=		dlmgr:dlmgr
-PKG_GECOS.dlmgr=	Download Manager Daemon
-PKG_HOME.dlmgr=		${PKG_SYSCONFDIR}/dlmgr
-OWN_DIRS_PERMS=		${PKG_SYSCONFDIR}/dlmgr dlmgr dlmgr 0755
+PKG_GROUPS=		sabnzbd
+PKG_USERS=		sabnzbd:sabnzbd
+PKG_GECOS.sabnzbd=	sabnbzd usenet download manager
+PKG_HOME.sabnzbd=	${PKG_SYSCONFDIR}/sabnzbd
+OWN_DIRS_PERMS=		${PKG_SYSCONFDIR}/sabnzbd sabnzbd sabnzbd 0750
 
-INSTALL_DIRS+=	cherrypy gntp interfaces locale po tools util
-
+PYTHON_VERSIONS_INCOMPATIBLE=	33 34 # py-cheetah, py-xml
 PY_PATCHPLIST=          yes
 PLIST_SUBST+=           PYVERSSUFFIX=${PYVERSSUFFIX}
 REPLACE_PYTHON=		*.py */*.py */*/*.py
@@ -44,15 +46,11 @@ SUBST_MESSAGE.fix-paths=Fix absolute paths.
 SUBST_FILES.fix-paths=	SABnzbd.py
 SUBST_SED.fix-paths=	-e 's,%%PREFIX%%,${PREFIX},g'
 
+
 do-install:
-	${MKDIR} ${DESTDIR}/${PREFIX}/bin
-	cd ${WRKSRC} && pax -rw SABnzbd.py ${DESTDIR}/${PREFIX}/bin/
-	${MKDIR} ${DESTDIR}/${PREFIX}/${PYSITELIB}/
-	cd ${WRKSRC} && pax -rw -pmp sabnzbd ${DESTDIR}/${PREFIX}/${PYSITELIB}/
-.for i in ${INSTALL_DIRS}
-	${MKDIR} ${DESTDIR}/${PREFIX}/share/sabnzbdplus
-	cd ${WRKSRC} && pax -rw -pmp ${i} ${DESTDIR}/${PREFIX}/share/sabnzbdplus
-.endfor
+	${MKDIR} ${DESTDIR}/${PKG_SYSCONFDIR}/sabnzbd
+	${MKDIR} ${DESTDIR}/${PREFIX}/share/SABnzbd
+	cd ${WRKSRC} && pax -rw -pmp . ${DESTDIR}/${PREFIX}/share/SABnzbd
 
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"

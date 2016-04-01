@@ -15,14 +15,10 @@
 
     <!-- execute as user USERNAME -->
     <method_context>
-      <method_credential user='dlmgr' group='dlmgr' />
-      <method_environment>
-        <envvar name="PATH" value="@PREFIX@/bin:/usr/bin:/bin" />
-        <envvar name="HOME" value="@PKG_SYSCONFDIR@/dlmgr" />
-      </method_environment>
+      <method_credential user='sabnzbd' group='sabnzbd' />
     </method_context>
 
-    <exec_method type='method' name='start' exec='@PREFIX@/bin/SABnzbd.py -d -f ~/.sabnzbd/sabnzbd.ini' timeout_seconds='60' />
+    <exec_method type='method' name='start' exec='@PREFIX@/share/SABnzbd/SABnzbd.py --daemon --config-file @PKG_SYSCONFDIR@/sabnzbd/sabnzbd.ini --ipv6_hosting 1 --browser 0 --pid /var/run' timeout_seconds='60' />
     <exec_method type='method' name='stop' exec=':kill' timeout_seconds='120' />
 
     <property_group name="startd" type="framework">
