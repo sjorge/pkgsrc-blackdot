@@ -23,5 +23,4 @@ Check out http://pkg.blackdot.be/ for how to use this repository.
 ## > in progress
 ###########################################
 [-] OmniOS compatibility
-[-] samba swap out openssl for gnu-tols
 [+] optimize build env to use chroot
