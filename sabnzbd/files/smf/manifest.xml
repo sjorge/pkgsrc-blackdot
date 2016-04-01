@@ -16,9 +16,12 @@
     <!-- execute as user USERNAME -->
     <method_context>
       <method_credential user='sabnzbd' group='sabnzbd' />
+      <method_environment>
+          <envvar name="PATH" value="@PREFIX@/bin:/usr/bin:/bin" />
+      </method_environment>
     </method_context>
 
-    <exec_method type='method' name='start' exec='@PREFIX@/share/SABnzbd/SABnzbd.py --daemon --config-file @PKG_SYSCONFDIR@/sabnzbd/sabnzbd.ini --ipv6_hosting 1 --browser 0 --pid /var/run' timeout_seconds='60' />
+    <exec_method type='method' name='start' exec='@PREFIX@/share/SABnzbd/SABnzbd.py --daemon --config-file @PKG_SYSCONFDIR@/sabnzbd/sabnzbd.ini --browser 0' timeout_seconds='60' />
     <exec_method type='method' name='stop' exec=':kill' timeout_seconds='120' />
 
     <property_group name="startd" type="framework">
