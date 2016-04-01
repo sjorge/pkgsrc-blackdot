@@ -21,11 +21,11 @@
       </method_environment>
     </method_context>
 
-    <exec_method type='method' name='start' exec='@PREFIX@/share/SABnzbd/SABnzbd.py --daemon --config-file @PKG_SYSCONFDIR@/sabnzbd/sabnzbd.ini --browser 0' timeout_seconds='60' />
+    <exec_method type='method' name='start' exec='@PREFIX@/share/SABnzbd/SABnzbd.py --config-file @PKG_SYSCONFDIR@/sabnzbd/sabnzbd.ini --browser 0' timeout_seconds='60' />
     <exec_method type='method' name='stop' exec=':kill' timeout_seconds='120' />
 
     <property_group name="startd" type="framework">
-      <propval name="duration" type="astring" value="contract" />
+      <propval name="duration" type="astring" value="child" />
       <propval name="ignore_error" type="astring" value="core,signal" />
     </property_group>
 
