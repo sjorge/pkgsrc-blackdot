@@ -24,6 +24,7 @@ BUILD_DEFS+=		VARBASE
 .include "../../mk/bsd.prefs.mk"
 
 SMB_LIB?=		${PREFIX}/lib
+SMF_NAME?=		samba
 
 PKG_SYSCONFSUBDIR=	samba
 SMB_SHAREDSTATE?=	${PREFIX}/com
