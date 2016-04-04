@@ -1,25 +1,23 @@
 $NetBSD$
 
---- source4/ntvfs/sysdep/wscript_configure.orig	2016-01-26 11:45:46.000000000 +0000
+--- source4/ntvfs/sysdep/wscript_configure.orig
 +++ source4/ntvfs/sysdep/wscript_configure
-@@ -1,9 +1,15 @@
+@@ -1,9 +1,14 @@
  #!/usr/bin/env python
  
 -conf.CHECK_HEADERS('sys/inotify.h', add_headers=False)
 +import sys
- 
--conf.CHECK_DECLS('F_SETLEASE', headers='linux/fcntl.h', reverse=True)
--conf.CHECK_DECLS('SA_SIGINFO', headers='signal.h', reverse=True)
++
 +# Check for inotify support (Skip if we are SunOS)
 +#NOTE: illumos provides sys/inotify.h but is not an exact match for linux
 +host_os = sys.platform
 +if host_os.rfind('sunos') == -1:
 +    conf.CHECK_HEADERS('sys/inotify.h', add_headers=False)
- 
--if (conf.CONFIG_SET('HAVE_SYS_INOTIFY_H')):
--    conf.DEFINE('HAVE_LINUX_INOTIFY', 1)
-+    conf.CHECK_DECLS('F_SETLEASE', headers='linux/fcntl.h', reverse=True)
-+    conf.CHECK_DECLS('SA_SIGINFO', headers='signal.h', reverse=True)
-+
 +    if (conf.CONFIG_SET('HAVE_SYS_INOTIFY_H')):
 +        conf.DEFINE('HAVE_LINUX_INOTIFY', 1)
+ 
+ conf.CHECK_DECLS('F_SETLEASE', headers='linux/fcntl.h', reverse=True)
+ conf.CHECK_DECLS('SA_SIGINFO', headers='signal.h', reverse=True)
+-
+-if (conf.CONFIG_SET('HAVE_SYS_INOTIFY_H')):
+-    conf.DEFINE('HAVE_LINUX_INOTIFY', 1)

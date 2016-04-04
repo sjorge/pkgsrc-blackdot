@@ -6,4 +6,4 @@ SHA512 (samba-4.4.0.tar.gz) = a8bc60c5640b7cd06d7e93a222ac7b3f6fb7396849cd70051f
 Size (samba-4.4.0.tar.gz) = 20590101 bytes
 SHA1 (patch-lib_nss__wrapper_wscript) = a9aac6a54483ec88253cbbb386508f5a1e092ed7
 SHA1 (patch-source3_wscript) = 48e2cd49d70c86718e2282045d35e6c23e459963
-SHA1 (patch-source4_ntvfs_sysdep_wscript__configure) = 88427ae1df3ebcdc5bcf5323e543d0e676f615b0
+SHA1 (patch-source4_ntvfs_sysdep_wscript__configure) = 112a6a64dc45e2322a963f4c25a36ae6283726b6
