@@ -349,6 +349,7 @@ ${PYSITELIB}/samba/tests/dcerpc/bare.py
 ${PYSITELIB}/samba/tests/dcerpc/dnsserver.py
 ${PYSITELIB}/samba/tests/dcerpc/integer.py
 ${PYSITELIB}/samba/tests/dcerpc/misc.py
+${PYSITELIB}/samba/tests/dcerpc/raw_protocol.py
 ${PYSITELIB}/samba/tests/dcerpc/registry.py
 ${PYSITELIB}/samba/tests/dcerpc/rpc_talloc.py
 ${PYSITELIB}/samba/tests/dcerpc/rpcecho.py
