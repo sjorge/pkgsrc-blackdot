@@ -29,6 +29,8 @@ PKG_GECOS.couchpotato=	movie download manager
 PKG_HOME.couchpotato=	${PKG_SYSCONFDIR}/couchpotato
 OWN_DIRS_PERMS=		${PKG_SYSCONFDIR}/couchpotato couchpotato couchpotato 0755
 
+SMF_NAME?=              couchpotato
+
 AUTO_MKDIRS=	yes
 
 PY_PATCHPLIST=	yes

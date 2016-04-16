@@ -35,6 +35,8 @@ PKG_GECOS.sabnzbd=	sabnbzd usenet download manager
 PKG_HOME.sabnzbd=	${PKG_SYSCONFDIR}/sabnzbd
 OWN_DIRS_PERMS=		${PKG_SYSCONFDIR}/sabnzbd sabnzbd sabnzbd 0750
 
+SMF_NAME?=              sabnzbd
+
 PYTHON_VERSIONS_INCOMPATIBLE=	33 34 # py-cheetah, py-xml
 PY_PATCHPLIST=          yes
 PLIST_SUBST+=           PYVERSSUFFIX=${PYVERSSUFFIX}
