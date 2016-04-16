@@ -15,7 +15,7 @@
 
     <!-- execute as user USERNAME -->
     <method_context>
-      <method_credential user='sabnzbd' group='sabnzbd' />
+      <method_credential user='sabnzbd' />
       <method_environment>
           <envvar name="PATH" value="@PREFIX@/bin:/usr/bin:/bin" />
       </method_environment>
