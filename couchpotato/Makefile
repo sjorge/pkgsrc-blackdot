@@ -25,7 +25,7 @@ BUILD_DEFS+=		PKG_SYSCONFDIR
 
 PKG_GROUPS=		couchpotato
 PKG_USERS=		couchpotato:couchpotato
-PKG_GECOS.couchpotato=	Movie download manager
+PKG_GECOS.couchpotato=	movie download manager
 PKG_HOME.couchpotato=	${PKG_SYSCONFDIR}/couchpotato
 OWN_DIRS_PERMS=		${PKG_SYSCONFDIR}/couchpotato couchpotato couchpotato 0755
 
