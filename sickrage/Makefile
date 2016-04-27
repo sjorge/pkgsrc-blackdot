@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	sickrage-${DISTVERSION}
-DISTVERSION=	2016.04.16-1
+DISTVERSION=	2016.04.16
 COMMIT_SHA=	8e2ceee
 CATEGORIES=	news
 MASTER_SITES=	-https://github.com/SickRage/SickRage/tarball/${COMMIT_SHA}
