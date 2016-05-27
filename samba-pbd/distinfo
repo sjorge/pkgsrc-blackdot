@@ -1,9 +1,9 @@
 $NetBSD: distinfo,v 1.2 2015/05/26 15:11:25 jperkin Exp $
 
-SHA1 (samba-4.4.2.tar.gz) = 58994f6ff296e9b8a3794ff8c137d62e0ee70b2d
-RMD160 (samba-4.4.2.tar.gz) = 4d59543e50267d4f50c424c6653d571fe268dd0a
-SHA512 (samba-4.4.2.tar.gz) = ba965ee32d9cfd9c54ef523fc2ed4179000de956a563fdd91625d2bbcf6f07dd787c8b7e3dc4c824f46c87eea0aa97e7123d759992080fdfb2fde8554d18e3b7
-Size (samba-4.4.2.tar.gz) = 20711230 bytes
+SHA1 (samba-4.4.3.tar.gz) = 21fb4832befa9e234a59c0be7b83f9084964e727
+RMD160 (samba-4.4.3.tar.gz) = a23ad0709b6cabf7e276716ba02b5adc1d084628
+SHA512 (samba-4.4.3.tar.gz) = 25c447f476a54c7e5992d3010957401373eb99b89bcab3e80d7a5aee08413fab87d0dc87d43e7c541b4fa1778a8707121639f56a208dd634e0b1f905eb8afa7c
+Size (samba-4.4.3.tar.gz) = 20705861 bytes
 SHA1 (patch-lib_nss__wrapper_wscript) = a9aac6a54483ec88253cbbb386508f5a1e092ed7
 SHA1 (patch-source3_wscript) = 48e2cd49d70c86718e2282045d35e6c23e459963
 SHA1 (patch-source4_ntvfs_sysdep_wscript__configure) = 112a6a64dc45e2322a963f4c25a36ae6283726b6
