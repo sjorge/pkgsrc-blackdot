@@ -1,8 +1,8 @@
 # $NetBSD$
 
 DISTNAME=	sickrage-${DISTVERSION}
-DISTVERSION=	2016.04.16
-COMMIT_SHA=	8e2ceee
+DISTVERSION=	2016.06.14
+COMMIT_SHA=	acf14ec
 CATEGORIES=	news
 MASTER_SITES=	-https://github.com/SickRage/SickRage/tarball/${COMMIT_SHA}
 DISTFILE= 	${DISTNAME}${EXTRACT_SUFX}
@@ -49,6 +49,9 @@ INSTALL_FILES+=			SickBeard.py readme.md COPYING.txt
 do-install:
 	${MKDIR} ${DESTDIR}/${PKG_SYSCONFDIR}/sickrage
 	${MKDIR} ${DESTDIR}/${PREFIX}/share/SickRage
+	${MKDIR} ${DESTDIR}/${PREFIX}/share/SickRage
+	${MKDIR} ${DESTDIR}/${PREFIX}/share/SickRage/lib
+	${MKDIR} -m 0777 ${DESTDIR}/${PREFIX}/share/SickRage/lib/adba
 .for i in ${INSTALL_DIRS}
 	cd ${WRKSRC} && pax -rw -pmp ${i} ${DESTDIR}/${PREFIX}/share/SickRage
 .endfor
