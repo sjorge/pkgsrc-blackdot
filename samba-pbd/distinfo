@@ -1,10 +1,6 @@
 $NetBSD: distinfo,v 1.2 2015/05/26 15:11:25 jperkin Exp $
 
-SHA1 (samba-4.4.3.tar.gz) = 21fb4832befa9e234a59c0be7b83f9084964e727
-RMD160 (samba-4.4.3.tar.gz) = a23ad0709b6cabf7e276716ba02b5adc1d084628
-SHA512 (samba-4.4.3.tar.gz) = 25c447f476a54c7e5992d3010957401373eb99b89bcab3e80d7a5aee08413fab87d0dc87d43e7c541b4fa1778a8707121639f56a208dd634e0b1f905eb8afa7c
-Size (samba-4.4.3.tar.gz) = 20705861 bytes
-SHA1 (patch-source3_smbd_notify__inotify.c) = 4ec8b890fe799157ce0f549a2bfabec3bc9dc8a0
-SHA1 (patch-source3_wscript) = 331930d373ba1f5ee33360c81df4cbf42ff4e59b
-SHA1 (patch-source4_ntvfs_sysdep_inotify.c) = f923ac11ef621aa02a3a214e4575b957145b4351
-SHA1 (patch-source4_ntvfs_sysdep_wscript__configure) = 1f729479ddc8d2dbd323572d16c3346cb422eeac
+SHA1 (samba-4.4.4.tar.gz) = 1165da52ba7c81d670be1f897af5266524eb74ca
+RMD160 (samba-4.4.4.tar.gz) = 5a81df8f6449d723d9357bcc075b908f24daf49d
+SHA512 (samba-4.4.4.tar.gz) = e982c09051fd4e7a14abfe4ae5add3d8da61e4e761511a403c911fadc3d8809dad19d5591c71baa35f80fe5c07b4fa67b46b6565aa03144c57d5a17476bb343b
+Size (samba-4.4.4.tar.gz) = 20711340 bytes
