@@ -381,6 +381,7 @@ ${PYSITELIB}/samba/tests/samba3.py
 ${PYSITELIB}/samba/tests/samba3sam.py
 ${PYSITELIB}/samba/tests/samba_tool/__init__.py
 ${PYSITELIB}/samba/tests/samba_tool/base.py
+${PYSITELIB}/samba/tests/samba_tool/fsmo.py
 ${PYSITELIB}/samba/tests/samba_tool/gpo.py
 ${PYSITELIB}/samba/tests/samba_tool/group.py
 ${PYSITELIB}/samba/tests/samba_tool/ntacl.py
