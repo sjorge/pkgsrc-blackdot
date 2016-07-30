@@ -2,7 +2,7 @@ $NetBSD: patch-salt_utils_network.py,v 1.2 2016/07/21 17:05:39 jperkin Exp $
 
 Use sockstat(1) on NetBSD
 
---- salt/utils/network.py.orig	2016-07-25 21:24:23.000000000 +0000
+--- salt/utils/network.py.orig	2016-06-13 22:17:50.000000000 +0000
 +++ salt/utils/network.py
 @@ -1086,6 +1086,8 @@ def _remotes_on(port, which_end):
              return _sunos_remotes_on(port, which_end)
