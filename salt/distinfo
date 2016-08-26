@@ -1,8 +1,8 @@
 $NetBSD: distinfo,v 1.21 2016/07/21 17:05:39 jperkin Exp $
 
-SHA1 (salt-2016.3.2.tar.gz) = 682097e817cc6cd560368c19a410d894b9d4772f
-RMD160 (salt-2016.3.2.tar.gz) = dc534a1f9f97cbc5e6523dbc85e1f0cb0d4840e2
-SHA512 (salt-2016.3.2.tar.gz) = 608e2a43bc8c55eeb8c9e0f9207306e591151940ad1ffb869ada12963c0790f37653936e539c0b70439c13180909de2c763db6c30e7f9e2087068985d1b3ff91
-Size (salt-2016.3.2.tar.gz) = 8014793 bytes
+SHA1 (salt-2016.3.3.tar.gz) = 9c52a7401c0600cc422ccaa2406909bd6ac71db0
+RMD160 (salt-2016.3.3.tar.gz) = 66f5b1615d59d200f82184a142a1a0597fe877ff
+SHA512 (salt-2016.3.3.tar.gz) = 46a8f8b3213e4cc02eaed95e7fc28ce224fe07fe2aea39b68ff3e97043021951558f04690f7043510c8dfb62d76fe82192d67de6151c7f1076a23c0f8d796c9e
+Size (salt-2016.3.3.tar.gz) = 7952361 bytes
 SHA1 (patch-salt_utils_____init____.py) = af78e958c6398f0e2fefd7074c9fd98a8ef78075
 SHA1 (patch-salt_utils_network.py) = bfc0aa1e85b1c4b73d811b04ef427567243f35a7
