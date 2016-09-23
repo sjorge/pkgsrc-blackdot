@@ -1,7 +1,6 @@
 @comment $NetBSD$
 bin/znc
 bin/znc-buildmod
-sbin/znc-setup
 include/znc/Buffer.h
 include/znc/Chan.h
 include/znc/Client.h
@@ -55,6 +54,7 @@ lib/znc/clientnotify.so
 lib/znc/controlpanel.so
 lib/znc/crypt.so
 lib/znc/ctcpflood.so
+lib/znc/cyrusauth.so
 lib/znc/dcc.so
 lib/znc/disconkick.so
 lib/znc/fail2ban.so
@@ -88,6 +88,7 @@ lib/znc/watch.so
 lib/znc/webadmin.so
 man/man1/znc-buildmod.1
 man/man1/znc.1
+sbin/znc-setup
 share/znc/modules/blockuser/tmpl/blockuser_WebadminUser.tmpl
 share/znc/modules/cert/tmpl/index.tmpl
 share/znc/modules/certauth/tmpl/index.tmpl
@@ -118,6 +119,7 @@ share/znc/webskins/_default_/pub/External.png
 share/znc/webskins/_default_/pub/_default_.css
 share/znc/webskins/_default_/pub/favicon.ico
 share/znc/webskins/_default_/pub/global.css
+share/znc/webskins/_default_/pub/jquery-1.11.2.js
 share/znc/webskins/_default_/pub/jquery-1.11.2.min.js
 share/znc/webskins/_default_/pub/robots.txt
 share/znc/webskins/_default_/tmpl/Banner.tmpl
