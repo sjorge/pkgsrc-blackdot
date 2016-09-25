@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- lib/tevent/wscript.orig	2016-03-08 11:07:45.000000000 +0000
++++ lib/tevent/wscript
+@@ -42,7 +42,7 @@ def configure(conf):
+                 conf.define('USING_SYSTEM_PYTEVENT', 1)
+ 
+     if conf.CHECK_FUNCS('epoll_create', headers='sys/epoll.h'):
+-        conf.DEFINE('HAVE_EPOLL', 1)
++        conf.DEFINE('HAVE_ILLUMOS_EPOLL', 1)
+ 
+     tevent_num_signals = 64
+     v = conf.CHECK_VALUEOF('NSIG', headers='signal.h')
