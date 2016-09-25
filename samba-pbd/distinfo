@@ -5,4 +5,6 @@ RMD160 (samba-4.4.6.tar.gz) = ac6114dfcd3a271e0b4c3e2d3723cd40e9e2c69f
 SHA512 (samba-4.4.6.tar.gz) = 1cbad57dc7d4c11221ec263ce246e0ad79a8fb14d0a0dbf9433be97bc47b3a4b610d7bffc9c20cfbde5951fc39c0cb254c8dd23d5d803540e9b7bc6abb63314b
 Size (samba-4.4.6.tar.gz) = 20743841 bytes
 SHA1 (patch-dbcheck-oldrelease.sh) = 25f1fa8fb297fab08ef73fcc2ec8ffd1a1cd4043
+SHA1 (patch-lib_replace_wscript) = 14ceb50e58ddd8ae961fb35afd548c60d17a224f
+SHA1 (patch-lib_tevent_wscript) = 4e1c423f3565714edd87a0429791faaf96b8d93c
 SHA1 (patch-source3_script_tests_test__smbclient__s3.sh) = db4ec0f4a43f052b0639e2ec8c09b848d9c6b27a

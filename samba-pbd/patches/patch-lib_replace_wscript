@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- lib/replace/wscript.orig	2016-01-26 11:45:46.000000000 +0000
++++ lib/replace/wscript
+@@ -483,7 +483,7 @@ removeea setea
+     conf.CHECK_DECLS('pread pwrite setenv setresgid setresuid', reverse=True)
+ 
+     if conf.CONFIG_SET('HAVE_EPOLL_CREATE') and conf.CONFIG_SET('HAVE_SYS_EPOLL_H'):
+-        conf.DEFINE('HAVE_EPOLL', 1)
++        conf.DEFINE('HAVE_ILLUMOS_EPOLL', 1)
+ 
+     if conf.CONFIG_SET('HAVE_PORT_CREATE') and conf.CONFIG_SET('HAVE_PORT_H'):
+         conf.DEFINE('HAVE_SOLARIS_PORTS', 1)
