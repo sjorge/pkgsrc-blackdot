@@ -22,5 +22,5 @@ Check out http://pkg.blackdot.be/ for how to use this repository.
 ## ! critical;
 ## > in progress
 ###########################################
+[=] https://github.com/j-keck/zfs-snap-diff
 [-] OmniOS compatibility
-[+] optimize build env to use chroot
