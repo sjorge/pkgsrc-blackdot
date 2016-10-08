@@ -1,6 +1,6 @@
 # $NetBSD: Makefile,v 1.41 2016/07/21 17:05:39 jperkin Exp $
 
-DISTNAME=	salt-2016.3.3
+DISTNAME=	salt-2016.11.0rc1
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_PYPI:=s/salt/}
 
@@ -24,15 +24,15 @@ BUILD_DEFS+=	VARBASE
 
 PYTHON_VERSIONS_INCOMPATIBLE=	34 35 # py-m2crypto
 
-PYSETUPINSTALLARGS+=	--salt-root-dir=${PREFIX}
-PYSETUPINSTALLARGS+=	--salt-config-dir=${PKG_SYSCONFDIR}
-PYSETUPINSTALLARGS+=	--salt-cache-dir=${VARBASE}/cache/salt
-PYSETUPINSTALLARGS+=	--salt-sock-dir=${VARBASE}/run/salt
-PYSETUPINSTALLARGS+=	--salt-base-file-roots-dir=${PKG_SYSCONFDIR}/states
-PYSETUPINSTALLARGS+=	--salt-base-pillar-roots-dir=${PKG_SYSCONFDIR}/pillar
-PYSETUPINSTALLARGS+=	--salt-base-master-roots-dir=${PKG_SYSCONFDIR}/salt-master
-PYSETUPINSTALLARGS+=	--salt-logs-dir=${VARBASE}/log/salt
-PYSETUPINSTALLARGS+=	--salt-pidfile-dir=${VARBASE}/run
+PYSETUPARGS+=	--salt-root-dir=${PREFIX}
+PYSETUPARGS+=	--salt-config-dir=${PKG_SYSCONFDIR}
+PYSETUPARGS+=	--salt-cache-dir=${VARBASE}/cache/salt
+PYSETUPARGS+=	--salt-sock-dir=${VARBASE}/run/salt
+PYSETUPARGS+=	--salt-base-file-roots-dir=${PKG_SYSCONFDIR}/states
+PYSETUPARGS+=	--salt-base-pillar-roots-dir=${PKG_SYSCONFDIR}/pillar
+PYSETUPARGS+=	--salt-base-master-roots-dir=${PKG_SYSCONFDIR}/salt-master
+PYSETUPARGS+=	--salt-logs-dir=${VARBASE}/log/salt
+PYSETUPARGS+=	--salt-pidfile-dir=${VARBASE}/run
 
 REPLACE_PYTHON=		*.py */*.py */*/*.py
 REPLACE_SH=		salt/templates/git/ssh-id-wrapper
