@@ -756,7 +756,6 @@ man/man8/winbindd.8
 sbin/nmbd
 sbin/smbd
 sbin/winbindd
-share/doc/samba-pbd/NT4_PlainPassword.reg
 share/doc/samba-pbd/NT4-Locking.reg
 share/doc/samba-pbd/Win-2Kx-XPP-DeleteCachedProfiles.reg
 share/doc/samba-pbd/Win-2Kx-XPP-ForceLocalProfile.reg
