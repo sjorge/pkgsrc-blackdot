@@ -14,6 +14,7 @@ COMMENT=	SickRage is an automatic Video Library Manager for TV Shows.
 LICENSE=	gnu-gpl-v3 AND modified-bsd AND mit AND unlicense
 
 DEPENDS+=	${PYPKGPREFIX}-sqlite3-[0-9]*:../../databases/py-sqlite3
+USE_LANGUAGES+= c
 
 TEMP_DIR= 	SickRage-SickRage-${COMMIT_SHA}
 WRKSRC= 	${WRKDIR}/${TEMP_DIR}

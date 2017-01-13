@@ -1,66 +1,74 @@
 @comment $NetBSD$
 share/SickRage/COPYING.txt
 share/SickRage/SickBeard.py
-share/SickRage/gui/slick/css/1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf
+share/SickRage/gui/slick/css/${PKGVERSION}ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf
 share/SickRage/gui/slick/css/702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf
-share/SickRage/gui/slick/css/JXh38I15wypJXxuGMBp0EAVxt0G0biEntp43Qt6E.ttf
-share/SickRage/gui/slick/css/KeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf
+share/SickRage/gui/slick/css/JXh38I${PKGVERSION}5wypJXxuGMBp0EAVxt0G0biEntp43Qt6E.ttf
+share/SickRage/gui/slick/css/KeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG${PKGVERSION}c.ttf
 share/SickRage/gui/slick/css/_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf
-share/SickRage/gui/slick/css/bV5DfGHOiMmvb1Xr-honF5uFdDttMLvmWuJdhhgs.ttf
+share/SickRage/gui/slick/css/bV5DfGHOiMmvb${PKGVERSION}Xr-honF5uFdDttMLvmWuJdhhgs.ttf
 share/SickRage/gui/slick/css/browser.css
 share/SickRage/gui/slick/css/browserconfig.xml
 share/SickRage/gui/slick/css/core.min.css
 share/SickRage/gui/slick/css/country-flags.css
 share/SickRage/gui/slick/css/dark.css
+share/SickRage/gui/slick/css/font-awesome.min.css
 share/SickRage/gui/slick/css/iXeptR36kaC0GEAetxi8cqLH4MEiSE0ROcU-qHOA.ttf
 share/SickRage/gui/slick/css/iXeptR36kaC0GEAetxlDMrAYtoOisqqMDW9M_Mqc.ttf
 share/SickRage/gui/slick/css/iXeptR36kaC0GEAetxp_TkvowlIOtbR7ePgFOpF4.ttf
-share/SickRage/gui/slick/css/iXeptR36kaC0GEAetxrfB31yxOzP-czbf6AAKCVo.ttf
+share/SickRage/gui/slick/css/iXeptR36kaC0GEAetxrfB3${PKGVERSION}yxOzP-czbf6AAKCVo.ttf
 share/SickRage/gui/slick/css/lib/images/animated-overlay.gif
 share/SickRage/gui/slick/css/lib/images/tablesorter/asc.gif
 share/SickRage/gui/slick/css/lib/images/tablesorter/bg.gif
 share/SickRage/gui/slick/css/lib/images/tablesorter/desc.gif
-share/SickRage/gui/slick/css/lib/images/ui-bg_fine-grain_10_eceadf_60x60.png
-share/SickRage/gui/slick/css/lib/images/ui-bg_flat_0_000000_40x100.png
-share/SickRage/gui/slick/css/lib/images/ui-bg_flat_0_606060_40x100.png
-share/SickRage/gui/slick/css/lib/images/ui-bg_flat_0_999999_40x100.png
-share/SickRage/gui/slick/css/lib/images/ui-bg_flat_0_aaaaaa_40x100.png
-share/SickRage/gui/slick/css/lib/images/ui-bg_flat_0_ffffff_40x100.png
-share/SickRage/gui/slick/css/lib/images/ui-bg_flat_75_ffffff_40x100.png
-share/SickRage/gui/slick/css/lib/images/ui-bg_glass_55_fbf9ee_1x400.png
-share/SickRage/gui/slick/css/lib/images/ui-bg_glass_65_ffffff_1x400.png
-share/SickRage/gui/slick/css/lib/images/ui-bg_glass_75_dadada_1x400.png
-share/SickRage/gui/slick/css/lib/images/ui-bg_glass_75_e6e6e6_1x400.png
-share/SickRage/gui/slick/css/lib/images/ui-bg_glass_95_fef1ec_1x400.png
-share/SickRage/gui/slick/css/lib/images/ui-bg_highlight-soft_75_cccccc_1x100.png
-share/SickRage/gui/slick/css/lib/images/ui-bg_highlight-soft_75_dcdcdc_1x100.png
-share/SickRage/gui/slick/css/lib/images/ui-bg_highlight-soft_75_dddddd_1x100.png
-share/SickRage/gui/slick/css/lib/images/ui-bg_highlight-soft_75_efefef_1x100.png
-share/SickRage/gui/slick/css/lib/images/ui-bg_inset-soft_75_dfdfdf_1x100.png
+share/SickRage/gui/slick/css/lib/images/ui-bg_fine-grain_${PKGVERSION}0_eceadf_60x60.png
+share/SickRage/gui/slick/css/lib/images/ui-bg_flat_0_000000_40x${PKGVERSION}00.png
+share/SickRage/gui/slick/css/lib/images/ui-bg_flat_0_606060_40x${PKGVERSION}00.png
+share/SickRage/gui/slick/css/lib/images/ui-bg_flat_0_999999_40x${PKGVERSION}00.png
+share/SickRage/gui/slick/css/lib/images/ui-bg_flat_0_aaaaaa_40x${PKGVERSION}00.png
+share/SickRage/gui/slick/css/lib/images/ui-bg_flat_0_ffffff_40x${PKGVERSION}00.png
+share/SickRage/gui/slick/css/lib/images/ui-bg_flat_75_ffffff_40x${PKGVERSION}00.png
+share/SickRage/gui/slick/css/lib/images/ui-bg_glass_55_fbf9ee_${PKGVERSION}x400.png
+share/SickRage/gui/slick/css/lib/images/ui-bg_glass_65_ffffff_${PKGVERSION}x400.png
+share/SickRage/gui/slick/css/lib/images/ui-bg_glass_75_dadada_${PKGVERSION}x400.png
+share/SickRage/gui/slick/css/lib/images/ui-bg_glass_75_e6e6e6_${PKGVERSION}x400.png
+share/SickRage/gui/slick/css/lib/images/ui-bg_glass_95_fef${PKGVERSION}ec_${PKGVERSION}x400.png
+share/SickRage/gui/slick/css/lib/images/ui-bg_highlight-soft_75_cccccc_${PKGVERSION}x${PKGVERSION}00.png
+share/SickRage/gui/slick/css/lib/images/ui-bg_highlight-soft_75_dcdcdc_${PKGVERSION}x${PKGVERSION}00.png
+share/SickRage/gui/slick/css/lib/images/ui-bg_highlight-soft_75_dddddd_${PKGVERSION}x${PKGVERSION}00.png
+share/SickRage/gui/slick/css/lib/images/ui-bg_highlight-soft_75_efefef_${PKGVERSION}x${PKGVERSION}00.png
+share/SickRage/gui/slick/css/lib/images/ui-bg_inset-soft_75_dfdfdf_${PKGVERSION}x${PKGVERSION}00.png
 share/SickRage/gui/slick/css/lib/images/ui-icons_09a2ff_256x240.png
 share/SickRage/gui/slick/css/lib/images/ui-icons_222222_256x240.png
 share/SickRage/gui/slick/css/lib/images/ui-icons_2e83ff_256x240.png
 share/SickRage/gui/slick/css/lib/images/ui-icons_454545_256x240.png
 share/SickRage/gui/slick/css/lib/images/ui-icons_888888_256x240.png
-share/SickRage/gui/slick/css/lib/images/ui-icons_8c291d_256x240.png
+share/SickRage/gui/slick/css/lib/images/ui-icons_8c29${PKGVERSION}d_256x240.png
 share/SickRage/gui/slick/css/lib/images/ui-icons_cd0a0a_256x240.png
 share/SickRage/gui/slick/css/lib/images/ui-icons_ffffff_256x240.png
-share/SickRage/gui/slick/css/lib/jquery-ui-1.10.4.custom.min.css
-share/SickRage/gui/slick/css/lib/jquery.qtip-2.2.1.min.css
+share/SickRage/gui/slick/css/lib/jquery-ui-${PKGVERSION}.${PKGVERSION}0.4.custom.min.css
+share/SickRage/gui/slick/css/lib/jquery.qtip-2.2.${PKGVERSION}.min.css
 share/SickRage/gui/slick/css/print.css
 share/SickRage/gui/slick/css/style.css
 share/SickRage/gui/slick/css/vender.min.css
+share/SickRage/gui/slick/fonts/FontAwesome.otf
+share/SickRage/gui/slick/fonts/fontawesome-webfont.eot
+share/SickRage/gui/slick/fonts/fontawesome-webfont.svg
+share/SickRage/gui/slick/fonts/fontawesome-webfont.ttf
+share/SickRage/gui/slick/fonts/fontawesome-webfont.woff
+share/SickRage/gui/slick/fonts/fontawesome-webfont.woff2
 share/SickRage/gui/slick/fonts/glyphicons-halflings-regular.eot
 share/SickRage/gui/slick/fonts/glyphicons-halflings-regular.svg
 share/SickRage/gui/slick/fonts/glyphicons-halflings-regular.ttf
 share/SickRage/gui/slick/fonts/glyphicons-halflings-regular.woff
 share/SickRage/gui/slick/fonts/glyphicons-halflings-regular.woff2
 share/SickRage/gui/slick/fonts/roboto.regular.ttf
-share/SickRage/gui/slick/images/16px_sprite_colored_help-info.png
-share/SickRage/gui/slick/images/16px_sprite_colored_show.png
+share/SickRage/gui/slick/images/${PKGVERSION}6px_sprite_colored_help-info.png
+share/SickRage/gui/slick/images/${PKGVERSION}6px_sprite_colored_show.png
 share/SickRage/gui/slick/images/32px_sprite_colored_add_lists.png
 share/SickRage/gui/slick/images/32px_sprite_colored_clients.png
 share/SickRage/gui/slick/images/32px_sprite_colored_notifiers.png
+share/SickRage/gui/slick/images/Slack_Mark_Web.png
 share/SickRage/gui/slick/images/arrows.png
 share/SickRage/gui/slick/images/banner.png
 share/SickRage/gui/slick/images/bg.gif
@@ -208,15 +216,15 @@ share/SickRage/gui/slick/images/flags/zm.png
 share/SickRage/gui/slick/images/flags/zw.png
 share/SickRage/gui/slick/images/glyphicons-halflings-white.png
 share/SickRage/gui/slick/images/glyphicons-halflings.png
-share/SickRage/gui/slick/images/ico/favicon-114.png
-share/SickRage/gui/slick/images/ico/favicon-120.png
-share/SickRage/gui/slick/images/ico/favicon-144.png
-share/SickRage/gui/slick/images/ico/favicon-150.png
-share/SickRage/gui/slick/images/ico/favicon-152.png
-share/SickRage/gui/slick/images/ico/favicon-16.png
-share/SickRage/gui/slick/images/ico/favicon-160.png
-share/SickRage/gui/slick/images/ico/favicon-196.png
-share/SickRage/gui/slick/images/ico/favicon-310.png
+share/SickRage/gui/slick/images/ico/favicon-${PKGVERSION}${PKGVERSION}4.png
+share/SickRage/gui/slick/images/ico/favicon-${PKGVERSION}20.png
+share/SickRage/gui/slick/images/ico/favicon-${PKGVERSION}44.png
+share/SickRage/gui/slick/images/ico/favicon-${PKGVERSION}50.png
+share/SickRage/gui/slick/images/ico/favicon-${PKGVERSION}52.png
+share/SickRage/gui/slick/images/ico/favicon-${PKGVERSION}6.png
+share/SickRage/gui/slick/images/ico/favicon-${PKGVERSION}60.png
+share/SickRage/gui/slick/images/ico/favicon-${PKGVERSION}96.png
+share/SickRage/gui/slick/images/ico/favicon-3${PKGVERSION}0.png
 share/SickRage/gui/slick/images/ico/favicon-32.png
 share/SickRage/gui/slick/images/ico/favicon-57.png
 share/SickRage/gui/slick/images/ico/favicon-64.png
@@ -225,26 +233,26 @@ share/SickRage/gui/slick/images/ico/favicon-72.png
 share/SickRage/gui/slick/images/ico/favicon-76.png
 share/SickRage/gui/slick/images/ico/favicon-96.png
 share/SickRage/gui/slick/images/ico/favicon.ico
-share/SickRage/gui/slick/images/indexers/thetvdb16.png
-share/SickRage/gui/slick/images/indexers/tvrage16.png
+share/SickRage/gui/slick/images/indexers/thetvdb${PKGVERSION}6.png
+share/SickRage/gui/slick/images/indexers/tvrage${PKGVERSION}6.png
 share/SickRage/gui/slick/images/info32.png
 share/SickRage/gui/slick/images/loading.gif
-share/SickRage/gui/slick/images/loading16-dark.gif
-share/SickRage/gui/slick/images/loading16-light.gif
-share/SickRage/gui/slick/images/loading16.gif
-share/SickRage/gui/slick/images/loading16_333333.gif
-share/SickRage/gui/slick/images/loading16_dddddd.gif
+share/SickRage/gui/slick/images/loading${PKGVERSION}6-dark.gif
+share/SickRage/gui/slick/images/loading${PKGVERSION}6-light.gif
+share/SickRage/gui/slick/images/loading${PKGVERSION}6.gif
+share/SickRage/gui/slick/images/loading${PKGVERSION}6_333333.gif
+share/SickRage/gui/slick/images/loading${PKGVERSION}6_dddddd.gif
 share/SickRage/gui/slick/images/loading32-dark.gif
 share/SickRage/gui/slick/images/loading32.gif
-share/SickRage/gui/slick/images/menu/16px_sprite_colored_menu_icons.png
+share/SickRage/gui/slick/images/menu/${PKGVERSION}6px_sprite_colored_menu_icons.png
 share/SickRage/gui/slick/images/menu/menu-icons-black.png
 share/SickRage/gui/slick/images/menu/menu-icons-white.png
-share/SickRage/gui/slick/images/menu/system18-2.png
-share/SickRage/gui/slick/images/menu/system18.png
+share/SickRage/gui/slick/images/menu/system${PKGVERSION}8-2.png
+share/SickRage/gui/slick/images/menu/system${PKGVERSION}8.png
 share/SickRage/gui/slick/images/minus.png
 share/SickRage/gui/slick/images/network/+globosat.png
-share/SickRage/gui/slick/images/network/13th street.png
-share/SickRage/gui/slick/images/network/1live.png
+share/SickRage/gui/slick/images/network/${PKGVERSION}3th street.png
+share/SickRage/gui/slick/images/network/${PKGVERSION}live.png
 share/SickRage/gui/slick/images/network/2be.png
 share/SickRage/gui/slick/images/network/33.png
 share/SickRage/gui/slick/images/network/3fm.png
@@ -269,7 +277,7 @@ share/SickRage/gui/slick/images/network/abc news.png
 share/SickRage/gui/slick/images/network/abc tv australia.png
 share/SickRage/gui/slick/images/network/abc tv.png
 share/SickRage/gui/slick/images/network/abc.png
-share/SickRage/gui/slick/images/network/abc1.png
+share/SickRage/gui/slick/images/network/abc${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/abc2.png
 share/SickRage/gui/slick/images/network/abc3.png
 share/SickRage/gui/slick/images/network/abu dhabi tv.png
@@ -341,7 +349,7 @@ share/SickRage/gui/slick/images/network/bravo (ca).png
 share/SickRage/gui/slick/images/network/bravo (uk).png
 share/SickRage/gui/slick/images/network/bravo (us).png
 share/SickRage/gui/slick/images/network/bravo.png
-share/SickRage/gui/slick/images/network/bs11.png
+share/SickRage/gui/slick/images/network/bs${PKGVERSION}${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/btv.png
 share/SickRage/gui/slick/images/network/byu television.png
 share/SickRage/gui/slick/images/network/c-span.png
@@ -366,7 +374,7 @@ share/SickRage/gui/slick/images/network/cbs.png
 share/SickRage/gui/slick/images/network/cctv.png
 share/SickRage/gui/slick/images/network/centric.png
 share/SickRage/gui/slick/images/network/challenge.png
-share/SickRage/gui/slick/images/network/channel 101.jpg
+share/SickRage/gui/slick/images/network/channel ${PKGVERSION}0${PKGVERSION}.jpg
 share/SickRage/gui/slick/images/network/channel 4.png
 share/SickRage/gui/slick/images/network/channel 5.png
 share/SickRage/gui/slick/images/network/channel ten.png
@@ -374,6 +382,7 @@ share/SickRage/gui/slick/images/network/chiba tv.png
 share/SickRage/gui/slick/images/network/cinemax.png
 share/SickRage/gui/slick/images/network/city.png
 share/SickRage/gui/slick/images/network/classic arts showcase.png
+share/SickRage/gui/slick/images/network/club illico.png
 share/SickRage/gui/slick/images/network/club rtl.png
 share/SickRage/gui/slick/images/network/cmt.png
 share/SickRage/gui/slick/images/network/cnbc.png
@@ -433,7 +442,7 @@ share/SickRage/gui/slick/images/network/diy network.png
 share/SickRage/gui/slick/images/network/dmax (de).png
 share/SickRage/gui/slick/images/network/dmax hd.png
 share/SickRage/gui/slick/images/network/dmax.png
-share/SickRage/gui/slick/images/network/dr1.png
+share/SickRage/gui/slick/images/network/dr${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/dr2.png
 share/SickRage/gui/slick/images/network/dumont television network.png
 share/SickRage/gui/slick/images/network/e! (ca).png
@@ -454,7 +463,7 @@ share/SickRage/gui/slick/images/network/espn classic.png
 share/SickRage/gui/slick/images/network/espn.png
 share/SickRage/gui/slick/images/network/esquire network.png
 share/SickRage/gui/slick/images/network/euronews.png
-share/SickRage/gui/slick/images/network/eurosport 1.png
+share/SickRage/gui/slick/images/network/eurosport ${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/eurosport 2.png
 share/SickRage/gui/slick/images/network/eurosport hd.png
 share/SickRage/gui/slick/images/network/eurosport.png
@@ -469,7 +478,7 @@ share/SickRage/gui/slick/images/network/fox (us).png
 share/SickRage/gui/slick/images/network/fox business.png
 share/SickRage/gui/slick/images/network/fox channel.png
 share/SickRage/gui/slick/images/network/fox crime.png
-share/SickRage/gui/slick/images/network/fox sports 1.png
+share/SickRage/gui/slick/images/network/fox sports ${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/fox sports.png
 share/SickRage/gui/slick/images/network/fox television classics.png
 share/SickRage/gui/slick/images/network/fox.png
@@ -518,13 +527,14 @@ share/SickRage/gui/slick/images/network/hulu presents.png
 share/SickRage/gui/slick/images/network/hulu.png
 share/SickRage/gui/slick/images/network/ifc.png
 share/SickRage/gui/slick/images/network/ikon.png
-share/SickRage/gui/slick/images/network/im1.png
+share/SickRage/gui/slick/images/network/im${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/internet.png
 share/SickRage/gui/slick/images/network/investigation discovery.png
 share/SickRage/gui/slick/images/network/ion television.png
+share/SickRage/gui/slick/images/network/italia ${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/itv granada.png
 share/SickRage/gui/slick/images/network/itv.png
-share/SickRage/gui/slick/images/network/itv1.png
+share/SickRage/gui/slick/images/network/itv${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/itv2.png
 share/SickRage/gui/slick/images/network/itv3.png
 share/SickRage/gui/slick/images/network/itv4.png
@@ -546,8 +556,9 @@ share/SickRage/gui/slick/images/network/kyoto broadcasting system.png
 share/SickRage/gui/slick/images/network/la deux.png
 share/SickRage/gui/slick/images/network/la trois.png
 share/SickRage/gui/slick/images/network/la une.png
-share/SickRage/gui/slick/images/network/la1.png
+share/SickRage/gui/slick/images/network/la${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/la2.png
+share/SickRage/gui/slick/images/network/la7.png
 share/SickRage/gui/slick/images/network/lasexta.png
 share/SickRage/gui/slick/images/network/lifestyle.png
 share/SickRage/gui/slick/images/network/lifetime uk.png
@@ -560,7 +571,7 @@ share/SickRage/gui/slick/images/network/m6.png
 share/SickRage/gui/slick/images/network/manhattan neighborhood network.png
 share/SickRage/gui/slick/images/network/matv.png
 share/SickRage/gui/slick/images/network/max.png
-share/SickRage/gui/slick/images/network/mbc 1.png
+share/SickRage/gui/slick/images/network/mbc ${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/mbs.png
 share/SickRage/gui/slick/images/network/mdr.png
 share/SickRage/gui/slick/images/network/mgm.png
@@ -592,7 +603,7 @@ share/SickRage/gui/slick/images/network/nbcu tv.png
 share/SickRage/gui/slick/images/network/ncrv.png
 share/SickRage/gui/slick/images/network/ndr hd.png
 share/SickRage/gui/slick/images/network/ndr.png
-share/SickRage/gui/slick/images/network/nederland 1.png
+share/SickRage/gui/slick/images/network/nederland ${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/nederland 2.png
 share/SickRage/gui/slick/images/network/nederland 3.png
 share/SickRage/gui/slick/images/network/neo kika.png
@@ -617,25 +628,26 @@ share/SickRage/gui/slick/images/network/nolife.png
 share/SickRage/gui/slick/images/network/nonetwork.png
 share/SickRage/gui/slick/images/network/nos.png
 share/SickRage/gui/slick/images/network/novatv.png
-share/SickRage/gui/slick/images/network/npo 1.png
+share/SickRage/gui/slick/images/network/npo ${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/npo 2.png
 share/SickRage/gui/slick/images/network/npo 3.png
 share/SickRage/gui/slick/images/network/nps.png
 share/SickRage/gui/slick/images/network/nrk.png
-share/SickRage/gui/slick/images/network/nrk1.png
+share/SickRage/gui/slick/images/network/nrk${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/ntr.png
+share/SickRage/gui/slick/images/network/ntv (jp).png
 share/SickRage/gui/slick/images/network/ntv.png
 share/SickRage/gui/slick/images/network/oasis hd.png
 share/SickRage/gui/slick/images/network/ocs.png
 share/SickRage/gui/slick/images/network/omroep brabant.png
 share/SickRage/gui/slick/images/network/omroep max.png
 share/SickRage/gui/slick/images/network/oprah winfrey network.png
-share/SickRage/gui/slick/images/network/orf 1.png
+share/SickRage/gui/slick/images/network/orf ${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/orf 2.png
 share/SickRage/gui/slick/images/network/orf eins.png
 share/SickRage/gui/slick/images/network/orf iii.png
 share/SickRage/gui/slick/images/network/orf.png
-share/SickRage/gui/slick/images/network/orf1 hd.png
+share/SickRage/gui/slick/images/network/orf${PKGVERSION} hd.png
 share/SickRage/gui/slick/images/network/own.png
 share/SickRage/gui/slick/images/network/oxygen.png
 share/SickRage/gui/slick/images/network/pay-per-view.png
@@ -662,6 +674,11 @@ share/SickRage/gui/slick/images/network/radio bremen.png
 share/SickRage/gui/slick/images/network/radio canada.png
 share/SickRage/gui/slick/images/network/radio west.png
 share/SickRage/gui/slick/images/network/radio-canada.png
+share/SickRage/gui/slick/images/network/rai ${PKGVERSION}.png
+share/SickRage/gui/slick/images/network/rai 2.png
+share/SickRage/gui/slick/images/network/rai 3.png
+share/SickRage/gui/slick/images/network/rai 4.png
+share/SickRage/gui/slick/images/network/rai gulp.png
 share/SickRage/gui/slick/images/network/rai.png
 share/SickRage/gui/slick/images/network/rbb.png
 share/SickRage/gui/slick/images/network/rctv.png
@@ -671,6 +688,7 @@ share/SickRage/gui/slick/images/network/rede bandeirantes.png
 share/SickRage/gui/slick/images/network/rede globo.png
 share/SickRage/gui/slick/images/network/reelzchannel.png
 share/SickRage/gui/slick/images/network/regio tv.png
+share/SickRage/gui/slick/images/network/rete 4.png
 share/SickRage/gui/slick/images/network/revision3.png
 share/SickRage/gui/slick/images/network/rmc decouverte.png
 share/SickRage/gui/slick/images/network/rooster teeth.png
@@ -701,14 +719,14 @@ share/SickRage/gui/slick/images/network/rtl8.png
 share/SickRage/gui/slick/images/network/rtp internacional.png
 share/SickRage/gui/slick/images/network/rtp madeira.png
 share/SickRage/gui/slick/images/network/rtp n.png
-share/SickRage/gui/slick/images/network/rtp1.png
+share/SickRage/gui/slick/images/network/rtp${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/rvu.png
 share/SickRage/gui/slick/images/network/s4/c.png
-share/SickRage/gui/slick/images/network/sat.1 emotions.png
-share/SickRage/gui/slick/images/network/sat.1 gold.png
-share/SickRage/gui/slick/images/network/sat.1 hd.png
-share/SickRage/gui/slick/images/network/sat.1.png
-share/SickRage/gui/slick/images/network/sat1.png
+share/SickRage/gui/slick/images/network/sat.${PKGVERSION} emotions.png
+share/SickRage/gui/slick/images/network/sat.${PKGVERSION} gold.png
+share/SickRage/gui/slick/images/network/sat.${PKGVERSION} hd.png
+share/SickRage/gui/slick/images/network/sat.${PKGVERSION}.png
+share/SickRage/gui/slick/images/network/sat${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/sbs (au).png
 share/SickRage/gui/slick/images/network/sbs 6.png
 share/SickRage/gui/slick/images/network/sbs 9.png
@@ -744,7 +762,7 @@ share/SickRage/gui/slick/images/network/sky atlantic.png
 share/SickRage/gui/slick/images/network/sky bundesliga.png
 share/SickRage/gui/slick/images/network/sky cinema (it).png
 share/SickRage/gui/slick/images/network/sky cinema (uk).png
-share/SickRage/gui/slick/images/network/sky cinema +1.png
+share/SickRage/gui/slick/images/network/sky cinema +${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/sky cinema +24.png
 share/SickRage/gui/slick/images/network/sky cinema.png
 share/SickRage/gui/slick/images/network/sky comedy.png
@@ -756,11 +774,11 @@ share/SickRage/gui/slick/images/network/sky select.png
 share/SickRage/gui/slick/images/network/sky sport austria.png
 share/SickRage/gui/slick/images/network/sky sport news hd.png
 share/SickRage/gui/slick/images/network/sky sport news.png
-share/SickRage/gui/slick/images/network/sky sport1.png
+share/SickRage/gui/slick/images/network/sky sport${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/sky sport2.png
 share/SickRage/gui/slick/images/network/sky sports.png
 share/SickRage/gui/slick/images/network/sky.png
-share/SickRage/gui/slick/images/network/sky1.png
+share/SickRage/gui/slick/images/network/sky${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/smithsonian channel.png
 share/SickRage/gui/slick/images/network/soho.png
 share/SickRage/gui/slick/images/network/sony entertainment television.png
@@ -770,8 +788,8 @@ share/SickRage/gui/slick/images/network/speed.png
 share/SickRage/gui/slick/images/network/spiegel geschichte.png
 share/SickRage/gui/slick/images/network/spike tv.png
 share/SickRage/gui/slick/images/network/spike.png
-share/SickRage/gui/slick/images/network/sport1 hd.png
-share/SickRage/gui/slick/images/network/sport1.png
+share/SickRage/gui/slick/images/network/sport${PKGVERSION} hd.png
+share/SickRage/gui/slick/images/network/sport${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/sportsman channel.png
 share/SickRage/gui/slick/images/network/sr.png
 share/SickRage/gui/slick/images/network/src.png
@@ -798,7 +816,7 @@ share/SickRage/gui/slick/images/network/super rtl.png
 share/SickRage/gui/slick/images/network/sveriges television.png
 share/SickRage/gui/slick/images/network/svt drama.png
 share/SickRage/gui/slick/images/network/svt.png
-share/SickRage/gui/slick/images/network/svt1.png
+share/SickRage/gui/slick/images/network/svt${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/svt2.png
 share/SickRage/gui/slick/images/network/swr hd.png
 share/SickRage/gui/slick/images/network/swr.png
@@ -815,7 +833,7 @@ share/SickRage/gui/slick/images/network/tele-quebec.png
 share/SickRage/gui/slick/images/network/telecinco.png
 share/SickRage/gui/slick/images/network/teletama.png
 share/SickRage/gui/slick/images/network/teletoon.png
-share/SickRage/gui/slick/images/network/tf1.png
+share/SickRage/gui/slick/images/network/tf${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/thames television.png
 share/SickRage/gui/slick/images/network/the anime network.png
 share/SickRage/gui/slick/images/network/the cw.png
@@ -830,6 +848,7 @@ share/SickRage/gui/slick/images/network/thecw.png
 share/SickRage/gui/slick/images/network/thewb.png
 share/SickRage/gui/slick/images/network/tlc.png
 share/SickRage/gui/slick/images/network/tmf.png
+share/SickRage/gui/slick/images/network/tnt (us).png
 share/SickRage/gui/slick/images/network/tnt drama.png
 share/SickRage/gui/slick/images/network/tnt glitz.png
 share/SickRage/gui/slick/images/network/tnt serie.png
@@ -864,7 +883,7 @@ share/SickRage/gui/slick/images/network/tv one nz.png
 share/SickRage/gui/slick/images/network/tv saitama.png
 share/SickRage/gui/slick/images/network/tv tokyo.png
 share/SickRage/gui/slick/images/network/tv west.png
-share/SickRage/gui/slick/images/network/tv1.png
+share/SickRage/gui/slick/images/network/tv${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/tv2.png
 share/SickRage/gui/slick/images/network/tv3 (no).png
 share/SickRage/gui/slick/images/network/tv3, norway.png
@@ -877,7 +896,7 @@ share/SickRage/gui/slick/images/network/tv7.png
 share/SickRage/gui/slick/images/network/tva.png
 share/SickRage/gui/slick/images/network/tvb.png
 share/SickRage/gui/slick/images/network/tve.png
-share/SickRage/gui/slick/images/network/tve1.png
+share/SickRage/gui/slick/images/network/tve${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/tve2.png
 share/SickRage/gui/slick/images/network/tvg network.png
 share/SickRage/gui/slick/images/network/tvi.png
@@ -887,7 +906,7 @@ share/SickRage/gui/slick/images/network/tvnorge.png
 share/SickRage/gui/slick/images/network/tvnz.png
 share/SickRage/gui/slick/images/network/tvo.png
 share/SickRage/gui/slick/images/network/tvp sa.png
-share/SickRage/gui/slick/images/network/tvp1.png
+share/SickRage/gui/slick/images/network/tvp${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/tvp2.png
 share/SickRage/gui/slick/images/network/uktv history.png
 share/SickRage/gui/slick/images/network/uktv yesterday.png
@@ -903,8 +922,8 @@ share/SickRage/gui/slick/images/network/v.png
 share/SickRage/gui/slick/images/network/vara.png
 share/SickRage/gui/slick/images/network/velocity.png
 share/SickRage/gui/slick/images/network/veronica.png
-share/SickRage/gui/slick/images/network/vh1 classics.png
-share/SickRage/gui/slick/images/network/vh1.png
+share/SickRage/gui/slick/images/network/vh${PKGVERSION} classics.png
+share/SickRage/gui/slick/images/network/vh${PKGVERSION}.png
 share/SickRage/gui/slick/images/network/viceland.png
 share/SickRage/gui/slick/images/network/vier.png
 share/SickRage/gui/slick/images/network/vijftv.jpg
@@ -945,7 +964,7 @@ share/SickRage/gui/slick/images/network/zdfneo hd.png
 share/SickRage/gui/slick/images/network/zdfneo.png
 share/SickRage/gui/slick/images/nfo-no.gif
 share/SickRage/gui/slick/images/nfo.gif
-share/SickRage/gui/slick/images/no16.png
+share/SickRage/gui/slick/images/no${PKGVERSION}6.png
 share/SickRage/gui/slick/images/plus.png
 share/SickRage/gui/slick/images/poster-dark.jpg
 share/SickRage/gui/slick/images/poster.png
@@ -994,6 +1013,7 @@ share/SickRage/gui/slick/images/providers/hd4free.png
 share/SickRage/gui/slick/images/providers/hdbits.png
 share/SickRage/gui/slick/images/providers/hdspace.png
 share/SickRage/gui/slick/images/providers/hdtorrents.png
+share/SickRage/gui/slick/images/providers/horriblesubs.png
 share/SickRage/gui/slick/images/providers/hounddawgs.png
 share/SickRage/gui/slick/images/providers/ilovetorrents.png
 share/SickRage/gui/slick/images/providers/iptorrents.png
@@ -1071,12 +1091,13 @@ share/SickRage/gui/slick/images/providers/speedcd.png
 share/SickRage/gui/slick/images/providers/spotweb.png
 share/SickRage/gui/slick/images/providers/spotweb_be.png
 share/SickRage/gui/slick/images/providers/strike.png
-share/SickRage/gui/slick/images/providers/t411.png
+share/SickRage/gui/slick/images/providers/t4${PKGVERSION}${PKGVERSION}.png
 share/SickRage/gui/slick/images/providers/thepiratebay.png
 share/SickRage/gui/slick/images/providers/thepiratebay_.png
 share/SickRage/gui/slick/images/providers/titansoftv.png
 share/SickRage/gui/slick/images/providers/tntvillage.png
 share/SickRage/gui/slick/images/providers/tokyotoshokan.png
+share/SickRage/gui/slick/images/providers/torrent9.png
 share/SickRage/gui/slick/images/providers/torrentbytes.png
 share/SickRage/gui/slick/images/providers/torrentday.png
 share/SickRage/gui/slick/images/providers/torrentleech.png
@@ -1269,9 +1290,8 @@ share/SickRage/gui/slick/images/tag.png
 share/SickRage/gui/slick/images/tbn-no.gif
 share/SickRage/gui/slick/images/tbn.gif
 share/SickRage/gui/slick/images/top.gif
-share/SickRage/gui/slick/images/warning16.png
-share/SickRage/gui/slick/images/yes16.png
-share/SickRage/gui/slick/js/addShowOptions.js
+share/SickRage/gui/slick/images/warning${PKGVERSION}6.png
+share/SickRage/gui/slick/images/yes${PKGVERSION}6.png
 share/SickRage/gui/slick/js/ajaxEpSearch.js
 share/SickRage/gui/slick/js/ajaxEpSubtitles.js
 share/SickRage/gui/slick/js/ajaxNotifications.js
@@ -1287,7 +1307,7 @@ share/SickRage/gui/slick/js/lib/jquery.bookmarkscroll.js
 share/SickRage/gui/slick/js/lib/jquery.cookiejar.js
 share/SickRage/gui/slick/js/lib/jquery.form.min.js
 share/SickRage/gui/slick/js/lib/jquery.json-2.2.min.js
-share/SickRage/gui/slick/js/lib/jquery.scrolltopcontrol-1.1.js
+share/SickRage/gui/slick/js/lib/jquery.scrolltopcontrol-${PKGVERSION}.${PKGVERSION}.js
 share/SickRage/gui/slick/js/lib/jquery.selectboxes.min.js
 share/SickRage/gui/slick/js/massEdit.js
 share/SickRage/gui/slick/js/massUpdate.js
@@ -1374,9 +1394,9 @@ share/SickRage/lib/babelfish/converters/scope.py
 share/SickRage/lib/babelfish/converters/type.py
 share/SickRage/lib/babelfish/country.py
 share/SickRage/lib/babelfish/data/get_files.py
-share/SickRage/lib/babelfish/data/iso-3166-1.txt
+share/SickRage/lib/babelfish/data/iso-3${PKGVERSION}66-${PKGVERSION}.txt
 share/SickRage/lib/babelfish/data/iso-639-3.tab
-share/SickRage/lib/babelfish/data/iso15924-utf8-20131012.txt
+share/SickRage/lib/babelfish/data/iso${PKGVERSION}5924-utf8-20${PKGVERSION}3${PKGVERSION}0${PKGVERSION}2.txt
 share/SickRage/lib/babelfish/data/opensubtitles_languages.txt
 share/SickRage/lib/babelfish/exceptions.py
 share/SickRage/lib/babelfish/language.py
@@ -1386,6 +1406,7 @@ share/SickRage/lib/backports/__init__.py
 share/SickRage/lib/backports/ssl_match_hostname/LICENSE.txt
 share/SickRage/lib/backports/ssl_match_hostname/README.txt
 share/SickRage/lib/backports/ssl_match_hostname/__init__.py
+share/SickRage/lib/backports_abc.py
 share/SickRage/lib/bencode/BTL.py
 share/SickRage/lib/bencode/__init__.py
 share/SickRage/lib/bs4/__init__.py
@@ -1424,6 +1445,7 @@ share/SickRage/lib/certifi/cacert.pem
 share/SickRage/lib/certifi/core.py
 share/SickRage/lib/certifi/old_root.pem
 share/SickRage/lib/certifi/weak.pem
+share/SickRage/lib/cfscrape/__init__.py
 share/SickRage/lib/chardet/__init__.py
 share/SickRage/lib/chardet/big5freq.py
 share/SickRage/lib/chardet/big5prober.py
@@ -1443,8 +1465,8 @@ share/SickRage/lib/chardet/euckrfreq.py
 share/SickRage/lib/chardet/euckrprober.py
 share/SickRage/lib/chardet/euctwfreq.py
 share/SickRage/lib/chardet/euctwprober.py
-share/SickRage/lib/chardet/gb2312freq.py
-share/SickRage/lib/chardet/gb2312prober.py
+share/SickRage/lib/chardet/gb23${PKGVERSION}2freq.py
+share/SickRage/lib/chardet/gb23${PKGVERSION}2prober.py
 share/SickRage/lib/chardet/hebrewprober.py
 share/SickRage/lib/chardet/jisfreq.py
 share/SickRage/lib/chardet/jpcntx.py
@@ -1455,7 +1477,7 @@ share/SickRage/lib/chardet/langhebrewmodel.py
 share/SickRage/lib/chardet/langhungarianmodel.py
 share/SickRage/lib/chardet/langthaimodel.py
 share/SickRage/lib/chardet/langturkishmodel.py
-share/SickRage/lib/chardet/latin1prober.py
+share/SickRage/lib/chardet/latin${PKGVERSION}prober.py
 share/SickRage/lib/chardet/mbcharsetprober.py
 share/SickRage/lib/chardet/mbcsgroupprober.py
 share/SickRage/lib/chardet/mbcssm.py
@@ -1532,7 +1554,7 @@ share/SickRage/lib/enzyme/parsers/ebml/core.py
 share/SickRage/lib/enzyme/parsers/ebml/readers.py
 share/SickRage/lib/enzyme/parsers/ebml/specs/matroska.xml
 share/SickRage/lib/enzyme/tests/__init__.py
-share/SickRage/lib/enzyme/tests/parsers/ebml/test1.mkv.yml
+share/SickRage/lib/enzyme/tests/parsers/ebml/test${PKGVERSION}.mkv.yml
 share/SickRage/lib/enzyme/tests/test_mkv.py
 share/SickRage/lib/enzyme/tests/test_parsers.py
 share/SickRage/lib/fake_useragent/__init__.py
@@ -1552,7 +1574,7 @@ share/SickRage/lib/fanart/tests/json/wilfred.json
 share/SickRage/lib/fanart/tests/response/50x50.png
 share/SickRage/lib/fanart/tests/response/movie_thg.json
 share/SickRage/lib/fanart/tests/response/music_a7f.json
-share/SickRage/lib/fanart/tests/response/tv_239761.json
+share/SickRage/lib/fanart/tests/response/tv_23976${PKGVERSION}.json
 share/SickRage/lib/fanart/tests/response/tv_79349.json
 share/SickRage/lib/fanart/tests/test_core.py
 share/SickRage/lib/fanart/tests/test_immutable.py
@@ -1567,7 +1589,7 @@ share/SickRage/lib/feedparser/datetimes/__init__.py
 share/SickRage/lib/feedparser/datetimes/asctime.py
 share/SickRage/lib/feedparser/datetimes/greek.py
 share/SickRage/lib/feedparser/datetimes/hungarian.py
-share/SickRage/lib/feedparser/datetimes/iso8601.py
+share/SickRage/lib/feedparser/datetimes/iso860${PKGVERSION}.py
 share/SickRage/lib/feedparser/datetimes/korean.py
 share/SickRage/lib/feedparser/datetimes/perforce.py
 share/SickRage/lib/feedparser/datetimes/rfc822.py
@@ -1733,6 +1755,7 @@ share/SickRage/lib/guessit/test/rules/video_codec.yml
 share/SickRage/lib/guessit/test/rules/website.yml
 share/SickRage/lib/guessit/test/test-input-file.txt
 share/SickRage/lib/guessit/test/test_api.py
+share/SickRage/lib/guessit/test/test_api_unicode_literals.py
 share/SickRage/lib/guessit/test/test_benchmark.py
 share/SickRage/lib/guessit/test/test_main.py
 share/SickRage/lib/guessit/test/test_yml.py
@@ -1772,7 +1795,7 @@ share/SickRage/lib/hachoir_core/field/string_field.py
 share/SickRage/lib/hachoir_core/field/sub_file.py
 share/SickRage/lib/hachoir_core/field/timestamp.py
 share/SickRage/lib/hachoir_core/field/vector.py
-share/SickRage/lib/hachoir_core/i18n.py
+share/SickRage/lib/hachoir_core/i${PKGVERSION}8n.py
 share/SickRage/lib/hachoir_core/iso639.py
 share/SickRage/lib/hachoir_core/language.py
 share/SickRage/lib/hachoir_core/log.py
@@ -1846,7 +1869,7 @@ share/SickRage/lib/hachoir_parser/common/win32.py
 share/SickRage/lib/hachoir_parser/common/win32_lang_id.py
 share/SickRage/lib/hachoir_parser/container/__init__.py
 share/SickRage/lib/hachoir_parser/container/action_script.py
-share/SickRage/lib/hachoir_parser/container/asn1.py
+share/SickRage/lib/hachoir_parser/container/asn${PKGVERSION}.py
 share/SickRage/lib/hachoir_parser/container/mkv.py
 share/SickRage/lib/hachoir_parser/container/ogg.py
 share/SickRage/lib/hachoir_parser/container/realmedia.py
@@ -2026,6 +2049,63 @@ share/SickRage/lib/imdb/parser/sql/cutils.c
 share/SickRage/lib/imdb/parser/sql/dbschema.py
 share/SickRage/lib/imdb/parser/sql/objectadapter.py
 share/SickRage/lib/imdb/utils.py
+share/SickRage/lib/js2py/__init__.py
+share/SickRage/lib/js2py/base.py
+share/SickRage/lib/js2py/constructors/__init__.py
+share/SickRage/lib/js2py/constructors/jsarray.py
+share/SickRage/lib/js2py/constructors/jsboolean.py
+share/SickRage/lib/js2py/constructors/jsdate.py
+share/SickRage/lib/js2py/constructors/jsfunction.py
+share/SickRage/lib/js2py/constructors/jsmath.py
+share/SickRage/lib/js2py/constructors/jsnumber.py
+share/SickRage/lib/js2py/constructors/jsobject.py
+share/SickRage/lib/js2py/constructors/jsregexp.py
+share/SickRage/lib/js2py/constructors/jsstring.py
+share/SickRage/lib/js2py/constructors/time_helpers.py
+share/SickRage/lib/js2py/evaljs.py
+share/SickRage/lib/js2py/host/__init__.py
+share/SickRage/lib/js2py/host/console.py
+share/SickRage/lib/js2py/host/dom/__init__.py
+share/SickRage/lib/js2py/host/dom/constants.py
+share/SickRage/lib/js2py/host/dom/interface.py
+share/SickRage/lib/js2py/host/jseval.py
+share/SickRage/lib/js2py/host/jsfunctions.py
+share/SickRage/lib/js2py/legecy_translators/__init__.py
+share/SickRage/lib/js2py/legecy_translators/constants.py
+share/SickRage/lib/js2py/legecy_translators/exps.py
+share/SickRage/lib/js2py/legecy_translators/flow.py
+share/SickRage/lib/js2py/legecy_translators/functions.py
+share/SickRage/lib/js2py/legecy_translators/jsparser.py
+share/SickRage/lib/js2py/legecy_translators/nodevisitor.py
+share/SickRage/lib/js2py/legecy_translators/nparser.py
+share/SickRage/lib/js2py/legecy_translators/objects.py
+share/SickRage/lib/js2py/legecy_translators/tokenize.py
+share/SickRage/lib/js2py/legecy_translators/translator.py
+share/SickRage/lib/js2py/legecy_translators/utils.py
+share/SickRage/lib/js2py/prototypes/__init__.py
+share/SickRage/lib/js2py/prototypes/jsarray.py
+share/SickRage/lib/js2py/prototypes/jsboolean.py
+share/SickRage/lib/js2py/prototypes/jserror.py
+share/SickRage/lib/js2py/prototypes/jsfunction.py
+share/SickRage/lib/js2py/prototypes/jsjson.py
+share/SickRage/lib/js2py/prototypes/jsnumber.py
+share/SickRage/lib/js2py/prototypes/jsobject.py
+share/SickRage/lib/js2py/prototypes/jsregexp.py
+share/SickRage/lib/js2py/prototypes/jsstring.py
+share/SickRage/lib/js2py/pyjs.py
+share/SickRage/lib/js2py/todo
+share/SickRage/lib/js2py/translators/__init__.py
+share/SickRage/lib/js2py/translators/friendly_nodes.py
+share/SickRage/lib/js2py/translators/jsregexps.py
+share/SickRage/lib/js2py/translators/markdown.js
+share/SickRage/lib/js2py/translators/pyjsparser.py
+share/SickRage/lib/js2py/translators/pyjsparserdata.py
+share/SickRage/lib/js2py/translators/std_nodes.py
+share/SickRage/lib/js2py/translators/translating_nodes.py
+share/SickRage/lib/js2py/translators/translator.py
+share/SickRage/lib/js2py/utils/__init__.py
+share/SickRage/lib/js2py/utils/definitions.py
+share/SickRage/lib/js2py/utils/injector.py
 share/SickRage/lib/jsonrpclib/SimpleJSONRPCServer.py
 share/SickRage/lib/jsonrpclib/__init__.py
 share/SickRage/lib/jsonrpclib/config.py
@@ -2094,42 +2174,149 @@ share/SickRage/lib/ndg/httpsclient/test/test_urllib2.py
 share/SickRage/lib/ndg/httpsclient/test/test_utils.py
 share/SickRage/lib/ndg/httpsclient/urllib2_build_opener.py
 share/SickRage/lib/ndg/httpsclient/utils.py
-share/SickRage/lib/network_timezones/.gitignore
-share/SickRage/lib/network_timezones/README.md
-share/SickRage/lib/network_timezones/network_timezones.txt
-share/SickRage/lib/network_timezones/zoneinfo-2015g.tar.gz
-share/SickRage/lib/network_timezones/zoneinfo.txt
 share/SickRage/lib/oauth2/__init__.py
+share/SickRage/lib/pgi/__init__.py
+share/SickRage/lib/pgi/_compat.py
+share/SickRage/lib/pgi/callback.py
+share/SickRage/lib/pgi/cffilib/README
+share/SickRage/lib/pgi/cffilib/__init__.py
+share/SickRage/lib/pgi/cffilib/_compat.py
+share/SickRage/lib/pgi/cffilib/_utils.py
+share/SickRage/lib/pgi/cffilib/gir/__init__.py
+share/SickRage/lib/pgi/cffilib/gir/_cdef.py
+share/SickRage/lib/pgi/cffilib/gir/_ffi.py
+share/SickRage/lib/pgi/cffilib/gir/error.py
+share/SickRage/lib/pgi/cffilib/gir/giarginfo.py
+share/SickRage/lib/pgi/cffilib/gir/giargument.py
+share/SickRage/lib/pgi/cffilib/gir/gibaseinfo.py
+share/SickRage/lib/pgi/cffilib/gir/gicallableinfo.py
+share/SickRage/lib/pgi/cffilib/gir/giconstantinfo.py
+share/SickRage/lib/pgi/cffilib/gir/gienuminfo.py
+share/SickRage/lib/pgi/cffilib/gir/gifieldinfo.py
+share/SickRage/lib/pgi/cffilib/gir/gifunctioninfo.py
+share/SickRage/lib/pgi/cffilib/gir/giinterfaceinfo.py
+share/SickRage/lib/pgi/cffilib/gir/giobjectinfo.py
+share/SickRage/lib/pgi/cffilib/gir/gipropertyinfo.py
+share/SickRage/lib/pgi/cffilib/gir/giregisteredtypeinfo.py
+share/SickRage/lib/pgi/cffilib/gir/girepository.py
+share/SickRage/lib/pgi/cffilib/gir/gisignalinfo.py
+share/SickRage/lib/pgi/cffilib/gir/gistructinfo.py
+share/SickRage/lib/pgi/cffilib/gir/gitypeinfo.py
+share/SickRage/lib/pgi/cffilib/gir/gitypelib.py
+share/SickRage/lib/pgi/cffilib/gir/giunioninfo.py
+share/SickRage/lib/pgi/cffilib/glib/__init__.py
+share/SickRage/lib/pgi/cffilib/glib/_cdef.py
+share/SickRage/lib/pgi/cffilib/glib/glib.py
+share/SickRage/lib/pgi/cffilib/gobject/__init__.py
+share/SickRage/lib/pgi/cffilib/gobject/_cdef.py
+share/SickRage/lib/pgi/cffilib/gobject/_ffi.py
+share/SickRage/lib/pgi/cffilib/gobject/gobject.py
+share/SickRage/lib/pgi/clib/__init__.py
+share/SickRage/lib/pgi/clib/_compat.py
+share/SickRage/lib/pgi/clib/_utils.py
+share/SickRage/lib/pgi/clib/gir/__init__.py
+share/SickRage/lib/pgi/clib/gir/error.py
+share/SickRage/lib/pgi/clib/gir/giarginfo.py
+share/SickRage/lib/pgi/clib/gir/giargument.py
+share/SickRage/lib/pgi/clib/gir/gibaseinfo.py
+share/SickRage/lib/pgi/clib/gir/gicallableinfo.py
+share/SickRage/lib/pgi/clib/gir/giconstantinfo.py
+share/SickRage/lib/pgi/clib/gir/gienuminfo.py
+share/SickRage/lib/pgi/clib/gir/gifieldinfo.py
+share/SickRage/lib/pgi/clib/gir/giinterfaceinfo.py
+share/SickRage/lib/pgi/clib/gir/giobjectinfo.py
+share/SickRage/lib/pgi/clib/gir/gipropertyinfo.py
+share/SickRage/lib/pgi/clib/gir/giregisteredtypeinfo.py
+share/SickRage/lib/pgi/clib/gir/girepository.py
+share/SickRage/lib/pgi/clib/gir/gistructinfo.py
+share/SickRage/lib/pgi/clib/gir/gitypeinfo.py
+share/SickRage/lib/pgi/clib/gir/gitypelib.py
+share/SickRage/lib/pgi/clib/gir/giunioninfo.py
+share/SickRage/lib/pgi/clib/glib.py
+share/SickRage/lib/pgi/clib/gobject.py
+share/SickRage/lib/pgi/codegen/__init__.py
+share/SickRage/lib/pgi/codegen/arguments.py
+share/SickRage/lib/pgi/codegen/backend.py
+share/SickRage/lib/pgi/codegen/cbargs.py
+share/SickRage/lib/pgi/codegen/cbreturn.py
+share/SickRage/lib/pgi/codegen/cffi_backend.py
+share/SickRage/lib/pgi/codegen/construct.py
+share/SickRage/lib/pgi/codegen/ctypes_backend/__init__.py
+share/SickRage/lib/pgi/codegen/ctypes_backend/main.py
+share/SickRage/lib/pgi/codegen/ctypes_backend/types_basic.py
+share/SickRage/lib/pgi/codegen/ctypes_backend/types_container.py
+share/SickRage/lib/pgi/codegen/ctypes_backend/types_interface.py
+share/SickRage/lib/pgi/codegen/ctypes_backend/types_other.py
+share/SickRage/lib/pgi/codegen/ctypes_backend/utils.py
+share/SickRage/lib/pgi/codegen/fieldgen.py
+share/SickRage/lib/pgi/codegen/fields.py
+share/SickRage/lib/pgi/codegen/funcgen.py
+share/SickRage/lib/pgi/codegen/null_backend.py
+share/SickRage/lib/pgi/codegen/returnvalues.py
+share/SickRage/lib/pgi/codegen/siggen.py
+share/SickRage/lib/pgi/codegen/utils.py
+share/SickRage/lib/pgi/const.py
+share/SickRage/lib/pgi/constant.py
+share/SickRage/lib/pgi/debug.py
+share/SickRage/lib/pgi/enum.py
+share/SickRage/lib/pgi/field.py
+share/SickRage/lib/pgi/finalizer.py
+share/SickRage/lib/pgi/foreign/__init__.py
+share/SickRage/lib/pgi/foreign/_base.py
+share/SickRage/lib/pgi/foreign/cairo.py
+share/SickRage/lib/pgi/function.py
+share/SickRage/lib/pgi/gerror.py
+share/SickRage/lib/pgi/gtype.py
+share/SickRage/lib/pgi/importer.py
+share/SickRage/lib/pgi/module.py
+share/SickRage/lib/pgi/obj.py
+share/SickRage/lib/pgi/overrides/GLib.py
+share/SickRage/lib/pgi/overrides/GObject.py
+share/SickRage/lib/pgi/overrides/Gdk.py
+share/SickRage/lib/pgi/overrides/Gio.py
+share/SickRage/lib/pgi/overrides/Gtk.py
+share/SickRage/lib/pgi/overrides/Pango.py
+share/SickRage/lib/pgi/overrides/Poppler.py
+share/SickRage/lib/pgi/overrides/__init__.py
+share/SickRage/lib/pgi/overrides/keysyms.py
+share/SickRage/lib/pgi/properties.py
+share/SickRage/lib/pgi/propertyhelper.py
+share/SickRage/lib/pgi/repository/__init__.py
+share/SickRage/lib/pgi/signalhelper.py
+share/SickRage/lib/pgi/signals.py
+share/SickRage/lib/pgi/static.py
+share/SickRage/lib/pgi/structure.py
+share/SickRage/lib/pgi/util.py
 share/SickRage/lib/pkg_resources.py
 share/SickRage/lib/profilehooks.py
-share/SickRage/lib/pyasn1/LICENSE
-share/SickRage/lib/pyasn1/__init__.py
-share/SickRage/lib/pyasn1/codec/__init__.py
-share/SickRage/lib/pyasn1/codec/ber/__init__.py
-share/SickRage/lib/pyasn1/codec/ber/decoder.py
-share/SickRage/lib/pyasn1/codec/ber/encoder.py
-share/SickRage/lib/pyasn1/codec/ber/eoo.py
-share/SickRage/lib/pyasn1/codec/cer/__init__.py
-share/SickRage/lib/pyasn1/codec/cer/decoder.py
-share/SickRage/lib/pyasn1/codec/cer/encoder.py
-share/SickRage/lib/pyasn1/codec/der/__init__.py
-share/SickRage/lib/pyasn1/codec/der/decoder.py
-share/SickRage/lib/pyasn1/codec/der/encoder.py
-share/SickRage/lib/pyasn1/compat/__init__.py
-share/SickRage/lib/pyasn1/compat/octets.py
-share/SickRage/lib/pyasn1/debug.py
-share/SickRage/lib/pyasn1/error.py
-share/SickRage/lib/pyasn1/type/__init__.py
-share/SickRage/lib/pyasn1/type/base.py
-share/SickRage/lib/pyasn1/type/char.py
-share/SickRage/lib/pyasn1/type/constraint.py
-share/SickRage/lib/pyasn1/type/error.py
-share/SickRage/lib/pyasn1/type/namedtype.py
-share/SickRage/lib/pyasn1/type/namedval.py
-share/SickRage/lib/pyasn1/type/tag.py
-share/SickRage/lib/pyasn1/type/tagmap.py
-share/SickRage/lib/pyasn1/type/univ.py
-share/SickRage/lib/pyasn1/type/useful.py
+share/SickRage/lib/pyasn${PKGVERSION}/LICENSE
+share/SickRage/lib/pyasn${PKGVERSION}/__init__.py
+share/SickRage/lib/pyasn${PKGVERSION}/codec/__init__.py
+share/SickRage/lib/pyasn${PKGVERSION}/codec/ber/__init__.py
+share/SickRage/lib/pyasn${PKGVERSION}/codec/ber/decoder.py
+share/SickRage/lib/pyasn${PKGVERSION}/codec/ber/encoder.py
+share/SickRage/lib/pyasn${PKGVERSION}/codec/ber/eoo.py
+share/SickRage/lib/pyasn${PKGVERSION}/codec/cer/__init__.py
+share/SickRage/lib/pyasn${PKGVERSION}/codec/cer/decoder.py
+share/SickRage/lib/pyasn${PKGVERSION}/codec/cer/encoder.py
+share/SickRage/lib/pyasn${PKGVERSION}/codec/der/__init__.py
+share/SickRage/lib/pyasn${PKGVERSION}/codec/der/decoder.py
+share/SickRage/lib/pyasn${PKGVERSION}/codec/der/encoder.py
+share/SickRage/lib/pyasn${PKGVERSION}/compat/__init__.py
+share/SickRage/lib/pyasn${PKGVERSION}/compat/octets.py
+share/SickRage/lib/pyasn${PKGVERSION}/debug.py
+share/SickRage/lib/pyasn${PKGVERSION}/error.py
+share/SickRage/lib/pyasn${PKGVERSION}/type/__init__.py
+share/SickRage/lib/pyasn${PKGVERSION}/type/base.py
+share/SickRage/lib/pyasn${PKGVERSION}/type/char.py
+share/SickRage/lib/pyasn${PKGVERSION}/type/constraint.py
+share/SickRage/lib/pyasn${PKGVERSION}/type/error.py
+share/SickRage/lib/pyasn${PKGVERSION}/type/namedtype.py
+share/SickRage/lib/pyasn${PKGVERSION}/type/namedval.py
+share/SickRage/lib/pyasn${PKGVERSION}/type/tag.py
+share/SickRage/lib/pyasn${PKGVERSION}/type/tagmap.py
+share/SickRage/lib/pyasn${PKGVERSION}/type/univ.py
+share/SickRage/lib/pyasn${PKGVERSION}/type/useful.py
 share/SickRage/lib/pymediainfo-2.0-py2.7.egg
 share/SickRage/lib/pynma/__init__.py
 share/SickRage/lib/pynma/pynma.py
@@ -2143,7 +2330,7 @@ share/SickRage/lib/pysrt/srtitem.py
 share/SickRage/lib/pysrt/srttime.py
 share/SickRage/lib/pysrt/version.py
 share/SickRage/lib/pythontwitter/__init__.py
-share/SickRage/lib/pytz-2016.4-py2.7.egg
+share/SickRage/lib/pytz-20${PKGVERSION}6.4-py2.7.egg
 share/SickRage/lib/rarfile/__init__.py
 share/SickRage/lib/rarfile/dumprar.py
 share/SickRage/lib/rebulk/__init__.py
@@ -2208,8 +2395,8 @@ share/SickRage/lib/requests/packages/chardet/euckrfreq.py
 share/SickRage/lib/requests/packages/chardet/euckrprober.py
 share/SickRage/lib/requests/packages/chardet/euctwfreq.py
 share/SickRage/lib/requests/packages/chardet/euctwprober.py
-share/SickRage/lib/requests/packages/chardet/gb2312freq.py
-share/SickRage/lib/requests/packages/chardet/gb2312prober.py
+share/SickRage/lib/requests/packages/chardet/gb23${PKGVERSION}2freq.py
+share/SickRage/lib/requests/packages/chardet/gb23${PKGVERSION}2prober.py
 share/SickRage/lib/requests/packages/chardet/hebrewprober.py
 share/SickRage/lib/requests/packages/chardet/jisfreq.py
 share/SickRage/lib/requests/packages/chardet/jpcntx.py
@@ -2219,7 +2406,7 @@ share/SickRage/lib/requests/packages/chardet/langgreekmodel.py
 share/SickRage/lib/requests/packages/chardet/langhebrewmodel.py
 share/SickRage/lib/requests/packages/chardet/langhungarianmodel.py
 share/SickRage/lib/requests/packages/chardet/langthaimodel.py
-share/SickRage/lib/requests/packages/chardet/latin1prober.py
+share/SickRage/lib/requests/packages/chardet/latin${PKGVERSION}prober.py
 share/SickRage/lib/requests/packages/chardet/mbcharsetprober.py
 share/SickRage/lib/requests/packages/chardet/mbcsgroupprober.py
 share/SickRage/lib/requests/packages/chardet/mbcssm.py
@@ -2284,12 +2471,13 @@ share/SickRage/lib/send2trash/plat_gio.py
 share/SickRage/lib/send2trash/plat_osx.py
 share/SickRage/lib/send2trash/plat_other.py
 share/SickRage/lib/send2trash/plat_win.py
-share/SickRage/lib/shutil_custom/__init__.py
 share/SickRage/lib/simplejson/__init__.py
 share/SickRage/lib/simplejson/_speedups.c
 share/SickRage/lib/simplejson/decoder.py
 share/SickRage/lib/simplejson/encoder.py
 share/SickRage/lib/simplejson/scanner.py
+share/SickRage/lib/singledispatch.py
+share/SickRage/lib/singledispatch_helpers.py
 share/SickRage/lib/six.py
 share/SickRage/lib/socks/__init__.py
 share/SickRage/lib/sqlalchemy/__init__.py
@@ -2548,13 +2736,14 @@ share/SickRage/lib/tmdb_api/__init__.py
 share/SickRage/lib/tmdb_api/test_tmdb_api.py
 share/SickRage/lib/tmdb_api/tmdb_api.py
 share/SickRage/lib/tornado/__init__.py
+share/SickRage/lib/tornado/_locale_data.py
 share/SickRage/lib/tornado/auth.py
 share/SickRage/lib/tornado/autoreload.py
 share/SickRage/lib/tornado/concurrent.py
 share/SickRage/lib/tornado/curl_httpclient.py
 share/SickRage/lib/tornado/escape.py
 share/SickRage/lib/tornado/gen.py
-share/SickRage/lib/tornado/http1connection.py
+share/SickRage/lib/tornado/http${PKGVERSION}connection.py
 share/SickRage/lib/tornado/httpclient.py
 share/SickRage/lib/tornado/httpserver.py
 share/SickRage/lib/tornado/httputil.py
@@ -2597,6 +2786,7 @@ share/SickRage/lib/tornado/test/escape_test.py
 share/SickRage/lib/tornado/test/gen_test.py
 share/SickRage/lib/tornado/test/gettext_translations/fr_FR/LC_MESSAGES/tornado_test.mo
 share/SickRage/lib/tornado/test/gettext_translations/fr_FR/LC_MESSAGES/tornado_test.po
+share/SickRage/lib/tornado/test/http${PKGVERSION}connection_test.py
 share/SickRage/lib/tornado/test/httpclient_test.py
 share/SickRage/lib/tornado/test/httpserver_test.py
 share/SickRage/lib/tornado/test/httputil_test.py
@@ -2617,6 +2807,9 @@ share/SickRage/lib/tornado/test/simple_httpclient_test.py
 share/SickRage/lib/tornado/test/stack_context_test.py
 share/SickRage/lib/tornado/test/static/dir/index.html
 share/SickRage/lib/tornado/test/static/robots.txt
+share/SickRage/lib/tornado/test/static/sample.xml
+share/SickRage/lib/tornado/test/static/sample.xml.bz2
+share/SickRage/lib/tornado/test/static/sample.xml.gz
 share/SickRage/lib/tornado/test/static_foo.txt
 share/SickRage/lib/tornado/test/tcpclient_test.py
 share/SickRage/lib/tornado/test/tcpserver_test.py
@@ -2630,6 +2823,7 @@ share/SickRage/lib/tornado/test/util.py
 share/SickRage/lib/tornado/test/util_test.py
 share/SickRage/lib/tornado/test/web_test.py
 share/SickRage/lib/tornado/test/websocket_test.py
+share/SickRage/lib/tornado/test/windows_test.py
 share/SickRage/lib/tornado/test/wsgi_test.py
 share/SickRage/lib/tornado/testing.py
 share/SickRage/lib/tornado/util.py
@@ -2641,9 +2835,95 @@ share/SickRage/lib/tvdb_api/tvdb_api.py
 share/SickRage/lib/tvdb_api/tvdb_cache.py
 share/SickRage/lib/tvdb_api/tvdb_exceptions.py
 share/SickRage/lib/tvdb_api/tvdb_ui.py
+share/SickRage/lib/twilio/__init__.py
+share/SickRage/lib/twilio/access_token.py
+share/SickRage/lib/twilio/compat/__init__.py
+share/SickRage/lib/twilio/conf/cacert.pem
+share/SickRage/lib/twilio/exceptions.py
+share/SickRage/lib/twilio/jwt/__init__.py
+share/SickRage/lib/twilio/rest/__init__.py
+share/SickRage/lib/twilio/rest/base.py
+share/SickRage/lib/twilio/rest/client.py
+share/SickRage/lib/twilio/rest/exceptions.py
+share/SickRage/lib/twilio/rest/ip_messaging.py
+share/SickRage/lib/twilio/rest/lookups.py
+share/SickRage/lib/twilio/rest/monitor.py
+share/SickRage/lib/twilio/rest/pricing.py
+share/SickRage/lib/twilio/rest/resources/__init__.py
+share/SickRage/lib/twilio/rest/resources/accounts.py
+share/SickRage/lib/twilio/rest/resources/addresses.py
+share/SickRage/lib/twilio/rest/resources/applications.py
+share/SickRage/lib/twilio/rest/resources/base.py
+share/SickRage/lib/twilio/rest/resources/call_feedback.py
+share/SickRage/lib/twilio/rest/resources/caller_ids.py
+share/SickRage/lib/twilio/rest/resources/calls.py
+share/SickRage/lib/twilio/rest/resources/conferences.py
+share/SickRage/lib/twilio/rest/resources/connect_apps.py
+share/SickRage/lib/twilio/rest/resources/connection.py
+share/SickRage/lib/twilio/rest/resources/imports.py
+share/SickRage/lib/twilio/rest/resources/ip_messaging/__init__.py
+share/SickRage/lib/twilio/rest/resources/ip_messaging/channels.py
+share/SickRage/lib/twilio/rest/resources/ip_messaging/credentials.py
+share/SickRage/lib/twilio/rest/resources/ip_messaging/members.py
+share/SickRage/lib/twilio/rest/resources/ip_messaging/messages.py
+share/SickRage/lib/twilio/rest/resources/ip_messaging/roles.py
+share/SickRage/lib/twilio/rest/resources/ip_messaging/services.py
+share/SickRage/lib/twilio/rest/resources/ip_messaging/users.py
+share/SickRage/lib/twilio/rest/resources/keys.py
+share/SickRage/lib/twilio/rest/resources/lookups/__init__.py
+share/SickRage/lib/twilio/rest/resources/lookups/phone_numbers.py
+share/SickRage/lib/twilio/rest/resources/media.py
+share/SickRage/lib/twilio/rest/resources/messages.py
+share/SickRage/lib/twilio/rest/resources/monitor/__init__.py
+share/SickRage/lib/twilio/rest/resources/monitor/alerts.py
+share/SickRage/lib/twilio/rest/resources/monitor/events.py
+share/SickRage/lib/twilio/rest/resources/notifications.py
+share/SickRage/lib/twilio/rest/resources/phone_numbers.py
+share/SickRage/lib/twilio/rest/resources/pricing/__init__.py
+share/SickRage/lib/twilio/rest/resources/pricing/messaging_countries.py
+share/SickRage/lib/twilio/rest/resources/pricing/phone_numbers.py
+share/SickRage/lib/twilio/rest/resources/pricing/voice.py
+share/SickRage/lib/twilio/rest/resources/queues.py
+share/SickRage/lib/twilio/rest/resources/recordings.py
+share/SickRage/lib/twilio/rest/resources/sandboxes.py
+share/SickRage/lib/twilio/rest/resources/sip/__init__.py
+share/SickRage/lib/twilio/rest/resources/sip/credential_lists.py
+share/SickRage/lib/twilio/rest/resources/sip/domains.py
+share/SickRage/lib/twilio/rest/resources/sip/ip_access_control_lists.py
+share/SickRage/lib/twilio/rest/resources/sms_messages.py
+share/SickRage/lib/twilio/rest/resources/task_router/__init__.py
+share/SickRage/lib/twilio/rest/resources/task_router/activities.py
+share/SickRage/lib/twilio/rest/resources/task_router/events.py
+share/SickRage/lib/twilio/rest/resources/task_router/reservations.py
+share/SickRage/lib/twilio/rest/resources/task_router/statistics.py
+share/SickRage/lib/twilio/rest/resources/task_router/task_queues.py
+share/SickRage/lib/twilio/rest/resources/task_router/tasks.py
+share/SickRage/lib/twilio/rest/resources/task_router/workers.py
+share/SickRage/lib/twilio/rest/resources/task_router/workflows.py
+share/SickRage/lib/twilio/rest/resources/task_router/workspaces.py
+share/SickRage/lib/twilio/rest/resources/tokens.py
+share/SickRage/lib/twilio/rest/resources/transcriptions.py
+share/SickRage/lib/twilio/rest/resources/trunking/__init__.py
+share/SickRage/lib/twilio/rest/resources/trunking/credential_lists.py
+share/SickRage/lib/twilio/rest/resources/trunking/ip_access_control_lists.py
+share/SickRage/lib/twilio/rest/resources/trunking/origination_urls.py
+share/SickRage/lib/twilio/rest/resources/trunking/phone_numbers.py
+share/SickRage/lib/twilio/rest/resources/trunking/trunks.py
+share/SickRage/lib/twilio/rest/resources/usage.py
+share/SickRage/lib/twilio/rest/resources/util.py
+share/SickRage/lib/twilio/rest/task_router.py
+share/SickRage/lib/twilio/rest/trunking.py
+share/SickRage/lib/twilio/task_router/__init__.py
+share/SickRage/lib/twilio/task_router/taskrouter_config.py
+share/SickRage/lib/twilio/task_router/workflow_config.py
+share/SickRage/lib/twilio/task_router/workflow_rule.py
+share/SickRage/lib/twilio/task_router/workflow_ruletarget.py
+share/SickRage/lib/twilio/twiml.py
+share/SickRage/lib/twilio/util.py
+share/SickRage/lib/twilio/version.py
 share/SickRage/lib/unidecode/__init__.py
 share/SickRage/lib/unidecode/x000.py
-share/SickRage/lib/unidecode/x001.py
+share/SickRage/lib/unidecode/x00${PKGVERSION}.py
 share/SickRage/lib/unidecode/x002.py
 share/SickRage/lib/unidecode/x003.py
 share/SickRage/lib/unidecode/x004.py
@@ -2657,20 +2937,20 @@ share/SickRage/lib/unidecode/x00c.py
 share/SickRage/lib/unidecode/x00d.py
 share/SickRage/lib/unidecode/x00e.py
 share/SickRage/lib/unidecode/x00f.py
-share/SickRage/lib/unidecode/x010.py
-share/SickRage/lib/unidecode/x011.py
-share/SickRage/lib/unidecode/x012.py
-share/SickRage/lib/unidecode/x013.py
-share/SickRage/lib/unidecode/x014.py
-share/SickRage/lib/unidecode/x015.py
-share/SickRage/lib/unidecode/x016.py
-share/SickRage/lib/unidecode/x017.py
-share/SickRage/lib/unidecode/x018.py
-share/SickRage/lib/unidecode/x01d.py
-share/SickRage/lib/unidecode/x01e.py
-share/SickRage/lib/unidecode/x01f.py
+share/SickRage/lib/unidecode/x0${PKGVERSION}0.py
+share/SickRage/lib/unidecode/x0${PKGVERSION}${PKGVERSION}.py
+share/SickRage/lib/unidecode/x0${PKGVERSION}2.py
+share/SickRage/lib/unidecode/x0${PKGVERSION}3.py
+share/SickRage/lib/unidecode/x0${PKGVERSION}4.py
+share/SickRage/lib/unidecode/x0${PKGVERSION}5.py
+share/SickRage/lib/unidecode/x0${PKGVERSION}6.py
+share/SickRage/lib/unidecode/x0${PKGVERSION}7.py
+share/SickRage/lib/unidecode/x0${PKGVERSION}8.py
+share/SickRage/lib/unidecode/x0${PKGVERSION}d.py
+share/SickRage/lib/unidecode/x0${PKGVERSION}e.py
+share/SickRage/lib/unidecode/x0${PKGVERSION}f.py
 share/SickRage/lib/unidecode/x020.py
-share/SickRage/lib/unidecode/x021.py
+share/SickRage/lib/unidecode/x02${PKGVERSION}.py
 share/SickRage/lib/unidecode/x022.py
 share/SickRage/lib/unidecode/x023.py
 share/SickRage/lib/unidecode/x024.py
@@ -2682,14 +2962,14 @@ share/SickRage/lib/unidecode/x02c.py
 share/SickRage/lib/unidecode/x02e.py
 share/SickRage/lib/unidecode/x02f.py
 share/SickRage/lib/unidecode/x030.py
-share/SickRage/lib/unidecode/x031.py
+share/SickRage/lib/unidecode/x03${PKGVERSION}.py
 share/SickRage/lib/unidecode/x032.py
 share/SickRage/lib/unidecode/x033.py
 share/SickRage/lib/unidecode/x04d.py
 share/SickRage/lib/unidecode/x04e.py
 share/SickRage/lib/unidecode/x04f.py
 share/SickRage/lib/unidecode/x050.py
-share/SickRage/lib/unidecode/x051.py
+share/SickRage/lib/unidecode/x05${PKGVERSION}.py
 share/SickRage/lib/unidecode/x052.py
 share/SickRage/lib/unidecode/x053.py
 share/SickRage/lib/unidecode/x054.py
@@ -2705,7 +2985,7 @@ share/SickRage/lib/unidecode/x05d.py
 share/SickRage/lib/unidecode/x05e.py
 share/SickRage/lib/unidecode/x05f.py
 share/SickRage/lib/unidecode/x060.py
-share/SickRage/lib/unidecode/x061.py
+share/SickRage/lib/unidecode/x06${PKGVERSION}.py
 share/SickRage/lib/unidecode/x062.py
 share/SickRage/lib/unidecode/x063.py
 share/SickRage/lib/unidecode/x064.py
@@ -2721,7 +3001,7 @@ share/SickRage/lib/unidecode/x06d.py
 share/SickRage/lib/unidecode/x06e.py
 share/SickRage/lib/unidecode/x06f.py
 share/SickRage/lib/unidecode/x070.py
-share/SickRage/lib/unidecode/x071.py
+share/SickRage/lib/unidecode/x07${PKGVERSION}.py
 share/SickRage/lib/unidecode/x072.py
 share/SickRage/lib/unidecode/x073.py
 share/SickRage/lib/unidecode/x074.py
@@ -2737,7 +3017,7 @@ share/SickRage/lib/unidecode/x07d.py
 share/SickRage/lib/unidecode/x07e.py
 share/SickRage/lib/unidecode/x07f.py
 share/SickRage/lib/unidecode/x080.py
-share/SickRage/lib/unidecode/x081.py
+share/SickRage/lib/unidecode/x08${PKGVERSION}.py
 share/SickRage/lib/unidecode/x082.py
 share/SickRage/lib/unidecode/x083.py
 share/SickRage/lib/unidecode/x084.py
@@ -2753,7 +3033,7 @@ share/SickRage/lib/unidecode/x08d.py
 share/SickRage/lib/unidecode/x08e.py
 share/SickRage/lib/unidecode/x08f.py
 share/SickRage/lib/unidecode/x090.py
-share/SickRage/lib/unidecode/x091.py
+share/SickRage/lib/unidecode/x09${PKGVERSION}.py
 share/SickRage/lib/unidecode/x092.py
 share/SickRage/lib/unidecode/x093.py
 share/SickRage/lib/unidecode/x094.py
@@ -2769,7 +3049,7 @@ share/SickRage/lib/unidecode/x09d.py
 share/SickRage/lib/unidecode/x09e.py
 share/SickRage/lib/unidecode/x09f.py
 share/SickRage/lib/unidecode/x0a0.py
-share/SickRage/lib/unidecode/x0a1.py
+share/SickRage/lib/unidecode/x0a${PKGVERSION}.py
 share/SickRage/lib/unidecode/x0a2.py
 share/SickRage/lib/unidecode/x0a3.py
 share/SickRage/lib/unidecode/x0a4.py
@@ -2778,7 +3058,7 @@ share/SickRage/lib/unidecode/x0ad.py
 share/SickRage/lib/unidecode/x0ae.py
 share/SickRage/lib/unidecode/x0af.py
 share/SickRage/lib/unidecode/x0b0.py
-share/SickRage/lib/unidecode/x0b1.py
+share/SickRage/lib/unidecode/x0b${PKGVERSION}.py
 share/SickRage/lib/unidecode/x0b2.py
 share/SickRage/lib/unidecode/x0b3.py
 share/SickRage/lib/unidecode/x0b4.py
@@ -2794,7 +3074,7 @@ share/SickRage/lib/unidecode/x0bd.py
 share/SickRage/lib/unidecode/x0be.py
 share/SickRage/lib/unidecode/x0bf.py
 share/SickRage/lib/unidecode/x0c0.py
-share/SickRage/lib/unidecode/x0c1.py
+share/SickRage/lib/unidecode/x0c${PKGVERSION}.py
 share/SickRage/lib/unidecode/x0c2.py
 share/SickRage/lib/unidecode/x0c3.py
 share/SickRage/lib/unidecode/x0c4.py
@@ -2810,7 +3090,7 @@ share/SickRage/lib/unidecode/x0cd.py
 share/SickRage/lib/unidecode/x0ce.py
 share/SickRage/lib/unidecode/x0cf.py
 share/SickRage/lib/unidecode/x0d0.py
-share/SickRage/lib/unidecode/x0d1.py
+share/SickRage/lib/unidecode/x0d${PKGVERSION}.py
 share/SickRage/lib/unidecode/x0d2.py
 share/SickRage/lib/unidecode/x0d3.py
 share/SickRage/lib/unidecode/x0d4.py
@@ -2824,10 +3104,10 @@ share/SickRage/lib/unidecode/x0fc.py
 share/SickRage/lib/unidecode/x0fd.py
 share/SickRage/lib/unidecode/x0fe.py
 share/SickRage/lib/unidecode/x0ff.py
-share/SickRage/lib/unidecode/x1d4.py
-share/SickRage/lib/unidecode/x1d5.py
-share/SickRage/lib/unidecode/x1d6.py
-share/SickRage/lib/unidecode/x1d7.py
+share/SickRage/lib/unidecode/x${PKGVERSION}d4.py
+share/SickRage/lib/unidecode/x${PKGVERSION}d5.py
+share/SickRage/lib/unidecode/x${PKGVERSION}d6.py
+share/SickRage/lib/unidecode/x${PKGVERSION}d7.py
 share/SickRage/lib/unrar2/.hgignore
 share/SickRage/lib/unrar2/MANIFEST.in
 share/SickRage/lib/unrar2/UnRAR2.html
@@ -2851,7 +3131,7 @@ share/SickRage/lib/unrar2/test_UnRAR2.py
 share/SickRage/lib/unrar2/test_nulls.rar
 share/SickRage/lib/unrar2/test_protected_files.rar
 share/SickRage/lib/unrar2/test_protected_headers.rar
-share/SickRage/lib/unrar2/test_volumes.part1.rar
+share/SickRage/lib/unrar2/test_volumes.part${PKGVERSION}.rar
 share/SickRage/lib/unrar2/test_volumes.part2.rar
 share/SickRage/lib/unrar2/test_volumes_old.r00
 share/SickRage/lib/unrar2/test_volumes_old.rar
@@ -2862,8 +3142,8 @@ share/SickRage/lib/validators/between.py
 share/SickRage/lib/validators/domain.py
 share/SickRage/lib/validators/email.py
 share/SickRage/lib/validators/extremes.py
-share/SickRage/lib/validators/i18n/__init__.py
-share/SickRage/lib/validators/i18n/fi.py
+share/SickRage/lib/validators/i${PKGVERSION}8n/__init__.py
+share/SickRage/lib/validators/i${PKGVERSION}8n/fi.py
 share/SickRage/lib/validators/iban.py
 share/SickRage/lib/validators/ip_address.py
 share/SickRage/lib/validators/length.py
@@ -2994,7 +3274,7 @@ share/SickRage/sickbeard/metadata/__init__.py
 share/SickRage/sickbeard/metadata/generic.py
 share/SickRage/sickbeard/metadata/helpers.py
 share/SickRage/sickbeard/metadata/kodi.py
-share/SickRage/sickbeard/metadata/kodi_12plus.py
+share/SickRage/sickbeard/metadata/kodi_${PKGVERSION}2plus.py
 share/SickRage/sickbeard/metadata/mede8er.py
 share/SickRage/sickbeard/metadata/mediabrowser.py
 share/SickRage/sickbeard/metadata/ps3.py
@@ -3024,15 +3304,18 @@ share/SickRage/sickbeard/notifiers/pushalot.py
 share/SickRage/sickbeard/notifiers/pushbullet.py
 share/SickRage/sickbeard/notifiers/pushover.py
 share/SickRage/sickbeard/notifiers/pytivo.py
+share/SickRage/sickbeard/notifiers/slack.py
 share/SickRage/sickbeard/notifiers/synoindex.py
 share/SickRage/sickbeard/notifiers/synologynotifier.py
 share/SickRage/sickbeard/notifiers/telegram.py
 share/SickRage/sickbeard/notifiers/trakt.py
 share/SickRage/sickbeard/notifiers/tweet.py
+share/SickRage/sickbeard/notifiers/twilio_notify.py
 share/SickRage/sickbeard/numdict.py
 share/SickRage/sickbeard/nzbSplitter.py
 share/SickRage/sickbeard/nzbget.py
 share/SickRage/sickbeard/postProcessor.py
+share/SickRage/sickbeard/post_processing_queue.py
 share/SickRage/sickbeard/processTV.py
 share/SickRage/sickbeard/properFinder.py
 share/SickRage/sickbeard/providers/__init__.py
@@ -3041,21 +3324,20 @@ share/SickRage/sickbeard/providers/alpharatio.py
 share/SickRage/sickbeard/providers/binsearch.py
 share/SickRage/sickbeard/providers/bitcannon.py
 share/SickRage/sickbeard/providers/bitsnoop.py
-share/SickRage/sickbeard/providers/bluetigers.py
-share/SickRage/sickbeard/providers/btdigg.py
 share/SickRage/sickbeard/providers/btn.py
 share/SickRage/sickbeard/providers/cpasbien.py
 share/SickRage/sickbeard/providers/danishbits.py
 share/SickRage/sickbeard/providers/elitetorrent.py
 share/SickRage/sickbeard/providers/extratorrent.py
+share/SickRage/sickbeard/providers/filelist.py
 share/SickRage/sickbeard/providers/freshontv.py
 share/SickRage/sickbeard/providers/gftracker.py
 share/SickRage/sickbeard/providers/hd4free.py
 share/SickRage/sickbeard/providers/hdbits.py
 share/SickRage/sickbeard/providers/hdspace.py
 share/SickRage/sickbeard/providers/hdtorrents.py
+share/SickRage/sickbeard/providers/horriblesubs.py
 share/SickRage/sickbeard/providers/hounddawgs.py
-share/SickRage/sickbeard/providers/ilovetorrents.py
 share/SickRage/sickbeard/providers/iptorrents.py
 share/SickRage/sickbeard/providers/kat.py
 share/SickRage/sickbeard/providers/limetorrents.py
@@ -3072,10 +3354,11 @@ share/SickRage/sickbeard/providers/scc.py
 share/SickRage/sickbeard/providers/scenetime.py
 share/SickRage/sickbeard/providers/shazbat.py
 share/SickRage/sickbeard/providers/speedcd.py
-share/SickRage/sickbeard/providers/t411.py
+share/SickRage/sickbeard/providers/t4${PKGVERSION}${PKGVERSION}.py
 share/SickRage/sickbeard/providers/thepiratebay.py
 share/SickRage/sickbeard/providers/tntvillage.py
 share/SickRage/sickbeard/providers/tokyotoshokan.py
+share/SickRage/sickbeard/providers/torrent9.py
 share/SickRage/sickbeard/providers/torrentbytes.py
 share/SickRage/sickbeard/providers/torrentday.py
 share/SickRage/sickbeard/providers/torrentleech.py
@@ -3108,6 +3391,7 @@ share/SickRage/sickbeard/webserve.py
 share/SickRage/sickbeard/webserveInit.py
 share/SickRage/sickrage/__init__.py
 share/SickRage/sickrage/helper/__init__.py
+share/SickRage/sickrage/helper/argument_parser.py
 share/SickRage/sickrage/helper/common.py
 share/SickRage/sickrage/helper/encoding.py
 share/SickRage/sickrage/helper/exceptions.py
@@ -3142,3 +3426,6 @@ share/SickRage/sickrage/system/Shutdown.py
 share/SickRage/sickrage/system/__init__.py
 share/SickRage/sickrage/tagger/__init__.py
 share/SickRage/sickrage/tagger/episode.py
+@pkgdir share/SickRage/lib/shutil_custom
+@pkgdir share/SickRage/lib/network_timezones
+@pkgdir etc/sickrage
