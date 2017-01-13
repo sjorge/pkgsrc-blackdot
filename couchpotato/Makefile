@@ -13,13 +13,15 @@ COMMENT=	Search for movies nzb-files via web interface
 LICENSE=	gnu-gpl-v3 AND modified-bsd AND mit AND unlicense
 
 DEPENDS+=	${PYPKGPREFIX}-sqlite3-[0-9]*:../../databases/py-sqlite3
+USE_LANGUAGES+= c
 
 TEMP_DIR= 	CouchPotato-CouchPotatoServer-${COMMIT_SHA}
 WRKSRC= 	${WRKDIR}/${TEMP_DIR}
 NO_BUILD= 	yes
 USE_TOOLS= 	pax
 
-PYTHON_VERSIONS_INCOMPATIBLE=	33 34 # py-cheetah
+PYTHON_VERSIONS_INCOMPATIBLE= 33 34 # py-cheetah
+CHECK_PORTABILITY_SKIP+=      init/ffpstick
 
 BUILD_DEFS+=		PKG_SYSCONFDIR
 
