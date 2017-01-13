@@ -771,3 +771,5 @@ share/doc/samba-pbd/WinXP_PlainPassword.reg
 share/doc/samba-pbd/WindowsTerminalServer.reg
 share/examples/samba-pbd/samba.schema
 share/examples/samba-pbd/smb.conf.default
+@pkgdir share/examples/samba-pbd/pam_smbpass
+@pkgdir etc/samba
