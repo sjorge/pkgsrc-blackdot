@@ -1,9 +1,9 @@
 $NetBSD: distinfo,v 1.2 2015/05/26 15:11:25 jperkin Exp $
 
-SHA1 (samba-4.4.9.tar.gz) = 8a7e8a8fdbf0734610604e0f890ec11da005805f
-RMD160 (samba-4.4.9.tar.gz) = 26ab53a269ea80b63916ef9358d092d2c301c6ab
-SHA512 (samba-4.4.9.tar.gz) = 9fda913ece883fbd4309623b03676629d944c6f14df359904db938ac956a2f56b347d51fd7293417b021d5b18145fb693649a54ec2125868ae3fb88f63a17e12
-Size (samba-4.4.9.tar.gz) = 20750010 bytes
+SHA1 (samba-4.5.3.tar.gz) = ce7338b629c6e026ba4482c0117470068ee19838
+RMD160 (samba-4.5.3.tar.gz) = b2519e8fc4bc2951be03a753d688af5d5e278a42
+SHA512 (samba-4.5.3.tar.gz) = 3ba4002131a5d7db35a62bc5841ed7aa7c43d85f7f3509237aa97bd1ff8bac6358eb3acec178ddfa6e8fa9c390dadb947fa90eec27d1299e2a9ccdecc5e9bc16
+Size (samba-4.5.3.tar.gz) = 20946015 bytes
 SHA1 (patch-dbcheck-oldrelease.sh) = 25f1fa8fb297fab08ef73fcc2ec8ffd1a1cd4043
 SHA1 (patch-lib_replace_wscript) = 14ceb50e58ddd8ae961fb35afd548c60d17a224f
 SHA1 (patch-lib_tevent_wscript) = 4e1c423f3565714edd87a0429791faaf96b8d93c

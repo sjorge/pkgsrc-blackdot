@@ -2,7 +2,7 @@
 
 DISTNAME=	samba-${VERSION}
 PKGNAME=	samba-pbd-${VERSION}
-VERSION=	4.4.9
+VERSION=	4.5.3
 #PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.samba.org/pub/samba/
@@ -18,6 +18,7 @@ CONFLICTS+=	samba-[0-9]* samba4-[0-9]* ja-samba-[0-9]* pam-smbpass-[0-9]* tdb-[0
 
 DEPENDS+=	libgcrypt-[0-9]*:../../security/libgcrypt
 BUILD_DEPENDS+=	${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
+BUILD_DEPENDS+= docbook-xsl>=1.75.2:../../textproc/docbook-xsl
 
 BUILD_DEFS+=		VARBASE
 
@@ -50,7 +51,7 @@ SMB_PAMMODULES?=	${SMB_LIB}/samba/security
 FILES_SUBST+=		SMB_CONFIG=${SMB_CONFIG}
 FILES_SUBST+=		SMB_PID=${SMB_PID}
 
-USE_TOOLS+=		gmake perl:run
+USE_TOOLS+=		gmake pkg-config perl:run
 
 REPLACE_PERL=		script/findsmb.in
 
@@ -82,11 +83,12 @@ CONFIGURE_ARGS+=	--with-privileged-socket-dir=${SMB_PRIVSOCKETS}
 CONFIGURE_ARGS+=	--with-configdir=${SMB_CONFIG}
 CONFIGURE_ARGS+=	--with-libiconv=${BUILDLINK_PREFIX.iconv}
 CONFIGURE_ARGS+=	--enable-gnutls
-CONFIGURE_ARGS+=	--with-system-mitkrb5
 CONFIGURE_ARGS+=	--abi-check-disable
 CONFIGURE_ARGS+=	--without-systemd
 CONFIGURE_ARGS+=	--disable-cups
 CONFIGURE_ARGS+=	--disable-iprint
+CONFIGURE_ARGS+=	--disable-cephfs
+CONFIGURE_ARGS+=	--disable-glusterfs
 #CONFIGURE_ARGS+=	--bundled-libraries=!crypto,ldb,ntdb,talloc,tdb,tevent
 .if defined(MAKE_JOBS) && !empty(MAKE_JOBS) && !(defined(MAKE_JOBS_SAFE) && !empty(MAKE_JOBS_SAFE:M[nN][oO]))
 CONFIGURE_ARGS+=	--jobs=${MAKE_JOBS}
@@ -216,6 +218,4 @@ PY_PATCHPLIST=	yes
 .include "../../devel/readline/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../security/gnutls/buildlink3.mk"
-BUILDLINK_API_DEPENDS.mit-krb5+=	mit-krb5>=1.9.0
-.include "../../security/mit-krb5/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
