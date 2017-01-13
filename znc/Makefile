@@ -1,10 +1,10 @@
 # $NetBSD$
 #
 
-DISTNAME=		znc-1.6.3
+DISTNAME=		znc-1.6.4
 CATEGORIES=		net
 PKGREVISION=		1
-MASTER_SITES=		http://znc.in/releases/archive/
+MASTER_SITES=		http://znc.in/releases/
 
 MAINTAINER=		florian@geiges.net
 HOMEPAGE=		http://znc.in/
