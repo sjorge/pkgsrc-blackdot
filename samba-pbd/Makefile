@@ -135,7 +135,7 @@ CONFIGURE_ARGS+=	--with-ldap
 ###
 CONFIGURE_ARGS+=	--with-winbind
 SAMBA_SHARED_MODULES:= ${SAMBA_SHARED_MODULES},idmap_rid,idmap_autorid,idmap_hash
-SAMBA_SHARED_MODULES:= ${SAMBA_SHARED_MODULES},idmap_ad
+SAMBA_SHARED_MODULES:= ${SAMBA_SHARED_MODULES},idmap_ad,idmap_ldap
 
 ###
 ### Add the optional static modules to the configuration.

@@ -516,6 +516,7 @@ lib/samba/gensec/krb5.so
 lib/samba/idmap/ad.so
 lib/samba/idmap/autorid.so
 lib/samba/idmap/hash.so
+lib/samba/idmap/ldap.so
 lib/samba/idmap/rfc2307.so
 lib/samba/idmap/rid.so
 lib/samba/idmap/script.so
