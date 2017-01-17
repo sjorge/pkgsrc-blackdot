@@ -54,6 +54,7 @@ FILES_SUBST+=		SMB_PID=${SMB_PID}
 USE_TOOLS+=		gmake pkg-config perl:run
 
 REPLACE_PERL=		script/findsmb.in
+CHECK_INTERPRETER_SKIP+=bin/findsmb
 
 USE_GNU_ICONV=		yes
 BROKEN_GETTEXT_DETECTION=yes

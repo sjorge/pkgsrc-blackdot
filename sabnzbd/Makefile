@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	sabnzbd-${DISTVERSION}
-DISTVERSION=	1.1.1
+DISTVERSION=	1.2.0
 DISTFILES=	SABnzbd-${DISTVERSION}-src${EXTRACT_SUFX}
 CATEGORIES=	news
 MASTER_SITES=   https://github.com/sabnzbd/sabnzbd/releases/download/${DISTVERSION}/
