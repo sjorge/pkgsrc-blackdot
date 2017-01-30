@@ -1,6 +1,6 @@
 $NetBSD: distinfo,v 1.21 2016/07/21 17:05:39 jperkin Exp $
 
-SHA1 (salt-2016.11.1.tar.gz) = 325cc1736fbb0ffa5f363634c9549ff75502d53f
-RMD160 (salt-2016.11.1.tar.gz) = 7155c1952ceffd12633905edbc7bb2e31ccd61e6
-SHA512 (salt-2016.11.1.tar.gz) = 77ac9a676a14c367005c9821136a2842d515d0c19b5f64d95a5c447f83baac99e6d0da3d9554942467a0bfa5bb620f742432bc19e2e1f78af61ccebc72b89748
-Size (salt-2016.11.1.tar.gz) = 9075078 bytes
+SHA1 (salt-2016.11.2.tar.gz) = 00cc3ad1af9e40e4cfa2572c45058e3342944413
+RMD160 (salt-2016.11.2.tar.gz) = cd6b75fb78e9bf52116c05866682a49cb96f67d2
+SHA512 (salt-2016.11.2.tar.gz) = 0dbc861424643af664edd2d9cb8bcbde7e9bcf7c1d202a5e844af83c21dc2d75fd7034db27dffc58dc2a6e47cfe2ea2c42e2a9af867c7ca78f93166eb4fd03ad
+Size (salt-2016.11.2.tar.gz) = 9114042 bytes
