@@ -1,6 +1,6 @@
 # $NetBSD: Makefile,v 1.41 2016/07/21 17:05:39 jperkin Exp $
 
-DISTNAME=	salt-2016.11.2
+DISTNAME=	salt-2016.11.3
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_PYPI:=s/salt/}
 
@@ -38,7 +38,7 @@ REPLACE_PYTHON=		*.py */*.py */*/*.py
 REPLACE_SH=		salt/templates/git/ssh-id-wrapper
 
 RCD_SCRIPTS+=		salt_master salt_minion salt_syndic
-SMF_INSTANCES=		master minion
+SMF_INSTANCES=		master minion api
 FILES_SUBST+=		PYTHON=${PYTHONBIN:Q}
 
 PKG_SYSCONFSUBDIR=	salt
