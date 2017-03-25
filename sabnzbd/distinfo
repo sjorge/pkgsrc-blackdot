@@ -1,6 +1,6 @@
 $NetBSD$
 
-SHA1 (SABnzbd-1.2.1-src.tar.gz) = c7fb1952340232e2cfb84ec925993f25aa9925c3
-RMD160 (SABnzbd-1.2.1-src.tar.gz) = 69d7ee290443f58f348d5cefafb744b913a9d8dc
-SHA512 (SABnzbd-1.2.1-src.tar.gz) = 0d3d249610c17916436db8f92e72fe3a6ec6d42c264371b0c7d231480357b175f27cccec7a3bf2e95e89407ef46ca2aa96d8b23755e760efc986b74796c19623
-Size (SABnzbd-1.2.1-src.tar.gz) = 2725395 bytes
+SHA1 (SABnzbd-1.2.3-src.tar.gz) = ddd5f21debbbbdc9bd652a14b914f0c7574dfa0e
+RMD160 (SABnzbd-1.2.3-src.tar.gz) = 4014b8de6aee57e078cae4e8ed7d5b1ced0016fd
+SHA512 (SABnzbd-1.2.3-src.tar.gz) = 80677df12a278a12a20405812f4f434625fa3a9dd769d8734b92771436a82ec6810fbc180e2b9b4ca9e15efc14b79d217b1392ff2a43785b803966afb9e3eb80
+Size (SABnzbd-1.2.3-src.tar.gz) = 2725678 bytes

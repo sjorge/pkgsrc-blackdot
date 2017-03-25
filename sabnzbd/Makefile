@@ -1,9 +1,10 @@
 # $NetBSD$
 
 DISTNAME=	sabnzbd-${DISTVERSION}
-DISTVERSION=	1.2.1
+DISTVERSION=	1.2.3
 DISTFILES=	SABnzbd-${DISTVERSION}-src${EXTRACT_SUFX}
 CATEGORIES=	news
+MASTER_SITES=   https://github.com/sabnzbd/sabnzbd/releases/download/${DISTVERSION}/
 MASTER_SITES=   https://github.com/sabnzbd/sabnzbd/releases/download/${DISTVERSION}/
 
 MAINTAINER=	wongk@apt.homeunix.net
