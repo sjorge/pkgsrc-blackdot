@@ -2,7 +2,7 @@
 
 DISTNAME=	sabnzbd-${DISTVERSION}
 DISTVERSION=	2.0.0
-#PKGREVISION=	2
+#PKGREVISION=	4
 DISTFILES=	SABnzbd-${DISTVERSION}-src${EXTRACT_SUFX}
 CATEGORIES=	news
 MASTER_SITES=   https://github.com/sabnzbd/sabnzbd/releases/download/${DISTVERSION}/
@@ -16,7 +16,8 @@ LICENSE=	gnu-gpl-v2 AND gnu-gpl-v3 AND modified-bsd AND mit
 DEPENDS+=	${PYPKGPREFIX}-cheetah-[0-9]*:../../devel/py-cheetah
 DEPENDS+=	${PYPKGPREFIX}-sqlite3-[0-9]*:../../databases/py-sqlite3
 DEPENDS+=	${PYPKGPREFIX}-xml-[0-9]*:../../textproc/py-xml
-DEPENDS+=	par2-[0-9]*:../../archivers/par2                               # par2 support
+#DEPENDS+=	par2-[0-9]*:../../archivers/par2                               # par2 support
+DEPENDS+=	par2-mt-[0-9]*:../../pbd/par2-mt                               # par2-mt support
 DEPENDS+=	unrar-[0-9]*:../../archivers/unrar                             # unrar support
 DEPENDS+=	unzip-[0-9]*:../../archivers/unzip                             # unzip support
 DEPENDS+=	p7zip-[0-9]*:../../archivers/p7zip                             # 7zip support
