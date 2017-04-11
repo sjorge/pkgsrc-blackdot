@@ -1,0 +1,8 @@
+$NetBSD: distinfo,v 1.15 2016/09/16 17:31:54 jperkin Exp $
+
+SHA1 (par2-mt-0.6.14.tar.gz) = 4d99ab2c442ed40750fdeee8fee442aeb2648562
+RMD160 (par2-mt-0.6.14.tar.gz) = 3be784ea01803f7357a790e458169b61834511e8
+SHA512 (par2-mt-0.6.14.tar.gz) = 7923e4cbfe64464bcaa2e49196461f276affc78974e685b20a5071aed8787c09977538ec9dd30cd437671968f9971e8000b52d95344d05adc7cb9d917234d49b
+Size (par2-mt-0.6.14.tar.gz) = 3553123 bytes
+SHA1 (patch-diskfile.cpp) = c2319215a6438322edeb28c4413a0a26dcade2d5
+SHA1 (patch-par2cmdline.h) = dd3516ffafabd07bab84fcb0322f65d9161296ca
