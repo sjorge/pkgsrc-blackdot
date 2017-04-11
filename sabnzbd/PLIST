@@ -311,14 +311,12 @@ share/SABnzbd/interfaces/wizard/static/javascript/checkserver.js
 share/SABnzbd/interfaces/wizard/static/style.css
 share/SABnzbd/interfaces/wizard/two.html
 share/SABnzbd/licenses/License-CherryPy.txt
-share/SABnzbd/licenses/License-OrderedDict.txt
 share/SABnzbd/licenses/License-Python.txt
 share/SABnzbd/licenses/License-PythonParts.txt
 share/SABnzbd/licenses/License-configobj.txt
 share/SABnzbd/licenses/License-feedparser.txt
 share/SABnzbd/licenses/License-gntp.txt
 share/SABnzbd/licenses/License-kronos.txt
-share/SABnzbd/licenses/License-listquote.txt
 share/SABnzbd/licenses/License-pybonjour.txt
 share/SABnzbd/licenses/License-pynewsleecher.txt
 share/SABnzbd/licenses/License-rarfile.txt
@@ -428,6 +426,7 @@ share/SABnzbd/sabnzbd/tvsort.py
 share/SABnzbd/sabnzbd/urlgrabber.py
 share/SABnzbd/sabnzbd/utils/__init__.py
 share/SABnzbd/sabnzbd/utils/certgen.py
+share/SABnzbd/sabnzbd/utils/checkdir.py
 share/SABnzbd/sabnzbd/utils/configobj.py
 share/SABnzbd/sabnzbd/utils/diskspeed.py
 share/SABnzbd/sabnzbd/utils/feedparser.py
@@ -435,7 +434,6 @@ share/SABnzbd/sabnzbd/utils/getperformance.py
 share/SABnzbd/sabnzbd/utils/happyeyeballs.py
 share/SABnzbd/sabnzbd/utils/json.py
 share/SABnzbd/sabnzbd/utils/kronos.py
-share/SABnzbd/sabnzbd/utils/listquote.py
 share/SABnzbd/sabnzbd/utils/pathbrowser.py
 share/SABnzbd/sabnzbd/utils/pybonjour.py
 share/SABnzbd/sabnzbd/utils/pystone.py
