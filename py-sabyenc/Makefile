@@ -14,7 +14,6 @@ HOMEPAGE=	https://pypi.python.org/pypi/sabyenc/
 COMMENT=	Mofied the original yenc module by Alessandro Duca for use within SABnzbd.
 LICENSE=	gnu-lgpl-v3
 
-DEPENDS+=	${PYPKGPREFIX}-setuptools_trial-[0-9]*:../../devel/py-setuptools_trial
 REPLACE_PYTHON=	*.py
 PYTHON_VERSIONS_INCOMPATIBLE=	34 35	# for 2.x only
 
