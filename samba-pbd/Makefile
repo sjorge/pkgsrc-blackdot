@@ -2,7 +2,7 @@
 
 DISTNAME=	samba-${VERSION}
 PKGNAME=	samba-pbd-${VERSION}
-VERSION=	4.5.8
+VERSION=	4.6.2
 #PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.samba.org/pub/samba/
@@ -26,6 +26,7 @@ BUILD_DEFS+=		VARBASE
 
 SMB_LIB?=		${PREFIX}/lib
 SMF_NAME?=		samba
+SMF_INSTANCES=          nmbd smbd winbindd
 
 PKG_SYSCONFSUBDIR=	samba
 SMB_SHAREDSTATE?=	${PREFIX}/com
