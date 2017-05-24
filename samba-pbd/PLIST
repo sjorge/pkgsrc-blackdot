@@ -240,6 +240,7 @@ ${PYSITELIB}/samba/auth.so
 ${PYSITELIB}/samba/com.so
 ${PYSITELIB}/samba/common.py
 ${PYSITELIB}/samba/credentials.so
+${PYSITELIB}/samba/crypto.so
 ${PYSITELIB}/samba/dbchecker.py
 ${PYSITELIB}/samba/dcerpc/__init__.py
 ${PYSITELIB}/samba/dcerpc/atsvc.so
