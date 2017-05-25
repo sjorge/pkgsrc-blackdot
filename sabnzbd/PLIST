@@ -179,7 +179,7 @@ share/SABnzbd/interfaces/Glitter/templates/static/javascripts/jquery.min.js
 share/SABnzbd/interfaces/Glitter/templates/static/javascripts/jquery.peity.min.js
 share/SABnzbd/interfaces/Glitter/templates/static/javascripts/knockout-extensions.js
 share/SABnzbd/interfaces/Glitter/templates/static/javascripts/knockout-latest.js
-share/SABnzbd/interfaces/Glitter/templates/static/javascripts/moment.js
+share/SABnzbd/interfaces/Glitter/templates/static/javascripts/moment.min.js
 share/SABnzbd/interfaces/Glitter/templates/static/javascripts/momentjs_locale/da.js
 share/SABnzbd/interfaces/Glitter/templates/static/javascripts/momentjs_locale/de.js
 share/SABnzbd/interfaces/Glitter/templates/static/javascripts/momentjs_locale/es.js
