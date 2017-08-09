@@ -7,16 +7,17 @@ $NetBSD$
  int connect_queue(struct connection *cnx, fd_set *fds_r, fd_set *fds_w)
  {
 -    struct queue *q = &cnx->q[1];
-+    struct _queue *q = &cnx->q[1];
++    struct sslhqueue *q = &cnx->q[1];
  
      q->fd = connect_addr(cnx, cnx->q[0].fd);
      if ((q->fd != -1) && fd_is_in_range(q->fd)) {
-@@ -156,7 +156,7 @@ int connect_queue(struct connection *cnx
+@@ -156,7 +156,8 @@ int connect_queue(struct connection *cnx
  void shovel(struct connection *cnx, int active_fd, 
              fd_set *fds_r, fd_set *fds_w)
  {
 -    struct queue *read_q, *write_q;
-+    struct _queue *read_q, *write_q;
++    struct sslhqueue *read_q, *write_q;
++
  
      read_q = &cnx->q[active_fd];
      write_q = &cnx->q[1-active_fd];

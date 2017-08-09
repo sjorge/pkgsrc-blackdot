@@ -7,7 +7,7 @@ $NetBSD$
  
  /* Store some data to write to the queue later */
 -int defer_write(struct queue *q, void* data, int data_size)
-+int defer_write(struct _queue *q, void* data, int data_size)
++int defer_write(struct sslhqueue *q, void* data, int data_size)
  {
      char *p;
      if (verbose)
@@ -16,7 +16,7 @@ $NetBSD$
   * Upon failure, -1 returned (e.g. connexion closed)
   * */
 -int flush_deferred(struct queue *q)
-+int flush_deferred(struct _queue *q)
++int flush_deferred(struct sslhqueue *q)
  {
      int n;
  
@@ -25,7 +25,7 @@ $NetBSD$
   * stored in temporary buffer.
   */
 -int fd2fd(struct queue *target_q, struct queue *from_q)
-+int fd2fd(struct _queue *target_q, struct _queue *from_q)
++int fd2fd(struct sslhqueue *target_q, struct sslhqueue *from_q)
  {
     char buffer[BUFSIZ];
     int target, from, size_r, size_w;
@@ -34,7 +34,7 @@ $NetBSD$
  
      name1 = strdup(bin_name);
 -    res = asprintf(&name2, "%s[%d]", basename(name1), getpid());
-+    res = asprintf(&name2, "%s[%ld]", basename(name1), getpid());
++    res = asprintf(&name2, "%s[%d]", basename(name1), (int)getpid());
      CHECK_RES_DIE(res, "asprintf");
      openlog(name2, LOG_CONS, LOG_AUTH);
      free(name1);
@@ -43,7 +43,7 @@ $NetBSD$
      }
  
 -    fprintf(f, "%d\n", getpid());
-+    fprintf(f, "%ld\n", getpid());
++    fprintf(f, "%d\n", (int)getpid());
      fclose(f);
  }
  
