@@ -1,8 +1,0 @@
-@comment $NetBSD$
-man/man8/sslh.8
-sbin/sslh
-sbin/sslh-select
-share/doc/sslh/ChangeLog
-share/doc/sslh/README.md
-share/examples/sslh/basic.cfg
-share/examples/sslh/example.cfg
