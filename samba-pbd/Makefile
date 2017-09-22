@@ -2,7 +2,7 @@
 
 DISTNAME=	samba-${VERSION}
 PKGNAME=	samba-pbd-${VERSION}
-VERSION=	4.6.4
+VERSION=	4.7.0
 #PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.samba.org/pub/samba/
@@ -183,6 +183,8 @@ SUBST_MESSAGE.logpath=	Fixing log path.
 SUBST_FILES.logpath=	examples/smb.conf.default
 SUBST_STAGE.logpath=	pre-configure
 SUBST_SED.logpath+=	-e 's,/usr/local/samba/var/log.%m,${SMB_LOGFILEBASE}/log.%m,g'
+
+CHECK_PORTABILITY_SKIP+=source3/script/tests/test_smbclient_s3.sh
 
 post-install:
 	set -e ; cd ${WRKSRC}/docs-xml/registry; for f in *.reg; do \

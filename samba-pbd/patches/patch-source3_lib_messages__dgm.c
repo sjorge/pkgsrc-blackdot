@@ -1,6 +1,6 @@
 $NetBSD$
 
---- source3/lib/messages_dgm.c.orig	2017-01-11 07:55:15.000000000 +0000
+--- source3/lib/messages_dgm.c.orig	2017-09-17 19:15:34.000000000 +0000
 +++ source3/lib/messages_dgm.c
 @@ -34,6 +34,11 @@
  
