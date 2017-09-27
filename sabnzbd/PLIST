@@ -60,7 +60,6 @@ share/SABnzbd/cherrypy/process/wspbus.py
 share/SABnzbd/cherrypy/wsgiserver/__init__.py
 share/SABnzbd/cherrypy/wsgiserver/ssl_builtin.py
 share/SABnzbd/cherrypy/wsgiserver/ssl_pyopenssl.py
-share/SABnzbd/cherrypy/wsgiserver/test_wsgiserver.py
 share/SABnzbd/email/badfetch-da.tmpl
 share/SABnzbd/email/badfetch-de.tmpl
 share/SABnzbd/email/badfetch-en.tmpl
@@ -157,7 +156,7 @@ share/SABnzbd/interfaces/Config/templates/staticcfg/images/logo-arrow.svg
 share/SABnzbd/interfaces/Config/templates/staticcfg/images/logo-full.svg
 share/SABnzbd/interfaces/Config/templates/staticcfg/images/logo-small.svg
 share/SABnzbd/interfaces/Config/templates/staticcfg/js/chartist.min.js
-share/SABnzbd/interfaces/Config/templates/staticcfg/js/jquery-3.1.1.min.js
+share/SABnzbd/interfaces/Config/templates/staticcfg/js/jquery-3.2.1.min.js
 share/SABnzbd/interfaces/Config/templates/staticcfg/js/jquery-ui.min.js
 share/SABnzbd/interfaces/Config/templates/staticcfg/js/jquery.tablesort.min.js
 share/SABnzbd/interfaces/Config/templates/staticcfg/js/script.js
@@ -429,6 +428,7 @@ share/SABnzbd/sabnzbd/nzbqueue.py
 share/SABnzbd/sabnzbd/nzbstuff.py
 share/SABnzbd/sabnzbd/osxmenu.py
 share/SABnzbd/sabnzbd/panic.py
+share/SABnzbd/sabnzbd/par2file.py
 share/SABnzbd/sabnzbd/postproc.py
 share/SABnzbd/sabnzbd/powersup.py
 share/SABnzbd/sabnzbd/rating.py
@@ -455,7 +455,6 @@ share/SABnzbd/sabnzbd/utils/pystone.py
 share/SABnzbd/sabnzbd/utils/rarfile.py
 share/SABnzbd/sabnzbd/utils/rsslib.py
 share/SABnzbd/sabnzbd/utils/servertests.py
-share/SABnzbd/sabnzbd/utils/sslinfo.py
 share/SABnzbd/sabnzbd/utils/subprocess_fix.py
 share/SABnzbd/sabnzbd/utils/systrayiconthread.py
 share/SABnzbd/sabnzbd/utils/upload.py
