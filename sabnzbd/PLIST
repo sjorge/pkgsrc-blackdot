@@ -152,6 +152,7 @@ share/SABnzbd/interfaces/Config/templates/staticcfg/ico/apple-touch-icon-180x180
 share/SABnzbd/interfaces/Config/templates/staticcfg/ico/apple-touch-icon-76x76-precomposed.png
 share/SABnzbd/interfaces/Config/templates/staticcfg/ico/favicon.ico
 share/SABnzbd/interfaces/Config/templates/staticcfg/ico/faviconpaused.ico
+share/SABnzbd/interfaces/Config/templates/staticcfg/ico/safari-pinned-tab.svg
 share/SABnzbd/interfaces/Config/templates/staticcfg/images/logo-arrow.svg
 share/SABnzbd/interfaces/Config/templates/staticcfg/images/logo-full.svg
 share/SABnzbd/interfaces/Config/templates/staticcfg/images/logo-small.svg
@@ -455,13 +456,14 @@ share/SABnzbd/sabnzbd/utils/pystone.py
 share/SABnzbd/sabnzbd/utils/rarfile.py
 share/SABnzbd/sabnzbd/utils/rsslib.py
 share/SABnzbd/sabnzbd/utils/servertests.py
-share/SABnzbd/sabnzbd/utils/subprocess_fix.py
 share/SABnzbd/sabnzbd/utils/systrayiconthread.py
 share/SABnzbd/sabnzbd/utils/upload.py
 share/SABnzbd/sabnzbd/version.py
 share/SABnzbd/sabnzbd/wizard.py
 share/SABnzbd/sabnzbd/zconfig.py
+share/SABnzbd/scripts/Deobfuscate.py
 share/SABnzbd/scripts/Sample-PostProc.cmd
+share/SABnzbd/scripts/Sample-PostProc.py
 share/SABnzbd/scripts/Sample-PostProc.sh
 share/SABnzbd/six/__init__.py
 share/SABnzbd/tools/make_mo.py
