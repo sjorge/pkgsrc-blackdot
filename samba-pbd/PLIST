@@ -388,6 +388,7 @@ ${PYSITELIB}/samba/tests/dns_base.py
 ${PYSITELIB}/samba/tests/dns_forwarder.py
 ${PYSITELIB}/samba/tests/dns_forwarder_helpers/server.py
 ${PYSITELIB}/samba/tests/dns_tkey.py
+${PYSITELIB}/samba/tests/dns_wildcard.py
 ${PYSITELIB}/samba/tests/docs.py
 ${PYSITELIB}/samba/tests/dsdb.py
 ${PYSITELIB}/samba/tests/dsdb_schema_attributes.py
