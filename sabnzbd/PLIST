@@ -157,6 +157,7 @@ share/SABnzbd/interfaces/Config/templates/staticcfg/images/logo-arrow.svg
 share/SABnzbd/interfaces/Config/templates/staticcfg/images/logo-full.svg
 share/SABnzbd/interfaces/Config/templates/staticcfg/images/logo-small.svg
 share/SABnzbd/interfaces/Config/templates/staticcfg/js/chartist.min.js
+share/SABnzbd/interfaces/Config/templates/staticcfg/js/filesize.min.js
 share/SABnzbd/interfaces/Config/templates/staticcfg/js/jquery-3.2.1.min.js
 share/SABnzbd/interfaces/Config/templates/staticcfg/js/jquery-ui.min.js
 share/SABnzbd/interfaces/Config/templates/staticcfg/js/jquery.tablesort.min.js
@@ -196,6 +197,7 @@ share/SABnzbd/interfaces/Glitter/templates/static/javascripts/momentjs_locale/de
 share/SABnzbd/interfaces/Glitter/templates/static/javascripts/momentjs_locale/es.js
 share/SABnzbd/interfaces/Glitter/templates/static/javascripts/momentjs_locale/fi.js
 share/SABnzbd/interfaces/Glitter/templates/static/javascripts/momentjs_locale/fr.js
+share/SABnzbd/interfaces/Glitter/templates/static/javascripts/momentjs_locale/he.js
 share/SABnzbd/interfaces/Glitter/templates/static/javascripts/momentjs_locale/nb.js
 share/SABnzbd/interfaces/Glitter/templates/static/javascripts/momentjs_locale/nl.js
 share/SABnzbd/interfaces/Glitter/templates/static/javascripts/momentjs_locale/pl.js
@@ -438,7 +440,7 @@ share/SABnzbd/sabnzbd/sabtray.py
 share/SABnzbd/sabnzbd/sabtraylinux.py
 share/SABnzbd/sabnzbd/scheduler.py
 share/SABnzbd/sabnzbd/skintext.py
-share/SABnzbd/sabnzbd/tvsort.py
+share/SABnzbd/sabnzbd/sorting.py
 share/SABnzbd/sabnzbd/urlgrabber.py
 share/SABnzbd/sabnzbd/utils/__init__.py
 share/SABnzbd/sabnzbd/utils/certgen.py
