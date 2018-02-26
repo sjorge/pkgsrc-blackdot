@@ -4023,6 +4023,9 @@ ${PYSITELIB}/salt/utils/smb.pyo
 ${PYSITELIB}/salt/utils/smtp.py
 ${PYSITELIB}/salt/utils/smtp.pyc
 ${PYSITELIB}/salt/utils/smtp.pyo
+${PYSITELIB}/salt/utils/ssh.py
+${PYSITELIB}/salt/utils/ssh.pyc
+${PYSITELIB}/salt/utils/ssh.pyo
 ${PYSITELIB}/salt/utils/stormpath.py
 ${PYSITELIB}/salt/utils/stormpath.pyc
 ${PYSITELIB}/salt/utils/stormpath.pyo
