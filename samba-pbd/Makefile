@@ -2,7 +2,7 @@
 
 DISTNAME=	samba-${VERSION}
 PKGNAME=	samba-pbd-${VERSION}
-VERSION=	4.7.2
+VERSION=	4.7.5
 #PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.samba.org/pub/samba/
@@ -99,7 +99,7 @@ CONFIGURE_ARGS+=	--jobs=1
 .endif
 
 # extra CF and LD flags
-LDFLAGS+=		${COMPILER_RPATH_FLAG}${SMB_PRIVATELIB} -lintl
+LDFLAGS+=		${COMPILER_RPATH_FLAG}${SMB_PRIVATELIB} -lintl -lnsl
 CFLAGS+=		-DHAVE_SOLARIS_GETGRENT_R
 PLIST_SUBST+=		LIBEXT=so
 SAMBA_LIBEXT=		so
