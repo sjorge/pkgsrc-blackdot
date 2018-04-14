@@ -1012,3 +1012,4 @@ share/CouchPotato/license.txt
 share/CouchPotato/package.json
 share/CouchPotato/setup.py
 share/CouchPotato/version.py
+@pkgdir etc/couchpotato
