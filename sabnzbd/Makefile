@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	sabnzbd-${DISTVERSION}
-DISTVERSION=	2.3.2
+DISTVERSION=	2.3.3
 #PKGREVISION=	4
 DISTFILES=	SABnzbd-${DISTVERSION}-src${EXTRACT_SUFX}
 CATEGORIES=	news
@@ -22,7 +22,6 @@ DEPENDS+=	unrar-[0-9]*:../../archivers/unrar                             # unrar
 DEPENDS+=	unzip-[0-9]*:../../archivers/unzip                             # unzip support
 DEPENDS+=	p7zip-[0-9]*:../../archivers/p7zip                             # 7zip support
 DEPENDS+=	${PYPKGPREFIX}-feedparser-[0-9]*:../../textproc/py-feedparser  # feedparser support
-DEPENDS+=	${PYPKGPREFIX}-yenc-[0-9]*:../../pbd/py-yenc                   # yenc support
 DEPENDS+=	${PYPKGPREFIX}-sabyenc-[0-9]*:../../pbd/py-sabyenc             # sabyenc support
 DEPENDS+=	openssl-[0-9]*:../../security/openssl                          # openssl support
 DEPENDS+=	${PYPKGPREFIX}-OpenSSL-[0-9]*:../../security/py-OpenSSL

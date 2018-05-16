@@ -461,7 +461,6 @@ share/SABnzbd/sabnzbd/utils/servertests.py
 share/SABnzbd/sabnzbd/utils/systrayiconthread.py
 share/SABnzbd/sabnzbd/utils/upload.py
 share/SABnzbd/sabnzbd/version.py
-share/SABnzbd/sabnzbd/wizard.py
 share/SABnzbd/sabnzbd/zconfig.py
 share/SABnzbd/scripts/Deobfuscate.py
 share/SABnzbd/scripts/Sample-PostProc.cmd
