@@ -2,7 +2,7 @@
 
 DISTNAME=	samba-${VERSION}
 PKGNAME=	samba-pbd-${VERSION}
-VERSION=	4.7.6
+VERSION=	4.8.2
 #PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.samba.org/pub/samba/
@@ -209,11 +209,7 @@ REPLACE_PERL=	pidl/pidl
 REPLACE_PYTHON=	buildtools/bin/waf \
 		source4/setup/* \
 		source4/scripting/bin/* \
-		lib/subunit/python/subunit/run.py \
-		lib/subunit/python/subunit/tests/sample-script.py \
-		lib/subunit/python/subunit/tests/sample-two-script.py \
 		lib/tevent/tevent.py
-
 
 PY_PATCHPLIST=	yes
 .include "../../lang/python/application.mk"

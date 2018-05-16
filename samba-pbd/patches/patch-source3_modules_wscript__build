@@ -1,0 +1,23 @@
+$NetBSD$
+
+--- source3/modules/wscript_build.orig	2018-02-12 10:27:16.000000000 +0000
++++ source3/modules/wscript_build
+@@ -225,14 +225,14 @@ bld.SAMBA3_MODULE('vfs_zfsacl',
+ xdr_buf_hack = 'sed -e "s@^\([ \t]*register int32_t \*buf\);@\\1 = buf;@"'
+ 
+ bld.SAMBA_GENERATOR('nfs41acl-xdr-c',
+-                    source='nfs41acl.x',
++                    source='nfs41acl.x.pregen-c',
+                     target='nfs41acl_xdr.c',
+-                    rule='rpcgen -c ${SRC} | ' + xdr_buf_hack + ' > ${TGT}')
++                    rule='cat ${SRC} | ' + xdr_buf_hack + ' > ${TGT}')
+ 
+ bld.SAMBA_GENERATOR('nfs41acl-h',
+-                    source='nfs41acl.x',
++                    source='nfs41acl.x.pregen-h',
+                     target='nfs41acl.h',
+-                    rule='rpcgen -h ${SRC} > ${TGT}')
++                    rule='cat ${SRC} > ${TGT}')
+ 
+ vfs_nfs4acl_xattr_source = '''
+                            vfs_nfs4acl_xattr.c

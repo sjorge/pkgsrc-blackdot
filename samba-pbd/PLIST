@@ -179,7 +179,7 @@ lib/libsamdb.so.0
 lib/libsamdb.so.0.0.1
 lib/libsmbclient.so
 lib/libsmbclient.so.0
-lib/libsmbclient.so.0.2.3
+lib/libsmbclient.so.0.3.1
 lib/libsmbconf.so
 lib/libsmbconf.so.0
 lib/libsmbldap.so
@@ -240,6 +240,7 @@ ${PYSITELIB}/samba/__init__.py
 ${PYSITELIB}/samba/_glue.so
 ${PYSITELIB}/samba/_ldb.so
 ${PYSITELIB}/samba/auth.so
+${PYSITELIB}/samba/colour.py
 ${PYSITELIB}/samba/common.py
 ${PYSITELIB}/samba/compat.py
 ${PYSITELIB}/samba/credentials.so
@@ -283,11 +284,19 @@ ${PYSITELIB}/samba/dcerpc/xattr.so
 ${PYSITELIB}/samba/dckeytab.so
 ${PYSITELIB}/samba/descriptor.py
 ${PYSITELIB}/samba/dnsserver.py
+${PYSITELIB}/samba/domain_update.py
 ${PYSITELIB}/samba/drs_utils.py
 ${PYSITELIB}/samba/dsdb.so
 ${PYSITELIB}/samba/dsdb_dns.so
+${PYSITELIB}/samba/emulate/__init__.py
+${PYSITELIB}/samba/emulate/traffic.py
+${PYSITELIB}/samba/emulate/traffic_packets.py
+${PYSITELIB}/samba/forest_update.py
 ${PYSITELIB}/samba/gensec.so
 ${PYSITELIB}/samba/getopt.py
+${PYSITELIB}/samba/gpclass.py
+${PYSITELIB}/samba/gpo.so
+${PYSITELIB}/samba/graph.py
 ${PYSITELIB}/samba/hostconfig.py
 ${PYSITELIB}/samba/idmap.py
 ${PYSITELIB}/samba/join.py
@@ -299,7 +308,9 @@ ${PYSITELIB}/samba/kcc/kcc_utils.py
 ${PYSITELIB}/samba/kcc/ldif_import_export.py
 ${PYSITELIB}/samba/messaging.so
 ${PYSITELIB}/samba/ms_display_specifiers.py
+${PYSITELIB}/samba/ms_forest_updates_markdown.py
 ${PYSITELIB}/samba/ms_schema.py
+${PYSITELIB}/samba/ms_schema_markdown.py
 ${PYSITELIB}/samba/ndr.py
 ${PYSITELIB}/samba/net.so
 ${PYSITELIB}/samba/netbios.so
@@ -324,6 +335,7 @@ ${PYSITELIB}/samba/netcmd/sites.py
 ${PYSITELIB}/samba/netcmd/spn.py
 ${PYSITELIB}/samba/netcmd/testparm.py
 ${PYSITELIB}/samba/netcmd/user.py
+${PYSITELIB}/samba/netcmd/visualize.py
 ${PYSITELIB}/samba/ntacls.py
 ${PYSITELIB}/samba/ntstatus.so
 ${PYSITELIB}/samba/param.so
@@ -362,8 +374,13 @@ ${PYSITELIB}/samba/tests/auth_log_netlogon_bad_creds.py
 ${PYSITELIB}/samba/tests/auth_log_pass_change.py
 ${PYSITELIB}/samba/tests/auth_log_samlogon.py
 ${PYSITELIB}/samba/tests/blackbox/__init__.py
+${PYSITELIB}/samba/tests/blackbox/check_output.py
 ${PYSITELIB}/samba/tests/blackbox/ndrdump.py
 ${PYSITELIB}/samba/tests/blackbox/samba_dnsupdate.py
+${PYSITELIB}/samba/tests/blackbox/smbcontrol.py
+${PYSITELIB}/samba/tests/blackbox/traffic_learner.py
+${PYSITELIB}/samba/tests/blackbox/traffic_replay.py
+${PYSITELIB}/samba/tests/blackbox/traffic_summary.py
 ${PYSITELIB}/samba/tests/common.py
 ${PYSITELIB}/samba/tests/core.py
 ${PYSITELIB}/samba/tests/credentials.py
@@ -391,10 +408,16 @@ ${PYSITELIB}/samba/tests/dns_tkey.py
 ${PYSITELIB}/samba/tests/dns_wildcard.py
 ${PYSITELIB}/samba/tests/docs.py
 ${PYSITELIB}/samba/tests/dsdb.py
+${PYSITELIB}/samba/tests/dsdb_lock.py
 ${PYSITELIB}/samba/tests/dsdb_schema_attributes.py
+${PYSITELIB}/samba/tests/emulate/__init__.py
+${PYSITELIB}/samba/tests/emulate/traffic.py
+${PYSITELIB}/samba/tests/emulate/traffic_packet.py
+${PYSITELIB}/samba/tests/encrypted_secrets.py
 ${PYSITELIB}/samba/tests/gensec.py
 ${PYSITELIB}/samba/tests/get_opt.py
 ${PYSITELIB}/samba/tests/glue.py
+${PYSITELIB}/samba/tests/graph.py
 ${PYSITELIB}/samba/tests/hostconfig.py
 ${PYSITELIB}/samba/tests/join.py
 ${PYSITELIB}/samba/tests/kcc/__init__.py
@@ -402,6 +425,7 @@ ${PYSITELIB}/samba/tests/kcc/graph.py
 ${PYSITELIB}/samba/tests/kcc/graph_utils.py
 ${PYSITELIB}/samba/tests/kcc/kcc_utils.py
 ${PYSITELIB}/samba/tests/kcc/ldif_import_export.py
+${PYSITELIB}/samba/tests/krb5_credentials.py
 ${PYSITELIB}/samba/tests/libsmb_samba_internal.py
 ${PYSITELIB}/samba/tests/lsa_string.py
 ${PYSITELIB}/samba/tests/messaging.py
@@ -410,14 +434,16 @@ ${PYSITELIB}/samba/tests/net_join_no_spnego.py
 ${PYSITELIB}/samba/tests/netcmd.py
 ${PYSITELIB}/samba/tests/netlogonsvc.py
 ${PYSITELIB}/samba/tests/ntacls.py
-${PYSITELIB}/samba/tests/ntlmauth.py
+${PYSITELIB}/samba/tests/ntlmdisabled.py
 ${PYSITELIB}/samba/tests/pam_winbind.py
+${PYSITELIB}/samba/tests/pam_winbind_warn_pwd_expire.py
 ${PYSITELIB}/samba/tests/param.py
 ${PYSITELIB}/samba/tests/password_hash.py
 ${PYSITELIB}/samba/tests/password_hash_fl2003.py
 ${PYSITELIB}/samba/tests/password_hash_fl2008.py
 ${PYSITELIB}/samba/tests/password_hash_gpgme.py
 ${PYSITELIB}/samba/tests/password_hash_ldap.py
+${PYSITELIB}/samba/tests/password_quality.py
 ${PYSITELIB}/samba/tests/policy.py
 ${PYSITELIB}/samba/tests/posixacl.py
 ${PYSITELIB}/samba/tests/provision.py
@@ -431,9 +457,11 @@ ${PYSITELIB}/samba/tests/samba_tool/dnscmd.py
 ${PYSITELIB}/samba/tests/samba_tool/fsmo.py
 ${PYSITELIB}/samba/tests/samba_tool/gpo.py
 ${PYSITELIB}/samba/tests/samba_tool/group.py
+${PYSITELIB}/samba/tests/samba_tool/help.py
 ${PYSITELIB}/samba/tests/samba_tool/join.py
 ${PYSITELIB}/samba/tests/samba_tool/ntacl.py
 ${PYSITELIB}/samba/tests/samba_tool/processes.py
+${PYSITELIB}/samba/tests/samba_tool/provision_password_check.py
 ${PYSITELIB}/samba/tests/samba_tool/rodc.py
 ${PYSITELIB}/samba/tests/samba_tool/sites.py
 ${PYSITELIB}/samba/tests/samba_tool/timecmd.py
@@ -441,11 +469,14 @@ ${PYSITELIB}/samba/tests/samba_tool/user.py
 ${PYSITELIB}/samba/tests/samba_tool/user_check_password_script.py
 ${PYSITELIB}/samba/tests/samba_tool/user_virtualCryptSHA.py
 ${PYSITELIB}/samba/tests/samba_tool/user_wdigest.py
+${PYSITELIB}/samba/tests/samba_tool/visualize.py
+${PYSITELIB}/samba/tests/samba_tool/visualize_drs.py
 ${PYSITELIB}/samba/tests/samdb.py
 ${PYSITELIB}/samba/tests/security.py
 ${PYSITELIB}/samba/tests/source.py
 ${PYSITELIB}/samba/tests/strings.py
 ${PYSITELIB}/samba/tests/subunitrun.py
+${PYSITELIB}/samba/tests/tdb_util.py
 ${PYSITELIB}/samba/tests/unicodenames.py
 ${PYSITELIB}/samba/tests/upgrade.py
 ${PYSITELIB}/samba/tests/upgradeprovision.py
@@ -567,6 +598,7 @@ lib/samba/ldb/descriptor.so
 lib/samba/ldb/dirsync.so
 lib/samba/ldb/dns_notify.so
 lib/samba/ldb/dsdb_notification.so
+lib/samba/ldb/encrypted_secrets.so
 lib/samba/ldb/extended_dn_in.so
 lib/samba/ldb/extended_dn_out.so
 lib/samba/ldb/extended_dn_store.so
@@ -608,6 +640,7 @@ lib/samba/ldb/subtree_delete.so
 lib/samba/ldb/subtree_rename.so
 lib/samba/ldb/tdb.so
 lib/samba/ldb/tombstone_reanimate.so
+lib/samba/ldb/unique_object_sids.so
 lib/samba/ldb/update_keytab.so
 lib/samba/ldb/vlv.so
 lib/samba/ldb/wins_ldb.so
@@ -655,7 +688,7 @@ lib/samba/private/libevents-samba4.so
 lib/samba/private/libflag-mapping-samba4.so
 lib/samba/private/libgenrand-samba4.so
 lib/samba/private/libgensec-samba4.so
-lib/samba/private/libgpo-samba4.so
+lib/samba/private/libgpext-samba4.so
 lib/samba/private/libgse-samba4.so
 lib/samba/private/libgssapi-samba4.so.2
 lib/samba/private/libgssapi-samba4.so.2.0.0
@@ -680,7 +713,7 @@ lib/samba/private/libkrb5-samba4.so.26.0.0
 lib/samba/private/libkrb5samba-samba4.so
 lib/samba/private/libldb-cmdline-samba4.so
 lib/samba/private/libldb.so.1
-lib/samba/private/libldb.so.1.2.3
+lib/samba/private/libldb.so.1.3.3
 lib/samba/private/libldbsamba-samba4.so
 lib/samba/private/liblibcli-lsa3-samba4.so
 lib/samba/private/liblibcli-netlogon3-samba4.so
@@ -702,9 +735,9 @@ lib/samba/private/libposix-eadb-samba4.so
 lib/samba/private/libprinting-migrate-samba4.so
 lib/samba/private/libprocess-model-samba4.so
 lib/samba/private/libpyldb-util.so.1
-lib/samba/private/libpyldb-util.so.1.2.3
+lib/samba/private/libpyldb-util.so.1.3.3
 lib/samba/private/libpytalloc-util.so.2
-lib/samba/private/libpytalloc-util.so.2.1.9
+lib/samba/private/libpytalloc-util.so.2.1.11
 lib/samba/private/libregistry-samba4.so
 lib/samba/private/libreplace-samba4.so
 lib/samba/private/libroken-samba4.so.19
@@ -734,12 +767,12 @@ lib/samba/private/libsocket-blocking-samba4.so
 lib/samba/private/libsys-rw-samba4.so
 lib/samba/private/libtalloc-report-samba4.so
 lib/samba/private/libtalloc.so.2
-lib/samba/private/libtalloc.so.2.1.9
+lib/samba/private/libtalloc.so.2.1.11
 lib/samba/private/libtdb-wrap-samba4.so
 lib/samba/private/libtdb.so.1
-lib/samba/private/libtdb.so.1.3.14
+lib/samba/private/libtdb.so.1.3.15
 lib/samba/private/libtevent.so.0
-lib/samba/private/libtevent.so.0.9.34
+lib/samba/private/libtevent.so.0.9.36
 lib/samba/private/libtime-basic-samba4.so
 lib/samba/private/libtorture-samba4.so
 lib/samba/private/libtrusts-util-samba4.so
@@ -751,6 +784,7 @@ lib/samba/private/libwinbind-client-samba4.so
 lib/samba/private/libwind-samba4.so.0
 lib/samba/private/libwind-samba4.so.0.0.0
 lib/samba/private/libxattr-tdb-samba4.so
+lib/samba/process_model/prefork.so
 lib/samba/process_model/standard.so
 lib/samba/security/pam_winbind.so
 lib/samba/service/cldap.so
@@ -800,6 +834,7 @@ lib/samba/vfs/streams_xattr.so
 lib/samba/vfs/syncops.so
 lib/samba/vfs/time_audit.so
 lib/samba/vfs/unityed_media.so
+lib/samba/vfs/virusfilter.so
 lib/samba/vfs/worm.so
 lib/samba/vfs/xattr_tdb.so
 lib/samba/vfs/zfsacl.so
@@ -837,6 +872,8 @@ man/man5/smbgetrc.5
 man/man5/smbpasswd.5
 man/man7/libsmbclient.7
 man/man7/samba.7
+man/man7/traffic_learner.7
+man/man7/traffic_replay.7
 man/man7/winbind_krb5_locator.7
 man/man8/cifsdd.8
 man/man8/eventlogadm.8
@@ -864,7 +901,6 @@ man/man8/smbspool_krb5_wrapper.8
 man/man8/vfs_acl_tdb.8
 man/man8/vfs_acl_xattr.8
 man/man8/vfs_aio_fork.8
-man/man8/vfs_aio_linux.8
 man/man8/vfs_aio_pthread.8
 man/man8/vfs_audit.8
 man/man8/vfs_btrfs.8
@@ -886,6 +922,7 @@ man/man8/vfs_gpfs.8
 man/man8/vfs_linux_xfs_sgid.8
 man/man8/vfs_media_harmony.8
 man/man8/vfs_netatalk.8
+man/man8/vfs_nfs4acl_xattr.8
 man/man8/vfs_offline.8
 man/man8/vfs_prealloc.8
 man/man8/vfs_preopen.8
@@ -902,6 +939,7 @@ man/man8/vfs_syncops.8
 man/man8/vfs_time_audit.8
 man/man8/vfs_tsmsm.8
 man/man8/vfs_unityed_media.8
+man/man8/vfs_virusfilter.8
 man/man8/vfs_worm.8
 man/man8/vfs_xattr_tdb.8
 man/man8/vfs_zfsacl.8
@@ -909,6 +947,7 @@ man/man8/winbindd.8
 sbin/nmbd
 sbin/samba
 sbin/samba_dnsupdate
+sbin/samba_gpoupdate
 sbin/samba_kcc
 sbin/samba_spnupdate
 sbin/samba_upgradedns
@@ -930,11 +969,27 @@ share/doc/samba-pbd/WindowsTerminalServer.reg
 share/examples/samba-pbd/samba.schema
 share/examples/samba-pbd/smb.conf.default
 share/samba/setup/DB_CONFIG
+share/samba/setup/ad-schema/AD_DS_Attributes__Windows_Server_2012_R2.ldf
+share/samba/setup/ad-schema/AD_DS_Attributes__Windows_Server_2016.ldf
+share/samba/setup/ad-schema/AD_DS_Classes__Windows_Server_2012_R2.ldf
+share/samba/setup/ad-schema/AD_DS_Classes__Windows_Server_2016.ldf
+share/samba/setup/ad-schema/Attributes_for_AD_DS__Windows_Server_2008_R2.ldf
+share/samba/setup/ad-schema/Attributes_for_AD_DS__Windows_Server_2012.ldf
+share/samba/setup/ad-schema/Classes_for_AD_DS__Windows_Server_2008_R2.ldf
+share/samba/setup/ad-schema/Classes_for_AD_DS__Windows_Server_2012.ldf
 share/samba/setup/ad-schema/MS-AD_Schema_2K8_Attributes.txt
 share/samba/setup/ad-schema/MS-AD_Schema_2K8_Classes.txt
 share/samba/setup/ad-schema/MS-AD_Schema_2K8_R2_Attributes.txt
 share/samba/setup/ad-schema/MS-AD_Schema_2K8_R2_Classes.txt
 share/samba/setup/ad-schema/licence.txt
+share/samba/setup/adprep/WindowsServerDocs/Forest-Wide-Updates.md
+share/samba/setup/adprep/WindowsServerDocs/Sch49.ldf.diff
+share/samba/setup/adprep/WindowsServerDocs/Sch50.ldf.diff
+share/samba/setup/adprep/WindowsServerDocs/Sch51.ldf.diff
+share/samba/setup/adprep/WindowsServerDocs/Sch57.ldf.diff
+share/samba/setup/adprep/WindowsServerDocs/Sch59.ldf.diff
+share/samba/setup/adprep/WindowsServerDocs/Schema-Updates.md
+share/samba/setup/adprep/fix-forest-rev.ldf
 share/samba/setup/aggregate_schema.ldif
 share/samba/setup/cn=samba.ldif
 share/samba/setup/display-specifiers/DisplaySpecifiers-Win2k0.txt
@@ -943,6 +998,7 @@ share/samba/setup/display-specifiers/DisplaySpecifiers-Win2k3R2.txt
 share/samba/setup/display-specifiers/DisplaySpecifiers-Win2k8.txt
 share/samba/setup/display-specifiers/DisplaySpecifiers-Win2k8R2.txt
 share/samba/setup/dns_update_list
+share/samba/setup/extended-rights.ldif
 share/samba/setup/fedora-ds-init.ldif
 share/samba/setup/fedorads-dna.ldif
 share/samba/setup/fedorads-index.ldif
@@ -1019,3 +1075,4 @@ share/samba/setup/spn_update_list
 share/samba/setup/ypServ30.ldif
 @pkgdir share/examples/samba-pbd/pam_smbpass
 @pkgdir etc/samba
+@pkgdir bind-dns
