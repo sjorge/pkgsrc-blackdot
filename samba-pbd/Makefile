@@ -87,6 +87,7 @@ CONFIGURE_ARGS+=	--with-libiconv=${BUILDLINK_PREFIX.iconv}
 CONFIGURE_ARGS+=	--enable-gnutls
 CONFIGURE_ARGS+=	--abi-check-disable
 CONFIGURE_ARGS+=	--without-systemd
+CONFIGURE_ARGS+=	--with-ntvfs-fileserver
 CONFIGURE_ARGS+=	--disable-cups
 CONFIGURE_ARGS+=	--disable-iprint
 CONFIGURE_ARGS+=	--disable-cephfs
