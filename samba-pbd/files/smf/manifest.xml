@@ -51,6 +51,20 @@
 		</template>
 	</instance>
 
+	<instance name='ad' enabled='false'>
+		<exec_method name='start'   type='method' exec='@PREFIX@/sbin/samba -D' timeout_seconds='0'/>
+		<exec_method name='stop'    type='method' exec=':kill'      timeout_seconds='30'/>
+		<exec_method name='refresh' type='method' exec=':kill -HUP' timeout_seconds='0'/>
+		<template>
+			<common_name>
+				<loctext xml:lang='C'>Samba AD DC daemon</loctext>
+			</common_name>
+			<documentation>
+				<manpage title='samba' section='8' manpath='man'/>
+			</documentation>
+		</template>
+	</instance>
+
 	<stability value='Unstable'/>
 </service>
 </service_bundle>
