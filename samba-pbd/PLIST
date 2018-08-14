@@ -713,7 +713,7 @@ lib/samba/private/libkrb5-samba4.so.26.0.0
 lib/samba/private/libkrb5samba-samba4.so
 lib/samba/private/libldb-cmdline-samba4.so
 lib/samba/private/libldb.so.1
-lib/samba/private/libldb.so.1.3.3
+lib/samba/private/libldb.so.1.3.4
 lib/samba/private/libldbsamba-samba4.so
 lib/samba/private/liblibcli-lsa3-samba4.so
 lib/samba/private/liblibcli-netlogon3-samba4.so
@@ -736,7 +736,7 @@ lib/samba/private/libposix-eadb-samba4.so
 lib/samba/private/libprinting-migrate-samba4.so
 lib/samba/private/libprocess-model-samba4.so
 lib/samba/private/libpyldb-util.so.1
-lib/samba/private/libpyldb-util.so.1.3.3
+lib/samba/private/libpyldb-util.so.1.3.4
 lib/samba/private/libpytalloc-util.so.2
 lib/samba/private/libpytalloc-util.so.2.1.11
 lib/samba/private/libregistry-samba4.so
