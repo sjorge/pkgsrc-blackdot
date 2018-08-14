@@ -2,7 +2,7 @@
 
 DISTNAME=	samba-${VERSION}
 PKGNAME=	samba-pbd-${VERSION}
-VERSION=	4.8.3
+VERSION=	4.8.4
 #PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.samba.org/pub/samba/
