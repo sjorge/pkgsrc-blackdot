@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.7 2013/11/11 12:14:47 obache Exp $
 #
 
-DISTNAME=		znc-1.6.6
+DISTNAME=		znc-1.7.1
 CATEGORIES=		net
 MASTER_SITES=		http://znc.in/releases/archive/
 
