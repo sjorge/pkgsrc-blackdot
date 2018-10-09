@@ -2,7 +2,7 @@
 
 DISTNAME=	samba-${VERSION}
 PKGNAME=	samba-pbd-${VERSION}
-VERSION=	4.8.5
+VERSION=	4.9.1
 #PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.samba.org/pub/samba/
@@ -84,6 +84,8 @@ CONFIGURE_ARGS+=	--with-privatelibdir=${SMB_PRIVATELIB}
 CONFIGURE_ARGS+=	--with-privileged-socket-dir=${SMB_PRIVSOCKETS}
 CONFIGURE_ARGS+=	--with-configdir=${SMB_CONFIG}
 CONFIGURE_ARGS+=	--with-libiconv=${BUILDLINK_PREFIX.iconv}
+CONFIGURE_ARGS+=	--with-gpgme
+CONFIGURE_ARGS+=	--with-regedit
 CONFIGURE_ARGS+=	--enable-gnutls
 CONFIGURE_ARGS+=	--abi-check-disable
 CONFIGURE_ARGS+=	--without-systemd
@@ -220,4 +222,8 @@ PY_PATCHPLIST=	yes
 .include "../../devel/readline/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../security/gnutls/buildlink3.mk"
+.include "../../security/gpgme/buildlink3.mk"
+.include "../../databases/lmdb/buildlink3.mk"
+.include "../../textproc/jansson/buildlink3.mk"
+.include "../../archivers/libarchive/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

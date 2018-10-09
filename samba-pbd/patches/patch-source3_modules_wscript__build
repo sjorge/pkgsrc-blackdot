@@ -1,8 +1,8 @@
 $NetBSD$
 
---- source3/modules/wscript_build.orig	2018-02-12 10:27:16.000000000 +0000
+--- source3/modules/wscript_build.orig	2018-09-06 07:59:20.000000000 +0000
 +++ source3/modules/wscript_build
-@@ -225,14 +225,14 @@ bld.SAMBA3_MODULE('vfs_zfsacl',
+@@ -230,14 +230,14 @@ bld.SAMBA3_MODULE('vfs_zfsacl',
  xdr_buf_hack = 'sed -e "s@^\([ \t]*register int32_t \*buf\);@\\1 = buf;@"'
  
  bld.SAMBA_GENERATOR('nfs41acl-xdr-c',

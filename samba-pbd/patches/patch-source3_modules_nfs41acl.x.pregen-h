@@ -1,6 +1,6 @@
 $NetBSD$
 
---- source3/modules/nfs41acl.x.pregen-h.orig	2018-05-16 15:11:02.938563721 +0000
+--- source3/modules/nfs41acl.x.pregen-h.orig	2018-10-09 11:35:52.173166079 +0000
 +++ source3/modules/nfs41acl.x.pregen-h
 @@ -0,0 +1,130 @@
 +/*
