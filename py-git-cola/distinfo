@@ -1,0 +1,8 @@
+$NetBSD: distinfo,v 1.43 2017/08/14 19:54:55 wiz Exp $
+
+SHA1 (git-cola-3.2.tar.gz) = 63bd8c8057acab4b4a5366c02c5b01a9e9e24911
+RMD160 (git-cola-3.2.tar.gz) = 41ccdfe2851f2ec0aad5633c333ce4e5ae56b5f7
+SHA512 (git-cola-3.2.tar.gz) = ca171549dad692088e337efad6f480103a41a1a94f57ae66c15fab3d69e3b18ecc28ac1178886fedd6d969f783e8d5feb4922539c1739ce52c0c0ac59dc941ee
+Size (git-cola-3.2.tar.gz) = 1208723 bytes
+SHA1 (patch-setup.py) = a28c82a1709b932f54610fa770cae3c78de3a8d5
+SHA1 (patch-tortoisehg_util_paths.py) = 0fbe6b583b3d6d60f4c8d96f81d633f454230f81
