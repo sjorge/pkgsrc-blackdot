@@ -1,10 +1,10 @@
 # $NetBSD$
 
 DISTNAME=	sickrage-${DISTVERSION}
-DISTVERSION=	2018.04.08
-COMMIT_SHA=	39c5dc6
+DISTVERSION=	2018.10.16
+COMMIT_SHA=	0d6d535
 CATEGORIES=	news
-MASTER_SITES=	-https://github.com/SickRage/SickRage/tarball/${COMMIT_SHA}
+MASTER_SITES=	-https://github.com/SickChill/SickChill/tarball/${COMMIT_SHA}
 DISTFILES=      ${DISTNAME}-1${EXTRACT_SUFX}
 DISTFILE= 	${DISTNAME}-1${EXTRACT_SUFX}
 EXTRACT_SUFX=	.tgz
@@ -21,7 +21,7 @@ DEPENDS+=	${PYPKGPREFIX}-lxml>=4.2.1:../../textproc/py-lxml
 DEPENDS+=	${PYPKGPREFIX}-sqlalchemy>=1.2.5:../../databases/py-sqlalchemy
 USE_LANGUAGES+= c
 
-TEMP_DIR= 	SickRage-SickRage-${COMMIT_SHA}
+TEMP_DIR= 	SickChill-SickChill-${COMMIT_SHA}
 WRKSRC= 	${WRKDIR}/${TEMP_DIR}
 NO_BUILD= 	yes
 USE_TOOLS= 	pax
@@ -54,7 +54,7 @@ SUBST_STAGE.fix-paths=		pre-configure
 SUBST_MESSAGE.fix-paths=	Fix absolute paths.
 SUBST_FILES.fix-paths=		SickBeard.py
 SUBST_SED.fix-paths=		-e 's,%%PREFIX%%,${PREFIX},g'
-INSTALL_DIRS+=			sickrage sickbeard lib gui locale
+INSTALL_DIRS+=			sickchill sickbeard lib gui locale
 INSTALL_FILES+=			SickBeard.py readme.md COPYING.txt
 CLEAN_LIBS+=                    tornado markupsafe sqlalchemy lxml
 

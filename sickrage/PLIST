@@ -217,6 +217,26 @@ share/SickRage/gui/slick/images/flags/zm.png
 share/SickRage/gui/slick/images/flags/zw.png
 share/SickRage/gui/slick/images/glyphicons-halflings-white.png
 share/SickRage/gui/slick/images/glyphicons-halflings.png
+share/SickRage/gui/slick/images/ico/android-chrome-144x144.png
+share/SickRage/gui/slick/images/ico/android-chrome-192x192.png
+share/SickRage/gui/slick/images/ico/android-chrome-256x256.png
+share/SickRage/gui/slick/images/ico/android-chrome-36x36.png
+share/SickRage/gui/slick/images/ico/android-chrome-384x384.png
+share/SickRage/gui/slick/images/ico/android-chrome-48x48.png
+share/SickRage/gui/slick/images/ico/android-chrome-512x512.png
+share/SickRage/gui/slick/images/ico/android-chrome-72x72.png
+share/SickRage/gui/slick/images/ico/android-chrome-96x96.png
+share/SickRage/gui/slick/images/ico/apple-touch-icon-114x114.png
+share/SickRage/gui/slick/images/ico/apple-touch-icon-120x120.png
+share/SickRage/gui/slick/images/ico/apple-touch-icon-144x144.png
+share/SickRage/gui/slick/images/ico/apple-touch-icon-152x152.png
+share/SickRage/gui/slick/images/ico/apple-touch-icon-180x180.png
+share/SickRage/gui/slick/images/ico/apple-touch-icon-57x57.png
+share/SickRage/gui/slick/images/ico/apple-touch-icon-60x60.png
+share/SickRage/gui/slick/images/ico/apple-touch-icon-72x72.png
+share/SickRage/gui/slick/images/ico/apple-touch-icon-76x76.png
+share/SickRage/gui/slick/images/ico/apple-touch-icon.png
+share/SickRage/gui/slick/images/ico/browserconfig.xml
 share/SickRage/gui/slick/images/ico/favicon-114.png
 share/SickRage/gui/slick/images/ico/favicon-120.png
 share/SickRage/gui/slick/images/ico/favicon-144.png
@@ -224,9 +244,11 @@ share/SickRage/gui/slick/images/ico/favicon-150.png
 share/SickRage/gui/slick/images/ico/favicon-152.png
 share/SickRage/gui/slick/images/ico/favicon-16.png
 share/SickRage/gui/slick/images/ico/favicon-160.png
+share/SickRage/gui/slick/images/ico/favicon-16x16.png
 share/SickRage/gui/slick/images/ico/favicon-196.png
 share/SickRage/gui/slick/images/ico/favicon-310.png
 share/SickRage/gui/slick/images/ico/favicon-32.png
+share/SickRage/gui/slick/images/ico/favicon-32x32.png
 share/SickRage/gui/slick/images/ico/favicon-57.png
 share/SickRage/gui/slick/images/ico/favicon-64.png
 share/SickRage/gui/slick/images/ico/favicon-70.png
@@ -234,7 +256,13 @@ share/SickRage/gui/slick/images/ico/favicon-72.png
 share/SickRage/gui/slick/images/ico/favicon-76.png
 share/SickRage/gui/slick/images/ico/favicon-96.png
 share/SickRage/gui/slick/images/ico/favicon.ico
+share/SickRage/gui/slick/images/ico/mstile-144x144.png
+share/SickRage/gui/slick/images/ico/mstile-150x150.png
+share/SickRage/gui/slick/images/ico/mstile-310x150.png
+share/SickRage/gui/slick/images/ico/mstile-310x310.png
+share/SickRage/gui/slick/images/ico/mstile-70x70.png
 share/SickRage/gui/slick/images/ico/safari-pinned-tab.svg
+share/SickRage/gui/slick/images/ico/site.webmanifest
 share/SickRage/gui/slick/images/indexers/thetvdb16.png
 share/SickRage/gui/slick/images/indexers/tvrage16.png
 share/SickRage/gui/slick/images/info32.png
@@ -342,6 +370,7 @@ share/SickRage/gui/slick/images/network/biography channel.png
 share/SickRage/gui/slick/images/network/blip.png
 share/SickRage/gui/slick/images/network/bloomberg.png
 share/SickRage/gui/slick/images/network/bnn (nl).png
+share/SickRage/gui/slick/images/network/bnn-vara.png
 share/SickRage/gui/slick/images/network/bnn.png
 share/SickRage/gui/slick/images/network/bounce tv.png
 share/SickRage/gui/slick/images/network/br alpha.png
@@ -564,6 +593,7 @@ share/SickRage/gui/slick/images/network/ketnet.png
 share/SickRage/gui/slick/images/network/kids station.png
 share/SickRage/gui/slick/images/network/kika hd.png
 share/SickRage/gui/slick/images/network/kika.png
+share/SickRage/gui/slick/images/network/kro-ncrv.png
 share/SickRage/gui/slick/images/network/kro.png
 share/SickRage/gui/slick/images/network/kyoto broadcasting system.png
 share/SickRage/gui/slick/images/network/la deux.png
@@ -666,6 +696,7 @@ share/SickRage/gui/slick/images/network/orf.png
 share/SickRage/gui/slick/images/network/orf1 hd.png
 share/SickRage/gui/slick/images/network/own.png
 share/SickRage/gui/slick/images/network/oxygen.png
+share/SickRage/gui/slick/images/network/paramount network.png
 share/SickRage/gui/slick/images/network/pay-per-view.png
 share/SickRage/gui/slick/images/network/pbs.png
 share/SickRage/gui/slick/images/network/phoenix hd.png
@@ -947,6 +978,7 @@ share/SickRage/gui/slick/images/network/veronica.png
 share/SickRage/gui/slick/images/network/vh1 classics.png
 share/SickRage/gui/slick/images/network/vh1.png
 share/SickRage/gui/slick/images/network/viceland.png
+share/SickRage/gui/slick/images/network/videoland (nl).png
 share/SickRage/gui/slick/images/network/vier.png
 share/SickRage/gui/slick/images/network/vijftv.jpg
 share/SickRage/gui/slick/images/network/vimeo.png
@@ -1010,6 +1042,7 @@ share/SickRage/gui/slick/images/providers/bin_req.png
 share/SickRage/gui/slick/images/providers/binsearch.png
 share/SickRage/gui/slick/images/providers/bitcannon.png
 share/SickRage/gui/slick/images/providers/bitsoup.png
+share/SickRage/gui/slick/images/providers/bj_share.png
 share/SickRage/gui/slick/images/providers/bluetigers.png
 share/SickRage/gui/slick/images/providers/btdigg.png
 share/SickRage/gui/slick/images/providers/btn.png
@@ -1032,6 +1065,7 @@ share/SickRage/gui/slick/images/providers/filelist.png
 share/SickRage/gui/slick/images/providers/french_adn.png
 share/SickRage/gui/slick/images/providers/french_adn_com.png
 share/SickRage/gui/slick/images/providers/gftracker.png
+share/SickRage/gui/slick/images/providers/gimmepeers.png
 share/SickRage/gui/slick/images/providers/hd4free.png
 share/SickRage/gui/slick/images/providers/hdbits.png
 share/SickRage/gui/slick/images/providers/hdspace.png
@@ -1144,8 +1178,8 @@ share/SickRage/gui/slick/images/providers/xthor_bz.png
 share/SickRage/gui/slick/images/providers/yggtorrent.png
 share/SickRage/gui/slick/images/rating.png
 share/SickRage/gui/slick/images/shadow.png
-share/SickRage/gui/slick/images/sickrage-shark-mascot.png
-share/SickRage/gui/slick/images/sickrage.png
+share/SickRage/gui/slick/images/sickchill-sc.png
+share/SickRage/gui/slick/images/sickchill.png
 share/SickRage/gui/slick/images/subtitles/addic7ed.png
 share/SickRage/gui/slick/images/subtitles/flags/afr.png
 share/SickRage/gui/slick/images/subtitles/flags/alb.png
@@ -4448,6 +4482,9 @@ share/SickRage/locale/hr_HR/LC_MESSAGES/messages.po
 share/SickRage/locale/hu_HU/LC_MESSAGES/messages.json
 share/SickRage/locale/hu_HU/LC_MESSAGES/messages.mo
 share/SickRage/locale/hu_HU/LC_MESSAGES/messages.po
+share/SickRage/locale/id_ID/LC_MESSAGES/messages.json
+share/SickRage/locale/id_ID/LC_MESSAGES/messages.mo
+share/SickRage/locale/id_ID/LC_MESSAGES/messages.po
 share/SickRage/locale/is_IS/LC_MESSAGES/messages.json
 share/SickRage/locale/is_IS/LC_MESSAGES/messages.mo
 share/SickRage/locale/is_IS/LC_MESSAGES/messages.po
@@ -4604,12 +4641,14 @@ share/SickRage/sickbeard/providers/alpharatio.py
 share/SickRage/sickbeard/providers/archetorrent.py
 share/SickRage/sickbeard/providers/binsearch.py
 share/SickRage/sickbeard/providers/bitcannon.py
+share/SickRage/sickbeard/providers/bjshare.py
 share/SickRage/sickbeard/providers/btn.py
 share/SickRage/sickbeard/providers/cpasbien.py
 share/SickRage/sickbeard/providers/danishbits.py
 share/SickRage/sickbeard/providers/elitetorrent.py
 share/SickRage/sickbeard/providers/filelist.py
 share/SickRage/sickbeard/providers/gftracker.py
+share/SickRage/sickbeard/providers/gimmepeers.py
 share/SickRage/sickbeard/providers/hd4free.py
 share/SickRage/sickbeard/providers/hdbits.py
 share/SickRage/sickbeard/providers/hdspace.py
@@ -4673,43 +4712,52 @@ share/SickRage/sickbeard/versionChecker.py
 share/SickRage/sickbeard/webapi.py
 share/SickRage/sickbeard/webserve.py
 share/SickRage/sickbeard/webserveInit.py
-share/SickRage/sickrage/__init__.py
-share/SickRage/sickrage/helper/__init__.py
-share/SickRage/sickrage/helper/argument_parser.py
-share/SickRage/sickrage/helper/common.py
-share/SickRage/sickrage/helper/encoding.py
-share/SickRage/sickrage/helper/exceptions.py
-share/SickRage/sickrage/helper/media_info.py
-share/SickRage/sickrage/helper/quality.py
-share/SickRage/sickrage/media/GenericMedia.py
-share/SickRage/sickrage/media/ShowBanner.py
-share/SickRage/sickrage/media/ShowFanArt.py
-share/SickRage/sickrage/media/ShowNetworkLogo.py
-share/SickRage/sickrage/media/ShowPoster.py
-share/SickRage/sickrage/media/__init__.py
-share/SickRage/sickrage/providers/GenericProvider.py
-share/SickRage/sickrage/providers/__init__.py
-share/SickRage/sickrage/providers/nzb/NZBProvider.py
-share/SickRage/sickrage/providers/nzb/__init__.py
-share/SickRage/sickrage/providers/subtitle/__init__.py
-share/SickRage/sickrage/providers/subtitle/itasa.py
-share/SickRage/sickrage/providers/subtitle/subscenter.py
-share/SickRage/sickrage/providers/subtitle/wizdom.py
-share/SickRage/sickrage/providers/torrent/TorrentProvider.py
-share/SickRage/sickrage/providers/torrent/__init__.py
-share/SickRage/sickrage/recompiled/__init__.py
-share/SickRage/sickrage/recompiled/tags.py
-share/SickRage/sickrage/show/ComingEpisodes.py
-share/SickRage/sickrage/show/History.py
-share/SickRage/sickrage/show/Show.py
-share/SickRage/sickrage/show/__init__.py
-share/SickRage/sickrage/show/recommendations/__init__.py
-share/SickRage/sickrage/show/recommendations/anidb.py
-share/SickRage/sickrage/show/recommendations/imdb.py
-share/SickRage/sickrage/show/recommendations/recommended.py
-share/SickRage/sickrage/system/Restart.py
-share/SickRage/sickrage/system/Shutdown.py
-share/SickRage/sickrage/system/__init__.py
-share/SickRage/sickrage/tagger/__init__.py
-share/SickRage/sickrage/tagger/episode.py
+share/SickRage/sickchill/__init__.py
+share/SickRage/sickchill/helper/__init__.py
+share/SickRage/sickchill/helper/argument_parser.py
+share/SickRage/sickchill/helper/common.py
+share/SickRage/sickchill/helper/encoding.py
+share/SickRage/sickchill/helper/exceptions.py
+share/SickRage/sickchill/helper/media_info.py
+share/SickRage/sickchill/helper/quality.py
+share/SickRage/sickchill/media/GenericMedia.py
+share/SickRage/sickchill/media/ShowBanner.py
+share/SickRage/sickchill/media/ShowFanArt.py
+share/SickRage/sickchill/media/ShowNetworkLogo.py
+share/SickRage/sickchill/media/ShowPoster.py
+share/SickRage/sickchill/media/__init__.py
+share/SickRage/sickchill/providers/GenericProvider.py
+share/SickRage/sickchill/providers/__init__.py
+share/SickRage/sickchill/providers/nzb/NZBProvider.py
+share/SickRage/sickchill/providers/nzb/__init__.py
+share/SickRage/sickchill/providers/subtitle/__init__.py
+share/SickRage/sickchill/providers/subtitle/itasa.py
+share/SickRage/sickchill/providers/subtitle/subscenter.py
+share/SickRage/sickchill/providers/subtitle/wizdom.py
+share/SickRage/sickchill/providers/torrent/TorrentProvider.py
+share/SickRage/sickchill/providers/torrent/__init__.py
+share/SickRage/sickchill/recompiled/__init__.py
+share/SickRage/sickchill/recompiled/tags.py
+share/SickRage/sickchill/show/ComingEpisodes.py
+share/SickRage/sickchill/show/History.py
+share/SickRage/sickchill/show/Show.py
+share/SickRage/sickchill/show/__init__.py
+share/SickRage/sickchill/show/recommendations/__init__.py
+share/SickRage/sickchill/show/recommendations/anidb.py
+share/SickRage/sickchill/show/recommendations/imdb.py
+share/SickRage/sickchill/show/recommendations/recommended.py
+share/SickRage/sickchill/system/Restart.py
+share/SickRage/sickchill/system/Shutdown.py
+share/SickRage/sickchill/system/__init__.py
+share/SickRage/sickchill/tagger/__init__.py
+share/SickRage/sickchill/tagger/episode.py
+@pkgdir share/SickRage/sickrage/tagger
+@pkgdir share/SickRage/sickrage/system
+@pkgdir share/SickRage/sickrage/show/recommendations
+@pkgdir share/SickRage/sickrage/recompiled
+@pkgdir share/SickRage/sickrage/providers/torrent
+@pkgdir share/SickRage/sickrage/providers/subtitle
+@pkgdir share/SickRage/sickrage/providers/nzb
+@pkgdir share/SickRage/sickrage/media
+@pkgdir share/SickRage/sickrage/helper
 @pkgdir etc/sickrage
