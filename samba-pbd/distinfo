@@ -1,9 +1,9 @@
 $NetBSD: distinfo,v 1.2 2015/05/26 15:11:25 jperkin Exp $
 
-SHA1 (samba-4.9.1.tar.gz) = 658e7c12edfa9acd46ca116aebbbb7ede2d9432a
-RMD160 (samba-4.9.1.tar.gz) = d5fa8270b990bbf67ee24c6c1445ece9e125294a
-SHA512 (samba-4.9.1.tar.gz) = 267673b6d6ab0db59063480c20f02e5864ef96e9ad1097c23a99b2ab4b5fd2252193d7a152729b40cae0751fb9b0b108b087a190f5db11eabbd075224bd6e663
-Size (samba-4.9.1.tar.gz) = 18018259 bytes
+SHA1 (samba-4.9.2.tar.gz) = 3b777a95aed4946717094bbe830279ba5ee2370f
+RMD160 (samba-4.9.2.tar.gz) = 4db2cf6684e724514f3ea1eaa7ed93c756f72f28
+SHA512 (samba-4.9.2.tar.gz) = 67de5faeda45e5c245bf02cc195cdf9ca4b63f17625837badf7c50d97250e94de5309c9ef824bd7890bc771b1dc0a3bfbafea09880850b5167f0bf8a8ef488ed
+Size (samba-4.9.2.tar.gz) = 18042752 bytes
 SHA1 (patch-lib_replace_wscript) = 14ceb50e58ddd8ae961fb35afd548c60d17a224f
 SHA1 (patch-lib_tevent_test__req.c) = 0642d5548816b991ff35c32bb1f101841bb6cef0
 SHA1 (patch-lib_tevent_wscript) = 4e1c423f3565714edd87a0429791faaf96b8d93c

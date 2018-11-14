@@ -384,6 +384,7 @@ ${PYSITELIB}/samba/tests/auth_log_netlogon_bad_creds.py
 ${PYSITELIB}/samba/tests/auth_log_pass_change.py
 ${PYSITELIB}/samba/tests/auth_log_samlogon.py
 ${PYSITELIB}/samba/tests/blackbox/__init__.py
+${PYSITELIB}/samba/tests/blackbox/bug13653.py
 ${PYSITELIB}/samba/tests/blackbox/check_output.py
 ${PYSITELIB}/samba/tests/blackbox/ndrdump.py
 ${PYSITELIB}/samba/tests/blackbox/samba_dnsupdate.py
@@ -708,6 +709,7 @@ lib/samba/private/libcli-smb-common-samba4.so
 lib/samba/private/libcli-spoolss-samba4.so
 lib/samba/private/libcliauth-samba4.so
 lib/samba/private/libcluster-samba4.so
+lib/samba/private/libcmdline-contexts-samba4.so
 lib/samba/private/libcmdline-credentials-samba4.so
 lib/samba/private/libcmocka-samba4.so
 lib/samba/private/libcom_err-samba4.so.0
@@ -753,7 +755,7 @@ lib/samba/private/libldb-cmdline-samba4.so
 lib/samba/private/libldb-key-value-samba4.so
 lib/samba/private/libldb-mdb-int-samba4.so
 lib/samba/private/libldb.so.1
-lib/samba/private/libldb.so.1.4.2
+lib/samba/private/libldb.so.1.4.3
 lib/samba/private/libldbsamba-samba4.so
 lib/samba/private/liblibcli-lsa3-samba4.so
 lib/samba/private/liblibcli-netlogon3-samba4.so
@@ -771,12 +773,13 @@ lib/samba/private/libnpa-tstream-samba4.so
 lib/samba/private/libnss-info-samba4.so
 lib/samba/private/libntvfs-samba4.so
 lib/samba/private/libpac-samba4.so
+lib/samba/private/libpopt-samba3-cmdline-samba4.so
 lib/samba/private/libpopt-samba3-samba4.so
 lib/samba/private/libposix-eadb-samba4.so
 lib/samba/private/libprinting-migrate-samba4.so
 lib/samba/private/libprocess-model-samba4.so
 lib/samba/private/libpyldb-util.so.1
-lib/samba/private/libpyldb-util.so.1.4.2
+lib/samba/private/libpyldb-util.so.1.4.3
 lib/samba/private/libpytalloc-util.so.2
 lib/samba/private/libpytalloc-util.so.2.1.14
 lib/samba/private/libregistry-samba4.so
