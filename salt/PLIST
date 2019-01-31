@@ -2195,6 +2195,9 @@ ${PYSITELIB}/salt/modules/vmctl.pyo
 ${PYSITELIB}/salt/modules/vsphere.py
 ${PYSITELIB}/salt/modules/vsphere.pyc
 ${PYSITELIB}/salt/modules/vsphere.pyo
+${PYSITELIB}/salt/modules/win_auditpol.py
+${PYSITELIB}/salt/modules/win_auditpol.pyc
+${PYSITELIB}/salt/modules/win_auditpol.pyo
 ${PYSITELIB}/salt/modules/win_autoruns.py
 ${PYSITELIB}/salt/modules/win_autoruns.pyc
 ${PYSITELIB}/salt/modules/win_autoruns.pyo
@@ -4730,6 +4733,9 @@ ${PYSITELIB}/salt/utils/win_dacl.pyo
 ${PYSITELIB}/salt/utils/win_functions.py
 ${PYSITELIB}/salt/utils/win_functions.pyc
 ${PYSITELIB}/salt/utils/win_functions.pyo
+${PYSITELIB}/salt/utils/win_lgpo_auditpol.py
+${PYSITELIB}/salt/utils/win_lgpo_auditpol.pyc
+${PYSITELIB}/salt/utils/win_lgpo_auditpol.pyo
 ${PYSITELIB}/salt/utils/win_lgpo_netsh.py
 ${PYSITELIB}/salt/utils/win_lgpo_netsh.pyc
 ${PYSITELIB}/salt/utils/win_lgpo_netsh.pyo

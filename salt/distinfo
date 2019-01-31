@@ -1,6 +1,6 @@
 $NetBSD: distinfo,v 1.21 2016/07/21 17:05:39 jperkin Exp $
 
-SHA1 (salt-2019.2.0rc1.tar.gz) = b76b49f5237b40a0937e519df4b3cb73d0e2b8f6
-RMD160 (salt-2019.2.0rc1.tar.gz) = 28fc5397d056b7fd1b0b0b0f46dee69079ca1cb3
-SHA512 (salt-2019.2.0rc1.tar.gz) = 3b6d4fb0a9174d061a70289204a5ed50a238fdd3cf99a2e4ac95bee27425f84e66fdaef9ad88e3b3346b02e0a50646c5cde103697378a038fe21cf79b8ddd23e
-Size (salt-2019.2.0rc1.tar.gz) = 14902030 bytes
+SHA1 (salt-2019.2.0rc2.tar.gz) = cb458b13f4466e9f9f3e21f785fa93e8f0f3344e
+RMD160 (salt-2019.2.0rc2.tar.gz) = 1f5d5b4ebe70ee2d35570b2cb5a14ab2ff4efb69
+SHA512 (salt-2019.2.0rc2.tar.gz) = 76d6ac3a991e584e9e3ee2e340723a5098189eca7200271b9b9a81c0a77a150c6d5d20658cab828f032c5566a218e29efed765664ed847815d20950b1bb5d017
+Size (salt-2019.2.0rc2.tar.gz) = 14909250 bytes
