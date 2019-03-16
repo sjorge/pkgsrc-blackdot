@@ -16,9 +16,10 @@ USE_LANGUAGES=	c c++
 PKGCONFIG_OVERRIDE+=	libmosquitto.pc.in
 PKGCONFIG_OVERRIDE+=	libmosquittopp.pc.in
 
+.include "../../mk/bsd.prefs.mk"
+
 LDFLAGS.SunOS+=		-lsocket
 
-## configure the user, group and home
 MOSQUITTO_USER?=	mqtt
 MOSQUITTO_GROUP?=	mqtt
 MOSQUITTO_HOME?=	${VARBASE}/lib/mqtt
@@ -36,12 +37,15 @@ PKG_USERS=			${MOSQUITTO_USER}:${MOSQUITTO_GROUP}
 PKG_GECOS.${MOSQUITTO_USER}=	Mosquitto MQTT Broker
 PKG_HOME.${MOSQUITTO_USER}=	${MOSQUITTO_HOME}
 
-.include "../../mk/bsd.prefs.mk"
-
-.if ${PKGMANDIR} != "share/man"
-INSTALLATION_DIRS+= ${PKGMANDIR}/
+OWN_DIRS_PERMS+=		${MOSQUITTO_HOME}/ \
+				${MOSQUITTO_USER} ${MOSQUITTO_GROUP} 0700
+INSTALLATION_DIRS+=		${PKGMANDIR}/ ${PREFIX}/share/examples/
+EGDIR=				${PREFIX}/share/examples/mosquitto
+CONF_FILES=			${EGDIR}/mosquitto.conf ${PKG_SYSCONFDIR}/mosquitto.conf
 
 post-install:
+	${MV} ${DESTDIR}${PREFIX}/etc/* ${DESTDIR}${PREFIX}/share/examples/
+.if ${PKGMANDIR} != "share/man"
 	${MV} ${DESTDIR}${PREFIX}/share/man/* ${DESTDIR}${PREFIX}/${PKGMANDIR}/
 .endif
 
