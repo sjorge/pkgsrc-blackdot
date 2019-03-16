@@ -16,8 +16,8 @@
       <service_fmri value='file://localhost/@PKG_SYSCONFDIR@/mosquitto.conf' />
     </dependency>
 
-    <method_context working_directory='/var/empty'>
-      <method_credential user='mosquitto' group='mosquitto' />
+    <method_context working_directory='@MOSQUITTO_HOME@'>
+      <method_credential user='@MOSQUITTO_USER@' group='@MOSQUITTO_GROUP@' />
     </method_context>
 
     <exec_method type='method' name='start' exec='@PREFIX@/bin/mosquitto -c @PKG_SYSCONFDIR@/mosquitto.conf &amp;' timeout_seconds='60' />
@@ -29,7 +29,7 @@
       </common_name>
       <documentation>
         <doc_link name='Mosquitto' uri='https://mosquitto.org/'/>
-        <manpage title='mosquitto' section='1M' manpath='man' />
+        <manpage title='mosquitto' section='8M' manpath='man' />
       </documentation>
     </template>
   </service>
