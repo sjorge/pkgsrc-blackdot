@@ -1,9 +1,9 @@
 $NetBSD: distinfo,v 1.2 2015/05/26 15:11:25 jperkin Exp $
 
-SHA1 (samba-4.9.4.tar.gz) = 7f8e15709e03e52d14bd9c85dd717366c106993f
-RMD160 (samba-4.9.4.tar.gz) = d0a43b85b85906f860de12b0b0abb1fcc5643b7a
-SHA512 (samba-4.9.4.tar.gz) = ecd9937caa12d409b9b4cf34982b1670346fa64c7ecd111b390e296771476e13eb7b868997bfe489f36b7bdc5c9fc3af42cd5ad276e9d85aaedfa8ac4cfc0617
-Size (samba-4.9.4.tar.gz) = 18053738 bytes
+SHA1 (samba-4.9.8.tar.gz) = fbbfac5b69725aec8e2441b9546cb9a282615ce0
+RMD160 (samba-4.9.8.tar.gz) = 2a1c436b2ee7a6491bce8020cdfad4d61cb4b2c1
+SHA512 (samba-4.9.8.tar.gz) = 80d93f10a415960b758c7fd26c91c27eeb9e8371eb82681aa287e139f9388b6131c9ab5460d39b912a22a79bbad9de210753ba01fd55fad8b2db91190ce3f286
+Size (samba-4.9.8.tar.gz) = 18081493 bytes
 SHA1 (patch-lib_replace_wscript) = 14ceb50e58ddd8ae961fb35afd548c60d17a224f
 SHA1 (patch-lib_tevent_wscript) = 4e1c423f3565714edd87a0429791faaf96b8d93c
 SHA1 (patch-source3_lib_messages__dgm.c) = 78b56907090b19ad4576021b3b05410fcccaa064
