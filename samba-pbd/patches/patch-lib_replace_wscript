@@ -1,8 +1,16 @@
 $NetBSD$
 
---- lib/replace/wscript.orig	2016-01-26 11:45:46.000000000 +0000
+--- lib/replace/wscript.orig	2019-01-15 10:07:00.000000000 +0000
 +++ lib/replace/wscript
-@@ -483,7 +483,7 @@ removeea setea
+@@ -360,6 +360,7 @@ def configure(conf):
+     conf.CHECK_FUNCS('link readlink symlink realpath snprintf vsnprintf')
+     conf.CHECK_FUNCS('asprintf vasprintf setenv unsetenv strnlen strtoull __strtoull')
+     conf.CHECK_FUNCS('strtouq strtoll __strtoll strtoq memalign posix_memalign')
++    conf.CHECK_FUNCS('fmemopen')
+
+     if conf.CONFIG_SET('HAVE_MEMALIGN'):
+         conf.CHECK_DECLS('memalign', headers='malloc.h')
+@@ -618,7 +619,7 @@ def configure(conf):
      conf.CHECK_DECLS('pread pwrite setenv setresgid setresuid', reverse=True)
  
      if conf.CONFIG_SET('HAVE_EPOLL_CREATE') and conf.CONFIG_SET('HAVE_SYS_EPOLL_H'):

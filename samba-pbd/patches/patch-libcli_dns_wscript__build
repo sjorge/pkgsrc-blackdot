@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- libcli/dns/wscript_build.orig	2019-05-07 08:38:21.000000000 +0000
++++ libcli/dns/wscript_build
+@@ -8,6 +8,7 @@ bld.SAMBA_LIBRARY('clidns',
+ bld.SAMBA_BINARY('resolvconftest',
+                   source='resolvconftest.c',
+                   deps='clidns',
++                  enabled=bld.CONFIG_SET('HAVE_FMEMOPEN'),
+                   install=False)
+ 
+ bld.SAMBA_SUBSYSTEM('dns_lookup',

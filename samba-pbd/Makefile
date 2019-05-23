@@ -2,7 +2,7 @@
 
 DISTNAME=	samba-${VERSION}
 PKGNAME=	samba-pbd-${VERSION}
-VERSION=	4.9.8
+VERSION=	4.10.3
 #PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.samba.org/pub/samba/
@@ -61,7 +61,6 @@ USE_GNU_ICONV=		yes
 BROKEN_GETTEXT_DETECTION=yes
 
 HAS_CONFIGURE=		yes
-#CONFIGURE_ENV+=		XSLTPROC=${FALSE} # suppress generation of man pages
 CONFIGURE_ARGS+=	--libdir=${SAMBA_LIB}
 CONFIG_SHELL=		${PYTHONBIN}
 CONFIGURE_SCRIPT=	${WRKSRC}/buildtools/bin/waf
@@ -86,14 +85,14 @@ CONFIGURE_ARGS+=	--with-configdir=${SMB_CONFIG}
 CONFIGURE_ARGS+=	--with-libiconv=${BUILDLINK_PREFIX.iconv}
 CONFIGURE_ARGS+=	--with-gpgme
 CONFIGURE_ARGS+=	--with-regedit
+CONFIGURE_ARGS+=	--with-ntvfs-fileserver
+CONFIGURE_ARGS+=	--enable-gnutls
 CONFIGURE_ARGS+=	--abi-check-disable
-CONFIGURE_ARGS+=	--without-ad-dc
 CONFIGURE_ARGS+=	--without-systemd
 CONFIGURE_ARGS+=	--disable-cups
 CONFIGURE_ARGS+=	--disable-iprint
 CONFIGURE_ARGS+=	--disable-cephfs
 CONFIGURE_ARGS+=	--disable-glusterfs
-#CONFIGURE_ARGS+=	--bundled-libraries=!crypto,ldb,ntdb,talloc,tdb,tevent
 .if defined(MAKE_JOBS) && !empty(MAKE_JOBS) && !(defined(MAKE_JOBS_SAFE) && !empty(MAKE_JOBS_SAFE:M[nN][oO]))
 CONFIGURE_ARGS+=	--jobs=${MAKE_JOBS}
 .else
@@ -102,7 +101,7 @@ CONFIGURE_ARGS+=	--jobs=1
 
 # extra CF and LD flags
 LDFLAGS+=               ${COMPILER_RPATH_FLAG}${SMB_PRIVATELIB} -lintl
-LDFLAGS.SunOS+=         -lsocket -lnsl
+LDFLAGS.SunOS+=         -lsocket -lnsl -lsendfile
 CFLAGS.SunOS+=		-DHAVE_SOLARIS_GETGRENT_R
 PLIST_SUBST+=		LIBEXT=so
 SAMBA_LIBEXT=		so
@@ -217,6 +216,8 @@ PY_PATCHPLIST=	yes
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
 .include "../../converters/libiconv/buildlink3.mk"
+.include "../../security/p11-kit/buildlink3.mk"
+.include "../../security/gnutls/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
