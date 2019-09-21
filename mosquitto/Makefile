@@ -18,7 +18,7 @@ PKGCONFIG_OVERRIDE+=	libmosquittopp.pc.in
 
 .include "../../mk/bsd.prefs.mk"
 
-LDFLAGS.SunOS+=		-lsocket
+LDFLAGS.SunOS+=		-lsocket -lnsl
 
 MOSQUITTO_USER?=	mqtt
 MOSQUITTO_GROUP?=	mqtt
