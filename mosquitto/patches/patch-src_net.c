@@ -7,7 +7,7 @@ Fix the build on SunOS by including the required network headers
  
  #include "config.h"
  
-+#ifdef _SunOS_
++#ifdef __sun
 +#include <netinet/in.h>
 +#include <sys/socket.h>
 +#endif
