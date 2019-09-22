@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	mosquitto-1.5.8
+DISTNAME=	mosquitto-1.6.6
 CATEGORIES=	pbd
 MASTER_SITES=	https://mosquitto.org/files/source/
 
@@ -45,9 +45,6 @@ CONF_FILES=			${EGDIR}/mosquitto.conf ${PKG_SYSCONFDIR}/mosquitto.conf
 
 post-install:
 	${MV} ${DESTDIR}${PREFIX}/etc/* ${DESTDIR}${PREFIX}/share/examples/
-.if ${PKGMANDIR} != "share/man"
-	${MV} ${DESTDIR}${PREFIX}/share/man/* ${DESTDIR}${PREFIX}/${PKGMANDIR}/
-.endif
 
 .include "../../devel/libuuid/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"

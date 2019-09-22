@@ -1,17 +1,16 @@
 $NetBSD$
-Avoid using the linux specific linker options on all other platforms.
 
---- src/CMakeLists.txt.orig	2019-02-28 17:18:59.000000000 +0000
+--- src/CMakeLists.txt.orig	2019-09-17 15:52:29.000000000 +0000
 +++ src/CMakeLists.txt
-@@ -171,9 +171,9 @@ target_link_libraries(mosquitto ${MOSQ_L
+@@ -179,9 +179,9 @@ target_link_libraries(mosquitto ${MOSQ_L
  if (UNIX)
  	if (APPLE)
  		set_target_properties(mosquitto PROPERTIES LINK_FLAGS "-Wl,-exported_symbols_list -Wl,${mosquitto_SOURCE_DIR}/src/linker-macosx.syms")
 -	else (APPLE)
-+	elseif (CMAKE_SYSTEM_NAME STREQUAL Linux)
++        elseif (CMAKE_SYSTEM_NAME STREQUAL Linux)
  		set_target_properties(mosquitto PROPERTIES LINK_FLAGS "-Wl,-dynamic-list=${mosquitto_SOURCE_DIR}/src/linker.syms")
 -	endif (APPLE)
 +	endif ()
  endif (UNIX)
  
- install(TARGETS mosquitto RUNTIME DESTINATION "${SBINDIR}" LIBRARY DESTINATION "${LIBDIR}")
+ install(TARGETS mosquitto RUNTIME DESTINATION "${CMAKE_INSTALL_SBINDIR}")
