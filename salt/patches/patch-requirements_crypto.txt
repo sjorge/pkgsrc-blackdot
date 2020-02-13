@@ -1,0 +1,8 @@
+$NetBSD$
+
+--- requirements/crypto.txt.orig	2020-02-12 06:43:00.242278232 +0000
++++ requirements/crypto.txt
+@@ -1,2 +1,2 @@
+-pycrypto>=2.6.1; sys.platform not in 'win32,darwin'
++pycryptodome; sys.platform != 'win32'
+ pycryptodomex; sys.platform == 'win32'
