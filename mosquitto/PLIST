@@ -13,6 +13,8 @@ lib/libmosquitto.so.${PKGVERSION}
 lib/libmosquittopp.so
 lib/libmosquittopp.so.1
 lib/libmosquittopp.so.${PKGVERSION}
+lib/pkgconfig/libmosquitto.pc
+lib/pkgconfig/libmosquittopp.pc
 man/man1/mosquitto_passwd.1
 man/man1/mosquitto_pub.1
 man/man1/mosquitto_rr.1
@@ -27,6 +29,4 @@ share/examples/mosquitto/aclfile.example
 share/examples/mosquitto/mosquitto.conf
 share/examples/mosquitto/pskfile.example
 share/examples/mosquitto/pwfile.example
-share/pkgconfig/libmosquitto.pc
-share/pkgconfig/libmosquittopp.pc
 @pkgdir etc

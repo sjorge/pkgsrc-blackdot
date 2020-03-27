@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	mosquitto-1.6.6
+DISTNAME=	mosquitto-1.6.9
 CATEGORIES=	pbd
 MASTER_SITES=	https://mosquitto.org/files/source/
 
@@ -19,6 +19,7 @@ PKGCONFIG_OVERRIDE+=	libmosquittopp.pc.in
 .include "../../mk/bsd.prefs.mk"
 
 LDFLAGS.SunOS+=		-lsocket -lnsl
+CMAKE_ARGS+=		-DWITH_BUNDLED_DEPS=yes
 
 MOSQUITTO_USER?=	mqtt
 MOSQUITTO_GROUP?=	mqtt
