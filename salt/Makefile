@@ -15,6 +15,7 @@ DEPENDS+=	${PYPKGPREFIX}-msgpack-[0-9]*:../../devel/py-msgpack
 DEPENDS+=	${PYPKGPREFIX}-yaml-[0-9]*:../../textproc/py-yaml
 DEPENDS+=	${PYPKGPREFIX}-requests>=2.5.0:../../devel/py-requests
 DEPENDS+=	${PYPKGPREFIX}-tornado>=4.3:../../www/py-tornado
+DEPENDS+=	${PYPKGPREFIX}-psutil-[0-9]*:../../sysutils/py-psutil
 # zeromq transport requirements
 DEPENDS+=	${PYPKGPREFIX}-cryptodome-[0-9]*:../../security/py-cryptodome
 DEPENDS+=	${PYPKGPREFIX}-zmq>=2.1.9:../../net/py-zmq
@@ -35,7 +36,6 @@ PYSETUPARGS+=	--salt-logs-dir=${VARBASE}/log/salt
 PYSETUPARGS+=	--salt-pidfile-dir=${VARBASE}/run
 PYSETUPARGS+=	--salt-sock-dir=${VARBASE}/run/salt
 
-REPLACE_PYTHON=		*.py */*.py */*/*.py
 REPLACE_SH=		salt/templates/git/ssh-id-wrapper
 
 RCD_SCRIPTS+=		salt_master salt_minion salt_syndic
@@ -72,19 +72,12 @@ SUBST_SED.fix-path+=	-e 's,/var/run,${VARBASE}/run,g'
 SUBST_SED.fix-path+=	-e 's,/var/cache,${VARBASE}/cache,g'
 SUBST_SED.fix-path+=	-e 's,/var/log,${VARBASE}/log,g'
 
+# Contains hardcoded paths to find installed libraries.
+CHECK_WRKREF_SKIP+=	*/salt/utils/rsax931.py
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/conf/master ${DESTDIR}${EGDIR}/
 	${INSTALL_DATA} ${WRKSRC}/conf/minion ${DESTDIR}${EGDIR}/
 
-# Dependencies are documented at
-# http://docs.saltstack.org/en/latest/topics/installation/index.html#dependencies
-# Jinja2 is documented as an optional dependency, but it's small so we
-# include it unconditionally.
-#
-# There's also an optional dependency on gcc, for Cython support, but
-# we don't bother with that here.
-#
-.include "../../lang/python/application.mk"
 .include "../../lang/python/distutils.mk"
 .include "../../mk/bsd.pkg.mk"
