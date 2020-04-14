@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1 2019/07/20 23:09:27 gdt Exp $
 bin/mosquitto_passwd
 bin/mosquitto_pub
 bin/mosquitto_rr
@@ -29,4 +29,3 @@ share/examples/mosquitto/aclfile.example
 share/examples/mosquitto/mosquitto.conf
 share/examples/mosquitto/pskfile.example
 share/examples/mosquitto/pwfile.example
-@pkgdir etc

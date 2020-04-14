@@ -1,53 +1,68 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.9 2020/02/29 18:29:01 gdt Exp $
 
-DISTNAME=	mosquitto-1.6.9
+VERSION=	1.6.9
+DISTNAME=	mosquitto-${VERSION}
 CATEGORIES=	net
 MASTER_SITES=	https://mosquitto.org/files/source/
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	https://mosquitto.org/files/source/
-COMMENT=	Open source MQTT broker
+#MAINTAINER=	amoibos@gmail.com
+MAINTAINER=	gdt@NetBSD.org
+HOMEPAGE=	https://mosquitto.org/
+COMMENT=	Open Source MQTT broker
 LICENSE=	epl-v1.0
 
+USE_LANGUAGES+=	c c++
+# Upstream documents that "unix" should use make, but Mac cmake.
+# After asking and receiving no guidance, choose to always use cmake.
+# https://github.com/eclipse/mosquitto/issues/1041
 USE_CMAKE=	yes
-USE_TOOLS+=	pkg-config
-USE_LANGUAGES=	c c++
-
-PKGCONFIG_OVERRIDE+=	libmosquitto.pc.in
-PKGCONFIG_OVERRIDE+=	libmosquittopp.pc.in
-
-.include "../../mk/bsd.prefs.mk"
+USE_TOOLS+=	gmake
 
 LDFLAGS.SunOS+=		-lsocket -lnsl
-CMAKE_ARGS+=		-DWITH_BUNDLED_DEPS=yes
+CMAKE_ARGS.SunOS+= 	-DWITH_BUNDLED_DEPS=yes
 
-MOSQUITTO_USER?=	mosquitto
-MOSQUITTO_GROUP?=	mosquitto
-MOSQUITTO_HOME?=	${VARBASE}/lib/mosquitto
+CMAKE_ARGS+=	-DCMAKE_INSTALL_SYSCONFDIR=${PREFIX}/share/examples
 
-FILES_SUBST+=		MOSQUITTO_USER=${MOSQUITTO_USER}
-FILES_SUBST+=		MOSQUITTO_GROUP=${MOSQUITTO_GROUP}
-FILES_SUBST+=		MOSQUITTO_HOME=${MOSQUITTO_HOME}
-BUILD_DEFS+=		MOSQUITTO_HOME VARBASE
+MOSQUITTO_USER=		mosquitto
+MOSQUITTO_GROUP=	mosquitto
 
-PKG_GROUPS_VARS+=	MOSQUITTO_GROUP
-PKG_USERS_VARS+=	MOSQUITTO_USER
+PKG_USERS=	${MOSQUITTO_USER}:${MOSQUITTO_GROUP}
+PKG_GROUPS=	${MOSQUITTO_GROUP}
 
-PKG_GROUPS=			${MOSQUITTO_GROUP}
-PKG_USERS=			${MOSQUITTO_USER}:${MOSQUITTO_GROUP}
-PKG_GECOS.${MOSQUITTO_USER}=	Mosquitto MQTT Broker
-PKG_HOME.${MOSQUITTO_USER}=	${MOSQUITTO_HOME}
+# \todo The example file is vast and arguably should not be installed.
+# However, we need to set a few things to make automatic startup work.
+CONF_FILES=	${PREFIX}/share/examples/mosquitto/mosquitto.conf \
+		${PKG_SYSCONFDIR}/mosquitto.conf
 
-OWN_DIRS_PERMS+=		${MOSQUITTO_HOME}/ \
-				${MOSQUITTO_USER} ${MOSQUITTO_GROUP} 0700
-INSTALLATION_DIRS+=		${PKGMANDIR}/ ${PREFIX}/share/examples/
-EGDIR=				${PREFIX}/share/examples/mosquitto
-CONF_FILES=			${EGDIR}/mosquitto.conf ${PKG_SYSCONFDIR}/mosquitto.conf
+SUBST_CLASSES+=		paths
+SUBST_STAGE.paths=	post-configure
+SUBST_MESSAGE.paths=	Substituting paths
+SUBST_FILES.paths=	mosquitto.conf
+SUBST_VARS.paths=	SSLCERTS
 
-post-install:
-	${MV} ${DESTDIR}${PREFIX}/etc/* ${DESTDIR}${PREFIX}/share/examples/
+RCD_SCRIPTS=	mosquitto
+SMF_METHODS=	mosquitto
+FILES_SUBST+=	MOSQUITTO_USER=${MOSQUITTO_USER}
+FILES_SUBST+=	MOSQUITTO_GROUP=${MOSQUITTO_GROUP}
+FILES_SUBST+=	PKG_SYSCONFDIR=${PKG_SYSCONFDIR}
+
+# mosquitto's build system is very troubled, and the tests do not
+# currently work.
+#   https://github.com/eclipse/mosquitto/issues/1242
+#   https://github.com/eclipse/mosquitto/issues/1330
+#
+# \todo invoke "gmake test" in tests/ subdir instead of at top level
+# \todo pass in CPPFLAGS/LDFLAGS to test invocation
+TEST_TARGET=	test
+.include "../../mk/bsd.prefs.mk"
+.include "../../devel/cunit/buildlink3.mk"
 
 .include "../../devel/libuuid/buildlink3.mk"
+# use bundle uthash on SunOS (DL_INSERT_INORDER not found otherwise)
+.if ${OPSYS} != "SunOS"
+.include "../../devel/uthash/buildlink3.mk"
+.endif
+# ?needed
+.include "../../net/libcares/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
-.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
