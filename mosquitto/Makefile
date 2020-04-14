@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	mosquitto-1.6.9
-CATEGORIES=	pbd
+CATEGORIES=	net
 MASTER_SITES=	https://mosquitto.org/files/source/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
