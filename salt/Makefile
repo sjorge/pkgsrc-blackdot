@@ -1,6 +1,6 @@
 # $NetBSD: Makefile,v 1.58 2018/02/28 13:37:23 adam Exp $
 
-DISTNAME=	salt-3000.1
+DISTNAME=	salt-3000.2
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_PYPI:=s/salt/}
 
@@ -19,6 +19,8 @@ DEPENDS+=	${PYPKGPREFIX}-psutil-[0-9]*:../../sysutils/py-psutil
 # zeromq transport requirements
 DEPENDS+=	${PYPKGPREFIX}-cryptodome-[0-9]*:../../security/py-cryptodome
 DEPENDS+=	${PYPKGPREFIX}-zmq>=2.1.9:../../net/py-zmq
+
+#PYTHON_VERSIONS_ACCEPTED=	36
 
 .include "../../lang/python/pyversion.mk"
 .if "${PYPKGPREFIX}" == "py27"

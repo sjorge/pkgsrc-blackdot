@@ -1,7 +1,7 @@
 $NetBSD: distinfo,v 1.21 2016/07/21 17:05:39 jperkin Exp $
 
-SHA1 (salt-3000.1.tar.gz) = 1c5168f8281788c9d84e4c2805e9f7903d72f4a6
-RMD160 (salt-3000.1.tar.gz) = a833498f2693d314127ef800cd7555a5402d4bf0
-SHA512 (salt-3000.1.tar.gz) = b28c3ddac58a85fc659fd9411d19f7fd1fcc0ecba1d973f6e1218474c0ad534854a9005ace91a853fb63c2f07d4b3094cf57fd635c96cbaa15074f08502f572e
-Size (salt-3000.1.tar.gz) = 15224161 bytes
+SHA1 (salt-3000.2.tar.gz) = 13996e3651c64cdcb82e3a8cb624f0ea9ec82936
+RMD160 (salt-3000.2.tar.gz) = 2765acd518382ccbce69fd9566af52d51ff06b6d
+SHA512 (salt-3000.2.tar.gz) = 88e8876ed8cd18e942c2194686cda68f40fa49e69e317ca488bf58e095bcf6cdf8771d93eba7960038941cc5863e13a4eea4dad5256c12da7cd8288a2c61f59d
+Size (salt-3000.2.tar.gz) = 15231513 bytes
 SHA1 (patch-requirements_crypto.txt) = b43cadeb1accc2163eec62902be8ff45691f1078
